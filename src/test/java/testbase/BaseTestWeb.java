@@ -9,10 +9,7 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 
 import java.net.MalformedURLException;
@@ -30,7 +27,7 @@ public class BaseTestWeb {
         return System.getProperty("user.dir") + "\\src\\main\\resources\\testdata\\"+workbookName+".xlsx";
     }
 
-    @BeforeClass
+    @BeforeTest
     @Parameters("browser")
     public void setUp(@Optional("chrome") String browser) throws MalformedURLException {
         switch (browser.toLowerCase()) {
@@ -59,7 +56,7 @@ public class BaseTestWeb {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @AfterClass
+    @AfterTest
     public void teardown(){
         if(driver!=null){
             driver.quit();
