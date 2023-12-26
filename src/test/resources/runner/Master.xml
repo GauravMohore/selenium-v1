@@ -7,7 +7,7 @@
             <package name="testcase.api"></package>
         </packages>
     </test>
-    <test name="test-web">
+    <test name="test-web" parallel="">
         <packages>
             <package name="testcase.web"></package>
         </packages>

@@ -12,7 +12,7 @@ public class TestNewsPage extends BaseTest {
         driver.get(baseURL+"news");
         newsPage = new NewsPage(driver);
     }
-    @Test
+    @Test(dependsOnMethods = "checkNewsPage")
     public void TC_VerifyPageTitle(){
         System.out.println(driver.getTitle());
     }
