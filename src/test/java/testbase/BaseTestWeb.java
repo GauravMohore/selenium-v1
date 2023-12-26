@@ -27,13 +27,13 @@ public class BaseTestWeb {
         return System.getProperty("user.dir") + "\\src\\main\\resources\\testdata\\"+workbookName+".xlsx";
     }
 
-    @BeforeTest
+    @BeforeClass
     @Parameters("browser")
     public void setUp(@Optional("chrome") String browser) throws MalformedURLException {
         switch (browser.toLowerCase()) {
             case "chrome":
                 ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless");
+//                options.addArguments("--headless");
                 driver = new ChromeDriver(options);
                 break;
             case "firefox":
@@ -56,7 +56,7 @@ public class BaseTestWeb {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }
 
-    @AfterTest
+    @AfterClass
     public void teardown(){
         if(driver!=null){
             driver.quit();

@@ -3,10 +3,7 @@ package testcase.web;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import pages.HomePage;
 import testbase.BaseTestWeb;
 import utils.DataProviders;
@@ -16,7 +13,7 @@ import java.util.Map;
 public class TestHomePage extends BaseTestWeb {
     HomePage homePage;
     @BeforeClass
-    private void setWebPage(){
+    private void classSetup(){
         driver.get(baseURL);
         homePage = new HomePage(driver);
     }
@@ -30,6 +27,7 @@ public class TestHomePage extends BaseTestWeb {
     public void TC_VerifyPageTitle(String key, String expectedTitle){
         try {
             String currentPageTitle = driver.getTitle();
+            //STEP: Validate Page Title
             Assert.assertEquals(currentPageTitle,expectedTitle);
         }catch (Exception error){
                 failedTest(error);

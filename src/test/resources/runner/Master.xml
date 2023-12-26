@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="test-test-suite" parallel="classes">
+<suite name="test-test-suite" >
     <parameter name="browser" value="firefox"></parameter>
     <test name="test-api">
         <packages>
             <package name="testcase.api"></package>
+        </packages>
+    </test>
+    <test name="test-web">
+        <packages>
+            <package name="testcase.web"></package>
         </packages>
     </test>
 </suite>
