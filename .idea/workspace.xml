@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36bd758e-17a1-4d25-b62e-edc4a8559da2" name="Changes" comment="added test directories and created base classes">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTestWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTestWeb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" afterDir="false" />
-    </list>
+    <list default="true" id="36bd758e-17a1-4d25-b62e-edc4a8559da2" name="Changes" comment="added 2 empty .xlsx files" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -50,6 +44,7 @@
     "TestNG.TestHomePage.TC_testPageTitle.executor": "Run",
     "TestNG.TestHomePage.executor": "Run",
     "TestNG.TestNewsPage.executor": "Run",
+    "TestNG.testcase.web.executor": "Run",
     "git-widget-placeholder": "setBase",
     "kotlin-language-version-configured": "true"
   }
@@ -184,13 +179,30 @@
       <option name="project" value="LOCAL" />
       <updated>1703570179444</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added 2 empty .xlsx files">
+      <option name="closed" value="true" />
+      <created>1703585669460</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1703585669460</updated>
+    </task>
+    <task id="LOCAL-00006" summary="added 2 empty .xlsx files">
+      <option name="closed" value="true" />
+      <created>1703585688524</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703585688524</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="created folders" />
     <MESSAGE value="added dependencies" />
     <MESSAGE value="added test directories and created base classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added test directories and created base classes" />
+    <MESSAGE value="added 2 empty .xlsx files" />
+    <option name="LAST_COMMIT_MESSAGE" value="added 2 empty .xlsx files" />
   </component>
 </project>
