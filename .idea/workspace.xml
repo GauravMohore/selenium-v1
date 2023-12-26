@@ -32,23 +32,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DataProviders.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor": "Run",
-    "TestNG.EntryPages.executor": "Run",
-    "TestNG.TestHomePage (1).executor": "Run",
-    "TestNG.TestHomePage.TC_VerifyPageTitle.executor": "Run",
-    "TestNG.TestHomePage.TC_testPageTitle.executor": "Run",
-    "TestNG.TestHomePage.executor": "Run",
-    "TestNG.TestNewsPage.executor": "Run",
-    "TestNG.testcase.web.executor": "Run",
-    "git-widget-placeholder": "setBase",
-    "kotlin-language-version-configured": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DataProviders.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EntryPages.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_VerifyPageTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_testPageTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNewsPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.testcase.web.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;setBase&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="TestNG.testcase.web">
     <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
