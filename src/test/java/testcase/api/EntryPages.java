@@ -7,7 +7,6 @@ import testbase.BaseTestApi;
 public class EntryPages extends BaseTestApi {
     @Test
     public void runTest(){
-        System.out.printf(RestAssured.baseURI);
+        response = RestAssured.get("/news");
     }
-
 }
