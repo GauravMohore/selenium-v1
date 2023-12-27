@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36bd758e-17a1-4d25-b62e-edc4a8559da2" name="Changes" comment="added 2 empty .xlsx files" />
+    <list default="true" id="36bd758e-17a1-4d25-b62e-edc4a8559da2" name="Changes" comment="added 2 empty .xlsx files">
+      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTestApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTestWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/EntryPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/api/EntryPages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,23 +38,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.DataProviders.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.EntryPages.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestHomePage (1).executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestHomePage.TC_VerifyPageTitle.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestHomePage.TC_testPageTitle.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestHomePage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.TestNewsPage.executor&quot;: &quot;Run&quot;,
-    &quot;TestNG.testcase.web.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;setBase&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.DataProviders.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor": "Run",
+    "TestNG.EntryPages.executor": "Run",
+    "TestNG.TestHomePage (1).executor": "Run",
+    "TestNG.TestHomePage.TC_VerifyPageTitle.executor": "Run",
+    "TestNG.TestHomePage.TC_testPageTitle.executor": "Run",
+    "TestNG.TestHomePage.executor": "Run",
+    "TestNG.TestNewsPage.executor": "Run",
+    "TestNG.testcase.web.executor": "Run",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="TestNG.testcase.web">
     <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />

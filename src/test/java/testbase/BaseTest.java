@@ -1,5 +1,7 @@
 package testbase;
 
+import io.restassured.RestAssured;
+import io.restassured.response.Response;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -17,8 +19,9 @@ import java.net.URL;
 import java.time.Duration;
 import java.util.ResourceBundle;
 
-public class BaseTestWeb {
+public class BaseTest {
     public WebDriver driver;
+    public Response response;
     public SoftAssert SAssert;
     public ResourceBundle resourceBundle = ResourceBundle.getBundle("config.baseConfig");
     public String baseURL = resourceBundle.getString("url");
@@ -52,6 +55,7 @@ public class BaseTestWeb {
                 throw new IllegalArgumentException("Invalid browser: " + browser);
         }
         SAssert = new SoftAssert();
+        RestAssured.baseURI = baseURL;
         driver.manage().deleteAllCookies();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
     }

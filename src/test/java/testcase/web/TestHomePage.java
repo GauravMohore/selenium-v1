@@ -1,16 +1,12 @@
 package testcase.web;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import pages.HomePage;
-import testbase.BaseTestWeb;
+import testbase.BaseTest;
 import utils.DataProviders;
 
-import java.util.Map;
-
-public class TestHomePage extends BaseTestWeb {
+public class TestHomePage extends BaseTest {
     HomePage homePage;
     @BeforeClass
     private void classSetup(){

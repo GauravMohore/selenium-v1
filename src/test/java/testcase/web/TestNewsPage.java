@@ -1,13 +1,11 @@
 package testcase.web;
 
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import pages.BasePage;
 import pages.NewsPage;
-import testbase.BaseTestWeb;
+import testbase.BaseTest;
 
-public class TestNewsPage extends BaseTestWeb {
+public class TestNewsPage extends BaseTest {
     NewsPage newsPage;
     @BeforeClass()
     public void classSetup(){
