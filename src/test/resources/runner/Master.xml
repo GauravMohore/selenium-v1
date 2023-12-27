@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="test-test-suite" >
-    <parameter name="browser" value="remote"/>
-<!--    <test name="test-api">-->
-<!--        <packages>-->
-<!--            <package name="testcase.api"></package>-->
-<!--        </packages>-->
-<!--    </test>-->
-    <test name="test-web" parallel="classes" thread-count="2">
-        <packages>
-            <package name="testcase.api"></package>
-            <package name="testcase.web"></package>
-        </packages>
+<suite name="test-test-suite" parallel="tests" thread-count="2">
+    <parameter name="browser" value="chrome"/>
+    <test name="test-web" parallel="methods" thread-count="2">
+        <classes>
+            <class name="testcase.web.TestHomePage"/>
+        </classes>
+    </test>
+    <test name="test-web2" parallel="methods" thread-count="3">
+        <classes>
+            <class name="testcase.web.TestHomePage"/>
+        </classes>
     </test>
 </suite>

@@ -1,6 +1,8 @@
 package testcase.web;
 
+import io.restassured.RestAssured;
 import org.testng.Assert;
+import org.testng.ITestResult;
 import org.testng.annotations.*;
 import pages.HomePage;
 import testbase.BaseTest;
@@ -14,13 +16,44 @@ public class TestHomePage extends BaseTest {
         homePage = new HomePage(driver);
     }
 
-    @DataProvider(name="homePageTestData")
-    private Object[][] homePageTestData(){
-        return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),"HomePageTitle");
+    @DataProvider(name="homePageTitle")
+    private Object[][] homePageTitle(){
+        String sheetName = "HomePageTitle";
+        return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),sheetName);
     }
 
-    @Test(dataProvider = "homePageTestData")
-    public void TC_VerifyPageTitle(String key, String expectedTitle){
+    @DataProvider(name="appDownloadLink")
+    private Object[][] appDownloadLink(){
+        String sheetName = "AppDownloadLink";
+        return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),sheetName);
+    }
+
+    /*---Testing Page Response------------------------------------*/
+
+    @Test(priority = 1, groups = "response")
+    public void TC_101_ValidatePageResponse(){
+        System.out.println(1);
+        try{
+            response = RestAssured.get(baseURL);
+
+            int statusCode = response.getStatusCode();
+            long responseTime = response.getTime();
+
+            //STEP-1: Validate Status Code
+            SAssert.assertEquals(statusCode, 200);
+
+            //STEP-2: Verify page response time to be under 10s
+            SAssert.assertTrue(responseTime <= 10000);
+            SAssert.assertAll();
+
+        }catch (Exception error){
+            failedTest(error);
+        }
+    }
+
+    @Test(priority = 2, dataProvider = "homePageTitle", groups = "response", dependsOnMethods = "TC_101_ValidatePageResponse")
+    public void TC_102_VerifyPageTitle(String key, String expectedTitle){
+        System.out.println(2);
         try {
             String currentPageTitle = driver.getTitle();
             //STEP: Validate Page Title
@@ -30,18 +63,37 @@ public class TestHomePage extends BaseTest {
         }
     }
 
-    @Test
-    public void TC_ValidateHeaderElements(){
-        try {
-            //STEP-1: Validate app logo
-            SAssert.assertTrue(homePage.getHeaderAppLogo().isDisplayed());
+    /*---Testing Header Elements------------------------------------*/
 
-            //STEP-2 : Validate app download button
-            SAssert.assertTrue(homePage.getHeaderDownloadButton().isDisplayed());
+    @Test(priority = 3, dependsOnGroups = "response")
+    public void TC_201_VerifyHeaderAppLogo(){
+        System.out.println(3);
+        try {
+            //STEP: Verify presence of app logo
+            Assert.assertTrue(homePage.getHeaderAppLogo().isDisplayed());
         }catch (Exception error){
             failedTest(error);
-        }finally {
-            SAssert.assertAll();
         }
     }
+
+    @Test(priority = 3, dataProvider = "appDownloadLink", dependsOnGroups = "response")
+    public void TC_202_VerifyHeaderDownloadLink(String key, String expectedDownloadLink){
+        System.out.println(4);
+        try {
+            //STEP-1: Verify presence of app download link
+            SAssert.assertTrue(homePage.getHeaderDownloadButton().isDisplayed());
+
+            //STEP-2: Validate app download link
+            String actualDownloadLink = homePage.getHeaderDownloadButton().getAttribute("href");
+            SAssert.assertEquals(expectedDownloadLink,actualDownloadLink);
+
+            SAssert.assertAll();
+
+        }catch (Exception error){
+            failedTest(error);
+        }
+    }
+
+    /*---Testing Footer Elements------------------------------------*/
+
 }

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="36bd758e-17a1-4d25-b62e-edc4a8559da2" name="Changes" comment="added 2 empty .xlsx files">
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTestApi.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTestWeb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/EntryPages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/api/EntryPages.java" afterDir="false" />
+    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="added 2 empty .xlsx files">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testdata/TD_HomePage.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testdata/TD_HomePage.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +30,13 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2a7atfYkEErxjLzwfBYQxWtk1yU" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
@@ -52,10 +58,12 @@
     "TestNG.TestNewsPage.executor": "Run",
     "TestNG.testcase.web.executor": "Run",
     "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true"
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/Projects/JavaProjects/Selenium-V1",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.testcase.web">
+  <component name="RunManager" selected="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml">
     <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner/Master.xml" />
@@ -136,18 +144,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.testcase.web" />
-        <item itemvalue="TestNG.TestHomePage" />
-        <item itemvalue="TestNG.TestNewsPage" />
         <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" />
+        <item itemvalue="TestNG.TestHomePage" />
+        <item itemvalue="TestNG.testcase.web" />
+        <item itemvalue="TestNG.TestNewsPage" />
         <item itemvalue="TestNG.TestHomePage.TC_testPageTitle" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-249ae16d76d6-98297cd8" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="36bd758e-17a1-4d25-b62e-edc4a8559da2" name="Changes" comment="" />
+      <changelist id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="added 2 empty .xlsx files" />
       <created>1703568941458</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -210,5 +225,30 @@
     <MESSAGE value="added test directories and created base classes" />
     <MESSAGE value="added 2 empty .xlsx files" />
     <option name="LAST_COMMIT_MESSAGE" value="added 2 empty .xlsx files" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/testcase/api/EntryPages.java</url>
+          <line>10</line>
+          <properties class="testcase.api.EntryPages">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
