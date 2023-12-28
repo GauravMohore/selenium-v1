@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class NewsPage extends BasePage{
 
-    @FindBy(xpath = "//h1[text()='Explore news from']")
+    @FindBy(tagName = "h1")
     private WebElement ContentHeading;
 
     /* Constructor */

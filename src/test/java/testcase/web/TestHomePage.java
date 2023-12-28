@@ -1,12 +1,17 @@
 package testcase.web;
 
 import io.restassured.RestAssured;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import pages.HomePage;
 import testbase.BaseTest;
 import utils.DataProviders;
+
+import java.util.*;
+import java.util.stream.Collectors;
 
 public class TestHomePage extends BaseTest {
     HomePage homePage;
@@ -28,6 +33,19 @@ public class TestHomePage extends BaseTest {
         return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),sheetName);
     }
 
+    @DataProvider(name="footerLinks")
+    private Object[][] footerLinks(){
+        String sheetName = "FooterLinks";
+        return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),sheetName);
+    }
+
+    /* TESTCASES */
+
+    @DataProvider(name="contactEmailAddress")
+    private Object[][] contactEmailAddress(){
+        String sheetName = "ContactEmailAddress";
+        return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),sheetName);
+    }
     /*---Testing Page Response------------------------------------*/
 
     @Test(priority = 1, groups = "response")
@@ -95,5 +113,38 @@ public class TestHomePage extends BaseTest {
     }
 
     /*---Testing Footer Elements------------------------------------*/
+    @Test(priority = 3,dataProvider = "contactEmailAddress", dependsOnGroups = "response")
+    public void TC_301_VerifyContactEmail(String key, String expectedContactAddress){
+        System.out.println(5);
+        try {
+            //STEP-1: Verify presence of Contact Us link
+            SAssert.assertTrue(homePage.getContactEmailLink().isDisplayed());
 
+            //STEP-2: Validate Contact email address
+            String actualContactAddress = homePage.getContactEmailLink().getAttribute("href").replace("mailto:","");
+            SAssert.assertEquals(expectedContactAddress,actualContactAddress);
+
+            SAssert.assertAll();
+        }catch (Exception error){
+            failedTest(error);
+        }
+    }
+
+    @Test(priority = 3, dataProvider = "footerLinks",dependsOnGroups = "response")
+    public void TC_302_VerifyFooterLinksLinks(String title, String linkText, String linkRoute) {
+        System.out.println(6);
+        try {
+            HashMap<String,String> map = homePage.getFooterLinks(title);
+
+            //STEP-1: Verify presence of link text
+            SAssert.assertTrue(map.containsKey(linkText));
+
+            //STEP-2: Verify link route
+            SAssert.assertTrue(map.get(linkText).contains(linkRoute));
+
+            SAssert.assertAll();
+        }catch (Exception error){
+            failedTest(error);
+        }
+    }
 }

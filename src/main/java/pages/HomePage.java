@@ -1,8 +1,12 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.HashMap;
+import java.util.List;
 
 public class HomePage extends BasePage {
 
@@ -10,7 +14,8 @@ public class HomePage extends BasePage {
     private WebElement HeaderAppLogo;
     @FindBy(xpath = "//img[@alt='download']/ancestor::a")
     private WebElement HeaderDownloadButton;
-
+    @FindBy(xpath = "//div[text()='Contact Us']/a")
+    private WebElement ContactEmailLink;
 
     /* Constructor */
     public HomePage(WebDriver driver){
@@ -25,5 +30,17 @@ public class HomePage extends BasePage {
 
     public WebElement getHeaderDownloadButton() {
         return HeaderDownloadButton;
+    }
+
+    public WebElement getContactEmailLink() {
+        return ContactEmailLink;
+    }
+
+    public HashMap<String, String> getFooterLinks(String sectionName) {
+        HashMap<String, String> linkInfo = new HashMap<>();
+        WebElement section = driver.findElement(By.xpath(String.format("//div[text()='%s']/following-sibling::div", sectionName)));
+        List<WebElement> anchorTags = section.findElements(By.tagName("a"));
+        anchorTags.forEach(link-> linkInfo.put(link.getText(),link.getAttribute("href")));
+        return linkInfo;
     }
 }
