@@ -7,6 +7,7 @@ import org.openqa.selenium.support.FindBy;
 
 import java.util.HashMap;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class HomePage extends BasePage {
 
@@ -16,6 +17,9 @@ public class HomePage extends BasePage {
     private WebElement HeaderDownloadButton;
     @FindBy(xpath = "//div[text()='Contact Us']/a")
     private WebElement ContactEmailLink;
+
+    @FindBy(xpath = "//div[text()='Follow Shuru app on']/following-sibling::ul")
+    List<WebElement> socialMediaLinks;
 
     /* Constructor */
     public HomePage(WebDriver driver){
@@ -42,5 +46,11 @@ public class HomePage extends BasePage {
         List<WebElement> anchorTags = section.findElements(By.tagName("a"));
         anchorTags.forEach(link-> linkInfo.put(link.getText(),link.getAttribute("href")));
         return linkInfo;
+    }
+
+    public List<WebElement> getSocialMediaLinks(){
+        return socialMediaLinks.stream()
+                .flatMap(li -> li.findElements(By.tagName("a")).stream())
+                .collect(Collectors.toList());
     }
 }

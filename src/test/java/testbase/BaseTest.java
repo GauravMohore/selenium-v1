@@ -17,6 +17,7 @@ import org.testng.asserts.SoftAssert;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
+import java.util.Arrays;
 import java.util.ResourceBundle;
 
 public class BaseTest {
