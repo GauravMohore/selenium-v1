@@ -68,6 +68,6 @@ public class BaseTest {
     }
 
     public static void failedTest(Exception error){
-        Assert.fail(error.getStackTrace().toString());
+        Assert.fail(error.getMessage());
     }
 }

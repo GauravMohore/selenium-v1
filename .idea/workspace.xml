@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="Added home + testcase" />
+    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="Added home + testcase">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testdata/TD_HomePage.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testdata/TD_HomePage.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,6 +35,7 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="ProjectErrors" />
@@ -61,13 +68,13 @@
     &quot;TestNG.TestHomePage.test.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNewsPage.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.testcase.web.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;test&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Projects/JavaProjects/Selenium-V1&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.TestHomePage.test">
+  <component name="RunManager" selected="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml">
     <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner/Master.xml" />
@@ -90,23 +97,6 @@
       <option name="MAIN_CLASS_NAME" value="testcase.web.TestBlogsPage" />
       <option name="METHOD_NAME" value="fillForm" />
       <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase.web" />
-      <option name="MAIN_CLASS_NAME" value="testcase.web.TestHomePage" />
-      <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
       <method v="2">
@@ -149,13 +139,30 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestNewsPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase.web" />
+      <option name="MAIN_CLASS_NAME" value="testcase.web.TestNewsPage" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" />
+        <item itemvalue="TestNG.TestHomePage.TC_302_VerifyFooterLinksLinks" />
+        <item itemvalue="TestNG.TestNewsPage" />
         <item itemvalue="TestNG.TestHomePage.test" />
         <item itemvalue="TestNG.TestBlogsPage.fillForm" />
-        <item itemvalue="TestNG.TestHomePage.TC_302_VerifyFooterLinksLinks" />
-        <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" />
-        <item itemvalue="TestNG.TestHomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -247,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1703785774543</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added home + testcase">
+      <option name="closed" value="true" />
+      <created>1703788786719</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1703788786719</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">

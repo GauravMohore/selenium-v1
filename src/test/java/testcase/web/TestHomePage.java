@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 import pages.HomePage;
 import testbase.BaseTest;
 import utils.DataProviders;
@@ -33,6 +34,12 @@ public class TestHomePage extends BaseTest {
         return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),sheetName);
     }
 
+    @DataProvider(name="contactEmailAddress")
+    private Object[][] contactEmailAddress(){
+        String sheetName = "ContactEmailAddress";
+        return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),sheetName);
+    }
+
     @DataProvider(name="footerLinks")
     private Object[][] footerLinks(){
         String sheetName = "FooterLinks";
@@ -40,12 +47,6 @@ public class TestHomePage extends BaseTest {
     }
 
     /* TESTCASES */
-
-    @DataProvider(name="contactEmailAddress")
-    private Object[][] contactEmailAddress(){
-        String sheetName = "ContactEmailAddress";
-        return DataProviders.readFromExcel(getTestDataFilePath("TD_HomePage"),sheetName);
-    }
     /*---Testing Page Response------------------------------------*/
 
     @Test(priority = 1, groups = "response")
@@ -131,8 +132,9 @@ public class TestHomePage extends BaseTest {
     }
 
     @Test(priority = 3, dataProvider = "footerLinks",dependsOnGroups = "response")
-    public void TC_302_VerifyFooterLinksLinks(String title, String linkText, String linkRoute) {
-        System.out.println(6);
+    public void TC_302_VerifyFooterLinksLinks(double index, String title, String linkText, String linkRoute) {
+        System.out.printf("%d -> %f%n",6,index);
+        SAssert = new SoftAssert();
         try {
             HashMap<String,String> map = homePage.getFooterLinks(title);
 
