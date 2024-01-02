@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
@@ -32,23 +33,27 @@ public class BaseTest {
     }
 
     @BeforeClass
-    @Parameters("browser")
-    public void setUp(@Optional("chrome") String browser) throws MalformedURLException {
+    @Parameters({"browser","setHeadless"})
+    public void setUp(@Optional("chrome") String browser, @Optional("true") boolean setHeadless) throws MalformedURLException {
         switch (browser.toLowerCase()) {
             case "chrome":
-                ChromeOptions options = new ChromeOptions();
-                options.addArguments("--headless");
-                driver = new ChromeDriver(options);
+                ChromeOptions chromeOptions = new ChromeOptions();
+                if(setHeadless) chromeOptions.addArguments("--headless");
+                driver = new ChromeDriver(chromeOptions);
                 break;
             case "firefox":
+                FirefoxOptions firefoxOptions = new FirefoxOptions();
+                if(setHeadless) firefoxOptions.addArguments("--headless");
                 driver = new FirefoxDriver();
                 break;
             case "edge":
+                /* Headless mode not directly supported in EdgeDriver */
                 driver = new EdgeDriver();
                 break;
             case "remote":
                 DesiredCapabilities capabilities = new DesiredCapabilities();
                 capabilities.setCapability(CapabilityType.BROWSER_NAME,"chrome");
+                if(setHeadless) capabilities.setCapability("--headless",true);
                 String hubUrl = resourceBundle.getString("hubUrl");
                 driver = new RemoteWebDriver(new URL(hubUrl), capabilities);
                 break;
