@@ -22,7 +22,7 @@ public class HomePage extends BasePage {
     List<WebElement> socialMediaLinks;
 
     /* Constructor */
-    public HomePage(WebDriver driver){
+    public HomePage(WebDriver driver) {
         super(driver);
     }
 
@@ -44,11 +44,11 @@ public class HomePage extends BasePage {
         HashMap<String, String> linkInfo = new HashMap<>();
         WebElement section = driver.findElement(By.xpath(String.format("//div[text()='%s']/following-sibling::div", sectionName)));
         List<WebElement> anchorTags = section.findElements(By.tagName("a"));
-        anchorTags.forEach(link-> linkInfo.put(link.getText(),link.getAttribute("href")));
+        anchorTags.forEach(link -> linkInfo.put(link.getText(), link.getAttribute("href")));
         return linkInfo;
     }
 
-    public List<WebElement> getSocialMediaLinks(){
+    public List<WebElement> getSocialMediaLinks() {
         return socialMediaLinks.stream()
                 .flatMap(li -> li.findElements(By.tagName("a")).stream())
                 .collect(Collectors.toList());

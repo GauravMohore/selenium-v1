@@ -14,8 +14,8 @@ public class BasePage {
     ResourceBundle resourceBundle = ResourceBundle.getBundle("config.baseConfig");
     String baseURL = resourceBundle.getString("url");
 
-    public BasePage(WebDriver driver){
+    public BasePage(WebDriver driver) {
         this.driver = driver;
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 }

@@ -6,11 +6,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import java.io.IOException;
 
 public class JsonOps {
-    private static ObjectMapper objectMapper = getDefaultObjectmapper();
-    private static ObjectMapper getDefaultObjectmapper(){
-        ObjectMapper defaultObjectMapper = new ObjectMapper();
+    private static final ObjectMapper objectMapper = getDefaultObjectmapper();
+
+    static ObjectMapper getDefaultObjectmapper() {
         // configurations...
-        return defaultObjectMapper;
+        return new ObjectMapper();
     }
 
     // Method - Parsing JSON string into JSON node
