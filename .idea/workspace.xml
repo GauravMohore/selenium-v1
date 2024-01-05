@@ -4,14 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="added &quot;setHeadless&quot; suite config">
+    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="practicing json read/write">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/NewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JsonMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JsonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practice/JsonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/JsonOps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebScraper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/EntryPages.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestBlogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestBlogsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,60 +59,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.DataProviders.executor": "Run",
-    "Application.JsonMain.executor": "Run",
-    "Application.WebScraper.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor": "Run",
-    "TestNG.EntryPages.executor": "Run",
-    "TestNG.TestBlogsPage.fillForm.executor": "Run",
-    "TestNG.TestHomePage (1).executor": "Run",
-    "TestNG.TestHomePage.TC_202_VerifyHeaderDownloadLink.executor": "Run",
-    "TestNG.TestHomePage.TC_301_VerifyContactEmail.executor": "Run",
-    "TestNG.TestHomePage.TC_302_VerifyFooterLinksLinks.executor": "Run",
-    "TestNG.TestHomePage.TC_303_VerifySocialMediaIntegration.executor": "Run",
-    "TestNG.TestHomePage.TC_VerifyPageTitle.executor": "Run",
-    "TestNG.TestHomePage.TC_testPageTitle.executor": "Run",
-    "TestNG.TestHomePage.executor": "Run",
-    "TestNG.TestHomePage.test.executor": "Run",
-    "TestNG.TestNewsPage.executor": "Run",
-    "TestNG.testcase.web.executor": "Run",
-    "git-widget-placeholder": "jsonSensei",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Projects/JavaProjects/Selenium-V1",
-    "settings.editor.selected.configurable": "actions.on.save"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.DataProviders.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonMain.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JsonOps.executor&quot;: &quot;Run&quot;,
+    &quot;Application.WebScraper.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.EntryPages.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestBlogsPage.fillForm.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestBlogsPage.testPageResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_102_VerifyPageTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_201_VerifyHeaderAppLogo.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_202_VerifyHeaderDownloadLink.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_301_VerifyContactEmail.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_302_VerifyFooterLinksLinks.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_303_VerifySocialMediaIntegration.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_VerifyPageTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.TC_testPageTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestHomePage.test.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNewsPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestPageResponse.TestHomePageResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestPageResponse.testHomePageResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestRest.testHomePageResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.testcase.web.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;jsonSensei&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Projects/JavaProjects/Selenium-V1&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="Application.WebScraper">
-    <configuration name="JsonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.JsonMain" />
-      <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebScraper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.WebScraper" />
-      <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunManager" selected="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml">
     <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner/Master.xml" />
@@ -120,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomePage.TC_301_VerifyContactEmail" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
       <extension name="coverage">
         <pattern>
@@ -130,7 +114,24 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcase.web" />
       <option name="MAIN_CLASS_NAME" value="testcase.web.TestHomePage" />
-      <option name="METHOD_NAME" value="TC_301_VerifyContactEmail" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestHomePage.TC_102_VerifyPageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase.web" />
+      <option name="MAIN_CLASS_NAME" value="testcase.web.TestHomePage" />
+      <option name="METHOD_NAME" value="TC_102_VerifyPageTitle" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -138,7 +139,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestHomePage.TC_303_VerifySocialMediaIntegration" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestHomePage.TC_201_VerifyHeaderAppLogo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
       <extension name="coverage">
         <pattern>
@@ -148,7 +149,25 @@
       </extension>
       <option name="PACKAGE_NAME" value="testcase.web" />
       <option name="MAIN_CLASS_NAME" value="testcase.web.TestHomePage" />
-      <option name="METHOD_NAME" value="TC_303_VerifySocialMediaIntegration" />
+      <option name="METHOD_NAME" value="TC_201_VerifyHeaderAppLogo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestPageResponse.testHomePageResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.smoke.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase.smoke" />
+      <option name="MAIN_CLASS_NAME" value="testcase.smoke.TestPageResponse" />
+      <option name="METHOD_NAME" value="testHomePageResponse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -158,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WebScraper" />
         <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" />
-        <item itemvalue="Application.JsonMain" />
-        <item itemvalue="TestNG.TestHomePage.TC_301_VerifyContactEmail" />
-        <item itemvalue="TestNG.TestHomePage.TC_303_VerifySocialMediaIntegration" />
+        <item itemvalue="TestNG.TestHomePage" />
+        <item itemvalue="TestNG.TestHomePage.TC_102_VerifyPageTitle" />
+        <item itemvalue="TestNG.TestPageResponse.testHomePageResponse" />
+        <item itemvalue="TestNG.TestHomePage.TC_201_VerifyHeaderAppLogo" />
       </list>
     </recent_temporary>
   </component>
@@ -286,7 +305,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704175917481</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="saved &quot;states&quot; data in json">
+      <option name="closed" value="true" />
+      <created>1704183823290</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1704183823290</updated>
+    </task>
+    <task id="LOCAL-00015" summary="practicing json read/write">
+      <option name="closed" value="true" />
+      <created>1704436263158</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704436263158</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -309,20 +344,13 @@
     <MESSAGE value="added fail test messages" />
     <MESSAGE value="added Jackson for json operations" />
     <MESSAGE value="added &quot;setHeadless&quot; suite config" />
-    <option name="LAST_COMMIT_MESSAGE" value="added &quot;setHeadless&quot; suite config" />
+    <MESSAGE value="saved &quot;states&quot; data in json" />
+    <MESSAGE value="practicing json read/write" />
+    <option name="LAST_COMMIT_MESSAGE" value="practicing json read/write" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/testcase/api/EntryPages.java</url>
-          <line>10</line>
-          <properties class="testcase.api.EntryPages">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pages/HomePage.java</url>
           <line>43</line>

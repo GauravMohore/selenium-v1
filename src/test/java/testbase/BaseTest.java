@@ -28,22 +28,22 @@ public class BaseTest {
     public ResourceBundle resourceBundle = ResourceBundle.getBundle("config.baseConfig");
     public String baseURL = resourceBundle.getString("url");
 
-    public static String getTestDataFilePath(String workbookName){
-        return System.getProperty("user.dir") + "\\src\\main\\resources\\testdata\\"+workbookName+".xlsx";
+    public static String getTestDataFilePath(String workbookName) {
+        return System.getProperty("user.dir") + "\\src\\main\\resources\\testdata\\" + workbookName + ".xlsx";
     }
 
     @BeforeClass
-    @Parameters({"browser","setHeadless"})
+    @Parameters({"browser", "setHeadless"})
     public void setUp(@Optional("chrome") String browser, @Optional("true") boolean setHeadless) throws MalformedURLException {
         switch (browser.toLowerCase()) {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
-                if(setHeadless) chromeOptions.addArguments("--headless");
+                if (setHeadless) chromeOptions.addArguments("--headless");
                 driver = new ChromeDriver(chromeOptions);
                 break;
             case "firefox":
                 FirefoxOptions firefoxOptions = new FirefoxOptions();
-                if(setHeadless) firefoxOptions.addArguments("--headless");
+                if (setHeadless) firefoxOptions.addArguments("--headless");
                 driver = new FirefoxDriver();
                 break;
             case "edge":
@@ -52,8 +52,8 @@ public class BaseTest {
                 break;
             case "remote":
                 DesiredCapabilities capabilities = new DesiredCapabilities();
-                capabilities.setCapability(CapabilityType.BROWSER_NAME,"chrome");
-                if(setHeadless) capabilities.setCapability("--headless",true);
+                capabilities.setCapability(CapabilityType.BROWSER_NAME, "chrome");
+                if (setHeadless) capabilities.setCapability("--headless", true);
                 String hubUrl = resourceBundle.getString("hubUrl");
                 driver = new RemoteWebDriver(new URL(hubUrl), capabilities);
                 break;
@@ -67,13 +67,13 @@ public class BaseTest {
     }
 
     @AfterClass
-    public void teardown(){
-        if(driver!=null){
+    public void teardown() {
+        if (driver != null) {
             driver.quit();
         }
     }
 
-    public static void failedTest(Exception error){
+    protected static void failedTest(Exception error) {
         Assert.fail(error.getMessage());
     }
 }

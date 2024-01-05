@@ -47,7 +47,7 @@
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>7.8.0</version>
+            <version>7.9.0</version>
             <scope>test</scope>
         </dependency>
 
@@ -109,18 +109,20 @@
         </dependency>
 
         <!-- Apache POI -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi</artifactId>
             <version>5.2.5</version>
         </dependency>
 
-        <!-- Apache POI OOXML Schemas -->
+        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
         <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>5.2.5</version>
         </dependency>
+
 
         <!-- REST Assured -->
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->

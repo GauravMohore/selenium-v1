@@ -5,6 +5,7 @@
     <parameter name="setHeadless" value="true"/>
     <test name="test-web" parallel="methods" thread-count="3">
         <classes>
+            <class name="testcase.smoke.TestPageResponse"/>
             <class name="testcase.web.TestHomePage"/>
         </classes>
     </test>
