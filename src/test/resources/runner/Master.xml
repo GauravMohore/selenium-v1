@@ -1,9 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="test-test-suite">
-    <parameter name="browser" value="chrome"/>
-    <parameter name="setHeadless" value="true"/>
     <test name="test-web" parallel="methods" thread-count="3">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="setHeadless" value="true"/>
+        <groups>
+            <dependencies>
+                <group name="homePage" depends-on="homePageResponse"/>
+            </dependencies>
+        </groups>
         <classes>
             <class name="testcase.smoke.TestPageResponse"/>
             <class name="testcase.web.TestHomePage"/>

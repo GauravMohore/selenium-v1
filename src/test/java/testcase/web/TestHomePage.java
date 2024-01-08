@@ -58,31 +58,8 @@ public class TestHomePage extends BaseTest {
     /* TESTCASES */
     /*---Testing Page Response------------------------------------*/
 
-    @Test(priority = 1, groups = "response")
-    public void TC_101_ValidatePageResponse() {
-        SAssert = new SoftAssert();
-        System.out.println(1);
-        try {
-            response = RestAssured.get(baseURL);
 
-            int statusCode = response.getStatusCode();
-            long responseTime = response.getTime();
-
-            //STEP-1: Validate Status Code
-            String failMessage1 = String.format("expected status code to be 200, but %s responded with %d", pageURL, statusCode);
-            SAssert.assertEquals(statusCode, 200, failMessage1);
-
-            //STEP-2: Verify page response time to be under 10s
-            String failMessage2 = String.format("expected response time(in ms) to be under 10000, but %s responded in %d", pageURL, responseTime);
-            SAssert.assertTrue(responseTime <= 10000, failMessage2);
-            SAssert.assertAll();
-
-        } catch (Exception error) {
-            failedTest(error);
-        }
-    }
-
-    @Test(priority = 2, dataProvider = "homePageTitle", groups = "response")
+    @Test(priority = 1, dataProvider = "homePageTitle", groups = {"homePageTitle", "homePage"})
     public void TC_102_VerifyPageTitle(String key, String expectedTitle) {
         System.out.println(2);
         try {
@@ -97,7 +74,7 @@ public class TestHomePage extends BaseTest {
 
     /*---Testing Header Elements------------------------------------*/
 
-    @Test(priority = 3, dependsOnGroups = "response")
+    @Test(priority = 2, groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_201_VerifyHeaderAppLogo() {
         System.out.println(3);
         try {
@@ -109,7 +86,7 @@ public class TestHomePage extends BaseTest {
         }
     }
 
-    @Test(priority = 3, dataProvider = "appDownloadLink", dependsOnGroups = "response")
+    @Test(priority = 2, dataProvider = "appDownloadLink", groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_202_VerifyHeaderDownloadLink(String key, String expectedDownloadLink) {
         System.out.println(4);
         try {
@@ -131,7 +108,7 @@ public class TestHomePage extends BaseTest {
 
     /*---Testing Footer Elements------------------------------------*/
 
-    @Test(priority = 3, dataProvider = "contactEmailAddress", dependsOnGroups = "response")
+    @Test(priority = 2, dataProvider = "contactEmailAddress", groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_301_VerifyContactEmail(String key, String expectedContactAddress) {
         System.out.println(5);
         try {
@@ -150,7 +127,7 @@ public class TestHomePage extends BaseTest {
         }
     }
 
-    @Test(priority = 3, dataProvider = "footerLinks", dependsOnGroups = "response")
+    @Test(priority = 2, dataProvider = "footerLinks", groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_302_VerifyFooterLinksLinks(double index, String title, String linkText, String linkRoute) {
         System.out.println(String.format("6(%s)", Math.round(index * 10) / 10.0));
         SAssert = new SoftAssert();
@@ -171,7 +148,7 @@ public class TestHomePage extends BaseTest {
         }
     }
 
-    @Test(priority = 3, dataProvider = "socialMedia", dependsOnGroups = "response")
+    @Test(priority = 2, dataProvider = "socialMedia", groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_303_VerifySocialMediaIntegration(double Index, String title, String expectedLink) {
         System.out.println(String.format("7(%d)", (int) Index));
         SAssert = new SoftAssert();

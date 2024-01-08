@@ -1,10 +1,28 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="VulnerableLibrariesLocal" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="isIgnoringEnabled" value="true" />
+      <option name="ignoredModules">
+        <list>
+          <option value="Selenium-V1" />
+        </list>
+      </option>
+      <option name="ignoredPackages">
+        <list>
+          <option value="org.webjars:jquery:3.7.1" />
+        </list>
+      </option>
+      <option name="ignoredReasons">
+        <list>
+          <option value="Not exploitable" />
+        </list>
+      </option>
+    </inspection_tool>
     <inspection_tool class="groupsTestNG" enabled="true" level="WARNING" enabled_by_default="true">
       <option name="groups">
         <value>
-          <list size="7">
+          <list size="10">
             <item index="0" class="java.lang.String" itemvalue="s" />
             <item index="1" class="java.lang.String" itemvalue="" />
             <item index="2" class="java.lang.String" itemvalue="response" />
@@ -12,6 +30,9 @@
             <item index="4" class="java.lang.String" itemvalue="smokeHomePage" />
             <item index="5" class="java.lang.String" itemvalue="shokeHomePage" />
             <item index="6" class="java.lang.String" itemvalue="testHomePage" />
+            <item index="7" class="java.lang.String" itemvalue="homePageResponse" />
+            <item index="8" class="java.lang.String" itemvalue="homePage" />
+            <item index="9" class="java.lang.String" itemvalue="homePageTitle" />
           </list>
         </value>
       </option>

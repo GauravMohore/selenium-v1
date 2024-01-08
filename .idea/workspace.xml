@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="practicing json read/write">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practice/JsonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/JsonOps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebScraper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/EntryPages.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestBlogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestBlogsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" afterDir="false" />
-    </list>
+    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="practicing json read/write" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -83,6 +72,8 @@
     &quot;TestNG.TestHomePage.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestHomePage.test.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestNewsPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNewsPage.test1.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestNewsPage.testSomething.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestPageResponse.TestHomePageResponse.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestPageResponse.testHomePageResponse.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestRest.testHomePageResponse.executor&quot;: &quot;Run&quot;,
@@ -178,10 +169,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" />
-        <item itemvalue="TestNG.TestHomePage" />
-        <item itemvalue="TestNG.TestHomePage.TC_102_VerifyPageTitle" />
         <item itemvalue="TestNG.TestPageResponse.testHomePageResponse" />
         <item itemvalue="TestNG.TestHomePage.TC_201_VerifyHeaderAppLogo" />
+        <item itemvalue="TestNG.TestHomePage.TC_102_VerifyPageTitle" />
+        <item itemvalue="TestNG.TestHomePage" />
       </list>
     </recent_temporary>
   </component>
@@ -321,7 +312,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704436263158</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="fixed grouping and dependencies from suite.xml">
+      <option name="closed" value="true" />
+      <created>1704692079306</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1704692079306</updated>
+    </task>
+    <task id="LOCAL-00017" summary="fixed grouping and dependencies from suite.xml">
+      <option name="closed" value="true" />
+      <created>1704692276870</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1704692276870</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -346,7 +353,8 @@
     <MESSAGE value="added &quot;setHeadless&quot; suite config" />
     <MESSAGE value="saved &quot;states&quot; data in json" />
     <MESSAGE value="practicing json read/write" />
-    <option name="LAST_COMMIT_MESSAGE" value="practicing json read/write" />
+    <MESSAGE value="fixed grouping and dependencies from suite.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed grouping and dependencies from suite.xml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

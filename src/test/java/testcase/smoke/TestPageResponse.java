@@ -9,7 +9,7 @@ import testbase.SmokeSetup;
 
 public class TestPageResponse extends SmokeSetup {
 
-    @Test(groups = {"smoke"})
+    @Test(priority = 0, groups = {"smoke", "homePageResponse"})
     public void testHomePageResponse() {
         System.out.println(1);
         SAssert = new SoftAssert();
