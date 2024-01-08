@@ -7,7 +7,7 @@ import org.testng.asserts.SoftAssert;
 
 import java.util.ResourceBundle;
 
-public class SmokeSetup {
+public class BaseApiTest {
     protected Response response;
     protected SoftAssert SAssert;
     protected String baseURL;
