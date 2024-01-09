@@ -11,6 +11,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
@@ -23,6 +24,7 @@ import java.util.ResourceBundle;
 
 public class BaseTest {
     public WebDriver driver;
+    public WebDriverWait wait;
     public Response response;
     public SoftAssert SAssert;
     public ResourceBundle resourceBundle = ResourceBundle.getBundle("config.baseConfig");
@@ -34,7 +36,7 @@ public class BaseTest {
 
     @BeforeClass
     @Parameters({"browser", "setHeadless"})
-    public void setUp(@Optional("chrome") String browser, @Optional("true") boolean setHeadless) throws MalformedURLException {
+    public void setUp(@Optional("chrome") String browser, @Optional("false") boolean setHeadless) throws MalformedURLException {
         switch (browser.toLowerCase()) {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
