@@ -1,6 +1,48 @@
 {
-  "id": 10,
-  "username": "Karl",
-  "user_data": [
+  "is_anon": false,
+  "created": 1704723708953,
+  "name": "Literally Dead",
+  "user_id": "c3b9555e-0a0f-4093-a0d9-b357f0bc8e4c",
+  "image_url": "https://media.shuru.co.in/input/IMG_20240108_201648_268236.jpg",
+  "sign_up_time": "3 days ago",
+  "deeplink": "/profile/c3b9555e-0a0f-4093-a0d9-b357f0bc8e4c",
+  "bio": "Through Shuru app I connect with people in my city",
+  "location": {
+    "displayLocation": "Ambala, Haryana"
+  },
+  "isBusiness": false,
+  "followed": false,
+  "followersCount": 102,
+  "followingCount": 0,
+  "connectionCount": 102,
+  "allowContact": false,
+  "showMyAddress": false,
+  "profession": "",
+  "businessId": "",
+  "isBlocked": false,
+  "online": false,
+  "cUrl": "",
+  "mCallLink": "https://meet.shuru.co.in/call/Literally-Dead",
+  "live": false,
+  "vc": {
+    "total": 202,
+    "unique": 103
+  },
+  "cc": 0,
+  "inMeeting": false,
+  "verified": true,
+  "isSpam": false,
+  "isCreator": true,
+  "assignedSupports": [
+    {
+      "id": "c2843720-9f47-4ae9-ac3d-f32f8dad417c",
+      "label": "Ram Mandir",
+      "imageUrl": "https://static.toiimg.com/thumb/msid-106564581,width-400,resizemode-4/106564581.jpg"
+    },
+    {
+      "id": "39558539-ac74-4733-a595-a80cff213da4",
+      "label": "Shuru",
+      "imageUrl": "https://shuru.co.in/android-chrome-192x192.png"
+    }
   ]
 }

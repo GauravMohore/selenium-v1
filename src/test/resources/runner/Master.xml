@@ -10,7 +10,7 @@
             </dependencies>
         </groups>
         <classes>
-            <class name="testcase.smoke.TestPageResponse"/>
+            <class name="testcase.smoke.TestHomePageResponse"/>
             <class name="testcase.web.TestHomePage"/>
         </classes>
     </test>

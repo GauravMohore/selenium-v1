@@ -4,14 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="before grouping fix">
+    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="added incomplete banner ad testcases">
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/config/baseConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/baseConfig.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseApiTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BannerFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BannerFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PromotionPurchasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PromotionPurchasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practice/JsonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/JsonMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/practice/JsonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/JsonOps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/saved/locationData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/saved/locationData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/saved/randomFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/saved/randomFile.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/saved/statesLocationData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/saved/statesLocationData.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestPageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestPageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/TestBannerAd.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestPageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestHomePageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,6 +87,10 @@
     "TestNG.TestBannerAdCreation.TC_105_VerifyBannerAdImageSelection.executor": "Run",
     "TestNG.TestBannerAdCreation.TC_106_WhatsAppNumberInput.executor": "Run",
     "TestNG.TestBannerAdCreation.TC_107_BannerPreviewFragment.executor": "Run",
+    "TestNG.TestBannerAdCreation.TC_108_BannerPreviewFragment.executor": "Run",
+    "TestNG.TestBannerAdCreation.TC_108_PurchasePageNavigation.executor": "Run",
+    "TestNG.TestBannerAdCreation.TC_109_PromotionLocalityLevelPlans.executor": "Run",
+    "TestNG.TestBannerAdCreation.TC_109_PurchasePageNavigation.executor": "Run",
     "TestNG.TestBannerAdCreation.TC_BannerPurchasePage.executor": "Run",
     "TestNG.TestBannerAdCreation.executor": "Run",
     "TestNG.TestBlogsPage.fillForm.executor": "Run",
@@ -98,29 +109,70 @@
     "TestNG.TestNewsPage.executor": "Run",
     "TestNG.TestNewsPage.test1.executor": "Run",
     "TestNG.TestNewsPage.testSomething.executor": "Run",
+    "TestNG.TestNewsPageResponse.executor": "Run",
+    "TestNG.TestNewsPageResponse.testHomePageResponse.executor": "Run",
     "TestNG.TestPageResponse.TestHomePageResponse.executor": "Run",
     "TestNG.TestPageResponse.executor": "Run",
     "TestNG.TestPageResponse.hitRestApiAndPrintResponse.executor": "Run",
     "TestNG.TestPageResponse.testHomePageResponse.executor": "Run",
     "TestNG.TestRest.testHomePageResponse.executor": "Run",
     "TestNG.testcase.web.executor": "Run",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "banner",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Projects/JavaProjects/Selenium-V1",
     "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.TestBannerAdCreation">
-    <configuration name="TestBannerAdCreation (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestNewsPageResponse">
+    <configuration name="JsonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.JsonMain" />
       <module name="Selenium-V1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcase.web.*" />
+          <option name="PATTERN" value="practice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testcase.web" />
-      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JsonOps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="practice.JsonOps" />
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="practice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebScraper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="utils.WebScraper" />
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNewsPageResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.smoke.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase.smoke" />
+      <option name="MAIN_CLASS_NAME" value="testcase.smoke.TestNewsPageResponse" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -128,70 +180,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBannerAdCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestNewsPageResponse.testHomePageResponse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcase.web.*" />
+          <option name="PATTERN" value="testcase.smoke.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testcase.web" />
-      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestBannerAdCreation.TC_106_WhatsAppNumberInput" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase.web" />
-      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
-      <option name="METHOD_NAME" value="TC_106_WhatsAppNumberInput" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestBannerAdCreation.TC_107_BannerPreviewFragment" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase.web" />
-      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
-      <option name="METHOD_NAME" value="TC_107_BannerPreviewFragment" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestBannerAdCreation.TC_BannerPurchasePage" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase.web" />
-      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
-      <option name="METHOD_NAME" value="TC_BannerPurchasePage" />
+      <option name="PACKAGE_NAME" value="testcase.smoke" />
+      <option name="MAIN_CLASS_NAME" value="testcase.smoke.TestNewsPageResponse" />
+      <option name="METHOD_NAME" value="testHomePageResponse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -201,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestBannerAdCreation" />
-        <item itemvalue="TestNG.TestBannerAdCreation.TC_BannerPurchasePage" />
-        <item itemvalue="TestNG.TestBannerAdCreation.TC_107_BannerPreviewFragment" />
-        <item itemvalue="TestNG.TestBannerAdCreation (1)" />
-        <item itemvalue="TestNG.TestBannerAdCreation.TC_106_WhatsAppNumberInput" />
+        <item itemvalue="TestNG.TestNewsPageResponse" />
+        <item itemvalue="TestNG.TestNewsPageResponse.testHomePageResponse" />
+        <item itemvalue="Application.JsonMain" />
+        <item itemvalue="Application.WebScraper" />
+        <item itemvalue="Application.JsonOps" />
       </list>
     </recent_temporary>
   </component>
@@ -369,7 +368,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704694846382</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="added incomplete banner ad testcases">
+      <option name="closed" value="true" />
+      <created>1704796442786</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1704796442786</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -407,7 +414,8 @@
     <MESSAGE value="fixed grouping and dependencies from suite.xml" />
     <MESSAGE value="practicing json read/write" />
     <MESSAGE value="before grouping fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="before grouping fix" />
+    <MESSAGE value="added incomplete banner ad testcases" />
+    <option name="LAST_COMMIT_MESSAGE" value="added incomplete banner ad testcases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

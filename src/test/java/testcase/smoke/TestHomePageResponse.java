@@ -1,14 +1,12 @@
 package testcase.smoke;
 
 import io.restassured.RestAssured;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import testbase.BaseApiTest;
-import testbase.BaseTest;
 
 
-public class TestPageResponse extends BaseApiTest {
+public class TestHomePageResponse extends BaseApiTest {
 
     @Test(priority = 0, groups = {"smoke", "homePageResponse"})
     public void testHomePageResponse() {

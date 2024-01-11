@@ -33,7 +33,7 @@ public class BannerFormPage extends BasePage {
     private WebElement nextButton;
     @FindBy(xpath = "//h1[text()='Preview']")
     private WebElement previewTitle;
-    @FindBy(css = "button[fdprocessedid=\'nmb1eh\']")
+    @FindBy(xpath = "//footer/button[2]")
     private WebElement previewNextButton;
 
     public BannerFormPage(WebDriver driver, WebDriverWait wait) {

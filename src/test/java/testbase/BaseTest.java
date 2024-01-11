@@ -76,6 +76,6 @@ public class BaseTest {
     }
 
     protected static void failedTest(Exception error) {
-        Assert.fail(error.getMessage());
+        Assert.fail(Arrays.toString(error.getStackTrace()));
     }
 }

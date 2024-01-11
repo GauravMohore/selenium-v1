@@ -10,6 +10,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.BannerFormPage;
+import pages.PromotionPurchasePage;
 import testbase.BaseTest;
 
 import java.net.MalformedURLException;
@@ -22,7 +23,8 @@ import java.util.stream.IntStream;
 
 public class TestBannerAdCreation extends BaseTest {
     String pageURL;
-    BannerFormPage bannerFormPage;
+    BannerFormPage formPage;
+    PromotionPurchasePage purchasePage;
 
     @BeforeClass
     private void classSetup() throws MalformedURLException {
@@ -34,14 +36,15 @@ public class TestBannerAdCreation extends BaseTest {
 
         pageURL = url.toString();
         driver.get(pageURL);
-        bannerFormPage = new BannerFormPage(driver, wait);
+        formPage = new BannerFormPage(driver, wait);
+        purchasePage = new PromotionPurchasePage(driver);
     }
 
     //    @AfterClass
 //    @Override
-    public void teardown() {
-        // don't close driver
-    }
+//    public void teardown() {
+//        // don't close driver
+//    }
 
     @Test(priority = 1, groups = {"bannerFormPageResponse", "bannerFormPage"})
     public void TC_101_VerifyBannerCreationFormResponse() {
@@ -75,7 +78,7 @@ public class TestBannerAdCreation extends BaseTest {
         try {
             //STEP: Verify presence of banner form
             String failMessage1 = "expected banner form not found";
-            Assert.assertTrue(bannerFormPage.getBannerForm().isDisplayed());
+            Assert.assertTrue(formPage.getBannerForm().isDisplayed());
         } catch (Exception error) {
             failedTest(error);
         }
@@ -87,11 +90,11 @@ public class TestBannerAdCreation extends BaseTest {
             //STEP-1: Enter 51 character String in heading text input
             int maxBoundaryValue = 51;
             String testString = IntStream.range(0, maxBoundaryValue).mapToObj(i -> "X").collect(Collectors.joining());
-            bannerFormPage.enterFormHeadingText(testString);
+            formPage.enterFormHeadingText(testString);
 
             //STEP-2: Validate maximum heading text character limit
-            String failMessage = String.format("expected word limit to be %s, but was able to enter %s", maxBoundaryValue, bannerFormPage.getFormHeadingText().length());
-            Assert.assertEquals(bannerFormPage.getFormHeadingText().length(), 50, failMessage);
+            String failMessage = String.format("expected word limit to be %s, but was able to enter %s", maxBoundaryValue, formPage.getFormHeadingText().length());
+            Assert.assertEquals(formPage.getFormHeadingText().length(), 50, failMessage);
         } catch (Exception error) {
             failedTest(error);
         }
@@ -103,11 +106,11 @@ public class TestBannerAdCreation extends BaseTest {
             //STEP-1: Enter 51 character String in heading text input
             int maxBoundaryValue = 101;
             String testString = IntStream.range(0, maxBoundaryValue).mapToObj(i -> "Y").collect(Collectors.joining());
-            bannerFormPage.enterFormDescriptionText(testString);
+            formPage.enterFormDescriptionText(testString);
 
             //STEP-2: Validate maximum heading text character limit
-            String failMessage = String.format("expected word limit to be %s, but was able to enter %s", maxBoundaryValue, bannerFormPage.getFormHeadingText().length());
-            Assert.assertEquals(bannerFormPage.getFormDescriptionText().length(), 100, failMessage);
+            String failMessage = String.format("expected word limit to be %s, but was able to enter %s", maxBoundaryValue, formPage.getFormHeadingText().length());
+            Assert.assertEquals(formPage.getFormDescriptionText().length(), 100, failMessage);
         } catch (Exception error) {
             failedTest(error);
         }
@@ -118,28 +121,28 @@ public class TestBannerAdCreation extends BaseTest {
         try {
             //STEP: Verify that WhatsApp radio button is selected by default
             String failMessage = "expected radio button not selected";
-            Assert.assertTrue(bannerFormPage.getWhatsappRadioButton().isSelected(), failMessage);
+            Assert.assertTrue(formPage.getWhatsappRadioButton().isSelected(), failMessage);
         } catch (Exception error) {
             failedTest(error);
         }
     }
 
-    @Test(priority = 3, groups = "bannerFormPage", dependsOnGroups = "bannerFormPageResponse")
+    @Test(priority = 3, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = "bannerFormPageResponse")
     public void TC_106_WhatsAppNumberInput() {
         String expectedWhatsappNumber = "9131122182";
         try {
 
             //STEP-1: Select WhatsApp radio button (if not selected)
-            if (!bannerFormPage.getWhatsappRadioButton().isSelected()) {
-                bannerFormPage.getWhatsappRadioButton().click();
+            if (!formPage.getWhatsappRadioButton().isSelected()) {
+                formPage.getWhatsappRadioButton().click();
             }
 
             //STEP-2: Enter Phone Number for WhatsApp Message link
             String enteredWhatsappNumber = "+91" + expectedWhatsappNumber; // Currently not implemented
-            bannerFormPage.enterWhatsappNumber(expectedWhatsappNumber);
+            formPage.enterWhatsappNumber(expectedWhatsappNumber);
 
             //STEP-3: Verify entered WhatsApp number
-            String actualWhatsappNumber = bannerFormPage.getWhatsappInputNumber();
+            String actualWhatsappNumber = formPage.getWhatsappInputNumber();
             String failMessage = String.format("expected number to be %s, but found %s", expectedWhatsappNumber, actualWhatsappNumber);
 
             Assert.assertEquals(expectedWhatsappNumber, actualWhatsappNumber, failMessage);
@@ -148,42 +151,55 @@ public class TestBannerAdCreation extends BaseTest {
         }
     }
 
-    @Test(priority = 4, groups = "bannerFormPage", dependsOnGroups = "bannerFormPageResponse")
-    public void TC_106_BannerAdImageSelection() {
+    @Test(priority = 4, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = "bannerFormPageResponse")
+    public void TC_107_BannerAdImageSelection() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         try {
             //STEP-1: Add banner image
             String imageFileName = "ImageA.png";
-            bannerFormPage.addBannerImage(wait, imageFileName);
+            formPage.addBannerImage(wait, imageFileName);
 
             //StEP-2: Validate presence of uploaded image
             String failMessage = String.format("expected image '%s' not displayed", imageFileName);
-            Assert.assertTrue(bannerFormPage.getUploadedImage().isDisplayed(), failMessage);
+            Assert.assertTrue(formPage.getUploadedImage().isDisplayed(), failMessage);
         } catch (Exception error) {
             failedTest(error);
         }
     }
 
-    @Test(priority = 5, groups = "bannerFormPage", dependsOnMethods = "TC_106_BannerAdImageSelection")
-    public void TC_107_BannerPreviewFragment() {
+    @Test(priority = 5, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = {"bannerFormPageResponse"})
+    public void TC_108_BannerPreviewFragment() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        String purchasePageEndpoint = "app/promotion/purchase";
         try {
             //STEP-1: Click on Next Button
-            bannerFormPage.clickOnNextButton();
+            formPage.clickOnNextButton();
 
             //STEP-2: Verify Preview Fragment
             String expectedPreviewFragmentTitleEN = "Preview";
-            String actualPreviewFragmentTitle = bannerFormPage.getPreviewTitle(wait).getText();
+            String actualPreviewFragmentTitle = formPage.getPreviewTitle(wait).getText();
 
             String failMessage1 = "expected preview fragment not displayed";
             String failMessage2 = String.format("expected preview text to be %s, but found %s", expectedPreviewFragmentTitleEN, actualPreviewFragmentTitle);
-            SAssert.assertTrue(bannerFormPage.getPreviewTitle(wait).isDisplayed(), failMessage1);
+            SAssert.assertTrue(formPage.getPreviewTitle(wait).isDisplayed(), failMessage1);
             SAssert.assertEquals(actualPreviewFragmentTitle, expectedPreviewFragmentTitleEN, failMessage2);
 
             //STEP-3: Verify banner image is displayed in preview Fragment
-            int totalUploadedImages = bannerFormPage.getUploadedImagesList().size();
+            int totalUploadedImages = formPage.getUploadedImagesList().size();
             String failMessage3 = "expected banner image in preview not found";
             SAssert.assertEquals(totalUploadedImages, 2, failMessage3);
+
+            //STEP-4: Click on 'Next' to navigate to purchase page
+            formPage.clickNextButtonInPreview(wait);
+
+            //STEP-5: Validate URL for purchase page
+            try {
+                wait.until(ExpectedConditions.urlContains(purchasePageEndpoint));
+            } finally {
+                String currentUrl = driver.getCurrentUrl();
+                String failMessage4 = String.format("expected %s to be %s", currentUrl, baseURL + purchasePageEndpoint + "/*");
+                SAssert.assertTrue(currentUrl.startsWith(baseURL + purchasePageEndpoint), failMessage4);
+            }
 
             SAssert.assertAll();
         } catch (Exception error) {
@@ -191,16 +207,37 @@ public class TestBannerAdCreation extends BaseTest {
         }
     }
 
-    @Test(priority = 6, groups = "bannerFormPage", dependsOnMethods = "TC_106_BannerAdImageSelection")
-    public void TC_BannerPurchasePage() {
+    @Test(priority = 6, groups = "bannerPurchasePage", dependsOnGroups = {"bannerFormPageResponse", "bannerFormCritical"})
+    public void TC_109_PromotionLocalityLevelPlans() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        String purchasePageEndpoint = "https://shuru.co.in/app/promotion/purchase";
         try {
-            //STEP-1: Navigate to banner purchase page (if not there)
-            bannerFormPage.clickNextButtonInPreview(wait);
+            //STEP-1: Verify presence of District, State & Country level plans
+            int expectedLocalityLevelCount = 3;
+            int actualLocalityLevelCount = purchasePage.getLocLevelList().size();
+            String failMessage1 = String.format("expected displayed location levels to be %d, but found %d", expectedLocalityLevelCount, actualLocalityLevelCount);
+            SAssert.assertEquals(expectedLocalityLevelCount, actualLocalityLevelCount, failMessage1);
 
+            //STEP-2: Verify that first(District) option is selected by default
+            int districtOptionIndex = 0;
+            String failMessage2 = String.format("expected option %d to be selected", districtOptionIndex);
+            SAssert.assertTrue(purchasePage.isLocLevelOptionSelected(districtOptionIndex), failMessage2);
+
+            SAssert.assertAll();
         } catch (Exception error) {
             failedTest(error);
         }
     }
+
+    @Test(priority = 6, groups = "bannerPurchasePage", dependsOnMethods = "TC_109_PromotionLocalityLevelPlans")
+    public void TC_110_PaymentGatewayRedirection() {
+        try {
+            String pgBaseUrl = "https://razorpay.com/payment-link";
+            purchasePage.clickBuyPromotionButton();
+            wait.until(ExpectedConditions.urlContains(pgBaseUrl));
+            System.out.println(driver.getCurrentUrl());
+        } catch (Exception error) {
+            failedTest(error);
+        }
+    }
+
 }
