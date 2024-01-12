@@ -33,6 +33,7 @@ public class TestBannerAdCreation extends BaseTest {
         url = TestUtils.addUrlParams(url, "web-2-app", "true");
         url = TestUtils.addUrlParams(url, "lang", "en");
         url = TestUtils.addUrlParams(url, "uid", "3cb5b7e7-f222-4975-a21e-b9b69e5b3043");
+        /* https://shuru.co.in/app/promotion/form?shop_ad=true&web-2-app=true&lang=en&uid=3cb5b7e7-f222-4975-a21e-b9b69e5b3043 */
 
         pageURL = url.toString();
         driver.get(pageURL);
@@ -151,9 +152,10 @@ public class TestBannerAdCreation extends BaseTest {
         }
     }
 
-    @Test(priority = 4, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = "bannerFormPageResponse")
+    @Test(priority = 3, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = "bannerFormPageResponse")
     public void TC_107_BannerAdImageSelection() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        SAssert = new SoftAssert();
         try {
             //STEP-1: Add banner image
             String imageFileName = "ImageA.png";
@@ -161,13 +163,15 @@ public class TestBannerAdCreation extends BaseTest {
 
             //StEP-2: Validate presence of uploaded image
             String failMessage = String.format("expected image '%s' not displayed", imageFileName);
-            Assert.assertTrue(formPage.getUploadedImage().isDisplayed(), failMessage);
+            SAssert.assertTrue(formPage.getUploadedImage(wait).isDisplayed(), failMessage);
+
+            SAssert.assertAll();
         } catch (Exception error) {
             failedTest(error);
         }
     }
 
-    @Test(priority = 5, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = {"bannerFormPageResponse"})
+    @Test(priority = 4, groups = {"bannerFormPage"}, dependsOnGroups = "bannerFormCritical")
     public void TC_108_BannerPreviewFragment() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String purchasePageEndpoint = "app/promotion/purchase";
@@ -207,7 +211,7 @@ public class TestBannerAdCreation extends BaseTest {
         }
     }
 
-    @Test(priority = 6, groups = "bannerPurchasePage", dependsOnGroups = {"bannerFormPageResponse", "bannerFormCritical"})
+    @Test(priority = 5, groups = "bannerPurchasePage", dependsOnGroups = "bannerFormPage")
     public void TC_109_PromotionLocalityLevelPlans() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         try {
@@ -228,7 +232,7 @@ public class TestBannerAdCreation extends BaseTest {
         }
     }
 
-    @Test(priority = 6, groups = "bannerPurchasePage", dependsOnMethods = "TC_109_PromotionLocalityLevelPlans")
+    @Test(priority = 6, groups = "bannerPurchasePage", dependsOnGroups = "bannerFormPage")
     public void TC_110_PaymentGatewayRedirection() {
         try {
             String pgBaseUrl = "https://razorpay.com/payment-link";

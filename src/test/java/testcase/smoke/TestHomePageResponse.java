@@ -12,7 +12,7 @@ public class TestHomePageResponse extends BaseApiTest {
     public void testHomePageResponse() {
         System.out.println(1);
         SAssert = new SoftAssert();
-        CURRENT_WEB_PAGE_URL = BASE_WEB_PAGE_URL;
+        CURRENT_WEB_PAGE_URL = String.valueOf(BASE_WEB_PAGE_URL);
         try {
             response = RestAssured.get(CURRENT_WEB_PAGE_URL);
 

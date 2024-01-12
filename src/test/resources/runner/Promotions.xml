@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test-test-suite">
+    <test name="test-promotions" parallel="methods" thread-count="3">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="setHeadless" value="false"/>
+        <classes>
+            <class name="testcase.web.TestBannerAdCreation"/>
+        </classes>
+    </test>
+</suite>

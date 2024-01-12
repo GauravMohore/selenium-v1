@@ -1,0 +1,515 @@
+Index: src/test/java/testcase/web/TestBannerAdCreation.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package testcase.web;\r\n\r\nimport components.TestUtils;\r\nimport io.restassured.RestAssured;\r\nimport org.openqa.selenium.support.ui.ExpectedConditions;\r\nimport org.openqa.selenium.support.ui.WebDriverWait;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.AfterClass;\r\nimport org.testng.annotations.BeforeClass;\r\nimport org.testng.annotations.Test;\r\nimport org.testng.asserts.SoftAssert;\r\nimport pages.BannerFormPage;\r\nimport pages.PromotionPurchasePage;\r\nimport testbase.BaseTest;\r\n\r\nimport java.net.MalformedURLException;\r\nimport java.net.URL;\r\nimport java.time.Duration;\r\nimport java.util.HashMap;\r\nimport java.util.Map;\r\nimport java.util.stream.Collectors;\r\nimport java.util.stream.IntStream;\r\n\r\npublic class TestBannerAdCreation extends BaseTest {\r\n    String pageURL;\r\n    BannerFormPage formPage;\r\n    PromotionPurchasePage purchasePage;\r\n\r\n    @BeforeClass\r\n    private void classSetup() throws MalformedURLException {\r\n        URL url = new URL(baseURL + \"app/promotion/form\");\r\n        url = TestUtils.addUrlParams(url, \"shop_ad\", \"true\");\r\n        url = TestUtils.addUrlParams(url, \"web-2-app\", \"true\");\r\n        url = TestUtils.addUrlParams(url, \"lang\", \"en\");\r\n        url = TestUtils.addUrlParams(url, \"uid\", \"3cb5b7e7-f222-4975-a21e-b9b69e5b3043\");\r\n\r\n        pageURL = url.toString();\r\n        driver.get(pageURL);\r\n        formPage = new BannerFormPage(driver, wait);\r\n        purchasePage = new PromotionPurchasePage(driver);\r\n    }\r\n\r\n    //    @AfterClass\r\n//    @Override\r\n//    public void teardown() {\r\n//        // don't close driver\r\n//    }\r\n\r\n    @Test(priority = 1, groups = {\"bannerFormPageResponse\", \"bannerFormPage\"})\r\n    public void TC_101_VerifyBannerCreationFormResponse() {\r\n        SAssert = new SoftAssert();\r\n        try {\r\n            Map<String, Object> requestParams = new HashMap<>();\r\n            requestParams.put(\"uid\", \"3cb5b7e7-f222-4975-a21e-b9b69e5b3043\");\r\n            requestParams.put(\"shop_ad\", true);\r\n            requestParams.put(\"web-2-app\", true);\r\n            requestParams.put(\"lang\", \"en\");\r\n\r\n            response = RestAssured.given().params(requestParams).get(pageURL);\r\n            int statusCode = response.getStatusCode();\r\n            long responseTime = response.getTime();\r\n\r\n            //STEP-1: Validate Status Code\r\n            String failMessage1 = String.format(\"expected status code to be 200, but %s responded with %d\", pageURL, statusCode);\r\n            SAssert.assertEquals(statusCode, 200, failMessage1);\r\n\r\n            //STEP-2: Verify page response time to be under 10s\r\n            String failMessage2 = String.format(\"expected response time(in ms) to be under 10000, but %s responded in %d\", pageURL, responseTime);\r\n            SAssert.assertTrue(responseTime <= 10000, failMessage2);\r\n\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 2, groups = \"bannerFormPage\", dependsOnGroups = \"bannerFormPageResponse\")\r\n    public void TC_102_VerifyBannerFormElements() {\r\n        try {\r\n            //STEP: Verify presence of banner form\r\n            String failMessage1 = \"expected banner form not found\";\r\n            Assert.assertTrue(formPage.getBannerForm().isDisplayed());\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 2, groups = \"bannerFormPage\", dependsOnGroups = \"bannerFormPageResponse\")\r\n    public void TC_103_BannerFormHeading() {\r\n        try {\r\n            //STEP-1: Enter 51 character String in heading text input\r\n            int maxBoundaryValue = 51;\r\n            String testString = IntStream.range(0, maxBoundaryValue).mapToObj(i -> \"X\").collect(Collectors.joining());\r\n            formPage.enterFormHeadingText(testString);\r\n\r\n            //STEP-2: Validate maximum heading text character limit\r\n            String failMessage = String.format(\"expected word limit to be %s, but was able to enter %s\", maxBoundaryValue, formPage.getFormHeadingText().length());\r\n            Assert.assertEquals(formPage.getFormHeadingText().length(), 50, failMessage);\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 2, groups = \"bannerFormPage\", dependsOnGroups = \"bannerFormPageResponse\")\r\n    public void TC_104_BannerFormDescription() {\r\n        try {\r\n            //STEP-1: Enter 51 character String in heading text input\r\n            int maxBoundaryValue = 101;\r\n            String testString = IntStream.range(0, maxBoundaryValue).mapToObj(i -> \"Y\").collect(Collectors.joining());\r\n            formPage.enterFormDescriptionText(testString);\r\n\r\n            //STEP-2: Validate maximum heading text character limit\r\n            String failMessage = String.format(\"expected word limit to be %s, but was able to enter %s\", maxBoundaryValue, formPage.getFormHeadingText().length());\r\n            Assert.assertEquals(formPage.getFormDescriptionText().length(), 100, failMessage);\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 2, groups = \"bannerFormPage\", dependsOnGroups = \"bannerFormPageResponse\")\r\n    public void TC_105_BannerFormRadioSelection() {\r\n        try {\r\n            //STEP: Verify that WhatsApp radio button is selected by default\r\n            String failMessage = \"expected radio button not selected\";\r\n            Assert.assertTrue(formPage.getWhatsappRadioButton().isSelected(), failMessage);\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 3, groups = {\"bannerFormPage\", \"bannerFormCritical\"}, dependsOnGroups = \"bannerFormPageResponse\")\r\n    public void TC_106_WhatsAppNumberInput() {\r\n        String expectedWhatsappNumber = \"9131122182\";\r\n        try {\r\n\r\n            //STEP-1: Select WhatsApp radio button (if not selected)\r\n            if (!formPage.getWhatsappRadioButton().isSelected()) {\r\n                formPage.getWhatsappRadioButton().click();\r\n            }\r\n\r\n            //STEP-2: Enter Phone Number for WhatsApp Message link\r\n            String enteredWhatsappNumber = \"+91\" + expectedWhatsappNumber; // Currently not implemented\r\n            formPage.enterWhatsappNumber(expectedWhatsappNumber);\r\n\r\n            //STEP-3: Verify entered WhatsApp number\r\n            String actualWhatsappNumber = formPage.getWhatsappInputNumber();\r\n            String failMessage = String.format(\"expected number to be %s, but found %s\", expectedWhatsappNumber, actualWhatsappNumber);\r\n\r\n            Assert.assertEquals(expectedWhatsappNumber, actualWhatsappNumber, failMessage);\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 4, groups = {\"bannerFormPage\", \"bannerFormCritical\"}, dependsOnGroups = \"bannerFormPageResponse\")\r\n    public void TC_107_BannerAdImageSelection() {\r\n        wait = new WebDriverWait(driver, Duration.ofSeconds(10));\r\n        try {\r\n            //STEP-1: Add banner image\r\n            String imageFileName = \"ImageA.png\";\r\n            formPage.addBannerImage(wait, imageFileName);\r\n\r\n            //StEP-2: Validate presence of uploaded image\r\n            String failMessage = String.format(\"expected image '%s' not displayed\", imageFileName);\r\n            Assert.assertTrue(formPage.getUploadedImage().isDisplayed(), failMessage);\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 5, groups = {\"bannerFormPage\", \"bannerFormCritical\"}, dependsOnGroups = {\"bannerFormPageResponse\"})\r\n    public void TC_108_BannerPreviewFragment() {\r\n        wait = new WebDriverWait(driver, Duration.ofSeconds(10));\r\n        String purchasePageEndpoint = \"app/promotion/purchase\";\r\n        try {\r\n            //STEP-1: Click on Next Button\r\n            formPage.clickOnNextButton();\r\n\r\n            //STEP-2: Verify Preview Fragment\r\n            String expectedPreviewFragmentTitleEN = \"Preview\";\r\n            String actualPreviewFragmentTitle = formPage.getPreviewTitle(wait).getText();\r\n\r\n            String failMessage1 = \"expected preview fragment not displayed\";\r\n            String failMessage2 = String.format(\"expected preview text to be %s, but found %s\", expectedPreviewFragmentTitleEN, actualPreviewFragmentTitle);\r\n            SAssert.assertTrue(formPage.getPreviewTitle(wait).isDisplayed(), failMessage1);\r\n            SAssert.assertEquals(actualPreviewFragmentTitle, expectedPreviewFragmentTitleEN, failMessage2);\r\n\r\n            //STEP-3: Verify banner image is displayed in preview Fragment\r\n            int totalUploadedImages = formPage.getUploadedImagesList().size();\r\n            String failMessage3 = \"expected banner image in preview not found\";\r\n            SAssert.assertEquals(totalUploadedImages, 2, failMessage3);\r\n\r\n            //STEP-4: Click on 'Next' to navigate to purchase page\r\n            formPage.clickNextButtonInPreview(wait);\r\n\r\n            //STEP-5: Validate URL for purchase page\r\n            try {\r\n                wait.until(ExpectedConditions.urlContains(purchasePageEndpoint));\r\n            } finally {\r\n                String currentUrl = driver.getCurrentUrl();\r\n                String failMessage4 = String.format(\"expected %s to be %s\", currentUrl, baseURL + purchasePageEndpoint + \"/*\");\r\n                SAssert.assertTrue(currentUrl.startsWith(baseURL + purchasePageEndpoint), failMessage4);\r\n            }\r\n\r\n            SAssert.assertAll();\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 6, groups = \"bannerPurchasePage\", dependsOnGroups = {\"bannerFormPageResponse\", \"bannerFormCritical\"})\r\n    public void TC_109_PromotionLocalityLevelPlans() {\r\n        wait = new WebDriverWait(driver, Duration.ofSeconds(10));\r\n        try {\r\n            //STEP-1: Verify presence of District, State & Country level plans\r\n            int expectedLocalityLevelCount = 3;\r\n            int actualLocalityLevelCount = purchasePage.getLocLevelList().size();\r\n            String failMessage1 = String.format(\"expected displayed location levels to be %d, but found %d\", expectedLocalityLevelCount, actualLocalityLevelCount);\r\n            SAssert.assertEquals(expectedLocalityLevelCount, actualLocalityLevelCount, failMessage1);\r\n\r\n            //STEP-2: Verify that first(District) option is selected by default\r\n            int districtOptionIndex = 0;\r\n            String failMessage2 = String.format(\"expected option %d to be selected\", districtOptionIndex);\r\n            SAssert.assertTrue(purchasePage.isLocLevelOptionSelected(districtOptionIndex), failMessage2);\r\n\r\n            SAssert.assertAll();\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n    @Test(priority = 6, groups = \"bannerPurchasePage\", dependsOnMethods = \"TC_109_PromotionLocalityLevelPlans\")\r\n    public void TC_110_PaymentGatewayRedirection() {\r\n        try {\r\n            String pgBaseUrl = \"https://razorpay.com/payment-link\";\r\n            purchasePage.clickBuyPromotionButton();\r\n            wait.until(ExpectedConditions.urlContains(pgBaseUrl));\r\n            System.out.println(driver.getCurrentUrl());\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/testcase/web/TestBannerAdCreation.java b/src/test/java/testcase/web/TestBannerAdCreation.java
+--- a/src/test/java/testcase/web/TestBannerAdCreation.java	(revision ad6d53e945f9348b4071cb30f8a0f44b78a77a29)
++++ b/src/test/java/testcase/web/TestBannerAdCreation.java	(date 1704964309806)
+@@ -33,6 +33,7 @@
+         url = TestUtils.addUrlParams(url, "web-2-app", "true");
+         url = TestUtils.addUrlParams(url, "lang", "en");
+         url = TestUtils.addUrlParams(url, "uid", "3cb5b7e7-f222-4975-a21e-b9b69e5b3043");
++        /* https://shuru.co.in/app/promotion/form?shop_ad=true&web-2-app=true&lang=en&uid=3cb5b7e7-f222-4975-a21e-b9b69e5b3043 */
+ 
+         pageURL = url.toString();
+         driver.get(pageURL);
+@@ -151,9 +152,10 @@
+         }
+     }
+ 
+-    @Test(priority = 4, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = "bannerFormPageResponse")
++    @Test(priority = 3, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = "bannerFormPageResponse")
+     public void TC_107_BannerAdImageSelection() {
+         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
++        SAssert = new SoftAssert();
+         try {
+             //STEP-1: Add banner image
+             String imageFileName = "ImageA.png";
+@@ -161,13 +163,15 @@
+ 
+             //StEP-2: Validate presence of uploaded image
+             String failMessage = String.format("expected image '%s' not displayed", imageFileName);
+-            Assert.assertTrue(formPage.getUploadedImage().isDisplayed(), failMessage);
++            SAssert.assertTrue(formPage.getUploadedImage(wait).isDisplayed(), failMessage);
++
++            SAssert.assertAll();
+         } catch (Exception error) {
+             failedTest(error);
+         }
+     }
+ 
+-    @Test(priority = 5, groups = {"bannerFormPage", "bannerFormCritical"}, dependsOnGroups = {"bannerFormPageResponse"})
++    @Test(priority = 4, groups = {"bannerFormPage"}, dependsOnGroups = "bannerFormCritical")
+     public void TC_108_BannerPreviewFragment() {
+         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+         String purchasePageEndpoint = "app/promotion/purchase";
+@@ -207,7 +211,7 @@
+         }
+     }
+ 
+-    @Test(priority = 6, groups = "bannerPurchasePage", dependsOnGroups = {"bannerFormPageResponse", "bannerFormCritical"})
++    @Test(priority = 5, groups = "bannerPurchasePage", dependsOnGroups = "bannerFormPage")
+     public void TC_109_PromotionLocalityLevelPlans() {
+         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+         try {
+@@ -228,7 +232,7 @@
+         }
+     }
+ 
+-    @Test(priority = 6, groups = "bannerPurchasePage", dependsOnMethods = "TC_109_PromotionLocalityLevelPlans")
++    @Test(priority = 6, groups = "bannerPurchasePage", dependsOnGroups = "bannerFormPage")
+     public void TC_110_PaymentGatewayRedirection() {
+         try {
+             String pgBaseUrl = "https://razorpay.com/payment-link";
+Index: src/test/java/testbase/BaseApiTest.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package testbase;\r\n\r\nimport io.restassured.response.Response;\r\nimport org.testng.Assert;\r\nimport org.testng.annotations.BeforeClass;\r\nimport org.testng.asserts.SoftAssert;\r\n\r\nimport java.util.ResourceBundle;\r\n\r\npublic class BaseApiTest {\r\n    protected Response response;\r\n    protected SoftAssert SAssert;\r\n    protected String BASE_WEB_PAGE_URL;\r\n    protected String CURRENT_WEB_PAGE_URL;\r\n    protected static final String BASE_STAGING_APP_URI = \"http://13.126.136.172:9000\";\r\n    protected static final String BASE_PRODUCTION_APP_URI = \"https://api.shuru.co.in\";\r\n\r\n    @BeforeClass\r\n    public void baseSetup() {\r\n        BASE_WEB_PAGE_URL = ResourceBundle.getBundle(\"config.baseConfig\").getString(\"url\");\r\n    }\r\n\r\n    protected void failedTest(Exception error) {\r\n        Assert.fail(error.getMessage());\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/testbase/BaseApiTest.java b/src/test/java/testbase/BaseApiTest.java
+--- a/src/test/java/testbase/BaseApiTest.java	(revision ad6d53e945f9348b4071cb30f8a0f44b78a77a29)
++++ b/src/test/java/testbase/BaseApiTest.java	(date 1704965640511)
+@@ -1,5 +1,6 @@
+ package testbase;
+ 
++import io.restassured.RestAssured;
+ import io.restassured.response.Response;
+ import org.testng.Assert;
+ import org.testng.annotations.BeforeClass;
+@@ -10,17 +11,39 @@
+ public class BaseApiTest {
+     protected Response response;
+     protected SoftAssert SAssert;
+-    protected String BASE_WEB_PAGE_URL;
++    protected StringBuilder BASE_WEB_PAGE_URL;
+     protected String CURRENT_WEB_PAGE_URL;
+     protected static final String BASE_STAGING_APP_URI = "http://13.126.136.172:9000";
+     protected static final String BASE_PRODUCTION_APP_URI = "https://api.shuru.co.in";
+ 
+     @BeforeClass
+     public void baseSetup() {
+-        BASE_WEB_PAGE_URL = ResourceBundle.getBundle("config.baseConfig").getString("url");
++        BASE_WEB_PAGE_URL = new StringBuilder(ResourceBundle.getBundle("config.baseConfig").getString("url"));
+     }
+ 
+     protected void failedTest(Exception error) {
+         Assert.fail(error.getMessage());
+     }
++
++    protected void testResponse(String uri) {
++        SAssert = new SoftAssert();
++        try {
++            response = RestAssured.get(uri);
++
++            int statusCode = response.getStatusCode();
++            long responseTime = response.getTime();
++
++            //STEP-1: Validate Status Code
++            String failMessage1 = String.format("expected status code to be 200, but %s responded with %d", uri, statusCode);
++            SAssert.assertEquals(statusCode, 200, failMessage1);
++
++            //STEP-2: Verify page response time to be under 10s
++            String failMessage2 = String.format("expected response time(in ms) to be under 10000, but %s responded in %d", uri, responseTime);
++            SAssert.assertTrue(responseTime <= 10000, failMessage2);
++
++            SAssert.assertAll();
++        } catch (Exception error) {
++            failedTest(error);
++        }
++    }
+ }
+Index: src/main/java/pages/BannerFormPage.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package pages;\r\n\r\nimport org.openqa.selenium.By;\r\nimport org.openqa.selenium.WebDriver;\r\nimport org.openqa.selenium.WebElement;\r\nimport org.openqa.selenium.support.FindBy;\r\nimport org.openqa.selenium.support.ui.ExpectedConditions;\r\nimport org.openqa.selenium.support.ui.WebDriverWait;\r\n\r\nimport java.util.List;\r\n\r\npublic class BannerFormPage extends BasePage {\r\n\r\n    @FindBy(css = \"body div form\")\r\n    private WebElement bannerForm;\r\n    @FindBy(css = \"input#imagePicker\")\r\n    private WebElement formImagePicker;\r\n    @FindBy(css = \"input#title\")\r\n    private WebElement formHeadingInput;\r\n    @FindBy(css = \"textarea#description\")\r\n    private WebElement formDescriptionInput;\r\n    @FindBy(xpath = \"input#WEBSITE\")\r\n    private WebElement websiteRadioButton;\r\n    @FindBy(css = \"input#WHATSAPP\")\r\n    private WebElement whatsappRadioButton;\r\n    @FindBy(css = \"input#whatsappInput\")\r\n    private WebElement whatsappInput;\r\n    @FindBy(css = \"img[alt='banner']\")\r\n    private WebElement uploadedImage;\r\n    @FindBy(css = \"img[alt='banner']\")\r\n    private List<WebElement> uploadedImagesList;\r\n    @FindBy(xpath = \"//form/button[last()]\")\r\n    private WebElement nextButton;\r\n    @FindBy(xpath = \"//h1[text()='Preview']\")\r\n    private WebElement previewTitle;\r\n    @FindBy(xpath = \"//footer/button[2]\")\r\n    private WebElement previewNextButton;\r\n\r\n    public BannerFormPage(WebDriver driver, WebDriverWait wait) {\r\n        super(driver, wait);\r\n    }\r\n\r\n    public WebElement getBannerForm() {\r\n        return bannerForm;\r\n    }\r\n\r\n    public WebElement getFormImagePicker() {\r\n        return formImagePicker;\r\n    }\r\n\r\n    public void enterFormHeadingText(String headingText) {\r\n        formHeadingInput.sendKeys(headingText);\r\n    }\r\n\r\n    public void enterFormDescriptionText(String headingText) {\r\n        formDescriptionInput.sendKeys(headingText);\r\n    }\r\n\r\n    public String getFormHeadingText() {\r\n        return formHeadingInput.getAttribute(\"value\");\r\n    }\r\n\r\n    public String getFormDescriptionText() {\r\n        return formDescriptionInput.getAttribute(\"value\");\r\n    }\r\n\r\n    public WebElement getWebsiteRadioButton() {\r\n        return websiteRadioButton;\r\n    }\r\n\r\n    public WebElement getWhatsappRadioButton() {\r\n        return whatsappRadioButton;\r\n    }\r\n\r\n    public String getWhatsappInputNumber() {\r\n        return whatsappInput.getAttribute(\"value\");\r\n    }\r\n\r\n    public void enterWhatsappNumber(String whatsappNumber) {\r\n        whatsappInput.sendKeys(whatsappNumber);\r\n    }\r\n\r\n    public String getRadioButtonLabel(WebElement radioButtonElement) {\r\n        return radioButtonElement.findElement(By.xpath(\"//parent::label//span\")).getText();\r\n    }\r\n\r\n    public WebElement getUploadedImage() {\r\n        return uploadedImage;\r\n    }\r\n\r\n    public List<WebElement> getUploadedImagesList() {\r\n        return uploadedImagesList;\r\n    }\r\n\r\n    public void addBannerImage(WebDriverWait wait, String fileNameInImagesWithExtension) throws InterruptedException {\r\n        String filePath = String.format(\"%s\\\\src\\\\main\\\\resources\\\\testdata\\\\images\\\\%s\", System.getProperty(\"user.dir\"), fileNameInImagesWithExtension);\r\n        formImagePicker.sendKeys(filePath);\r\n        wait.until(ExpectedConditions.visibilityOf(uploadedImage));\r\n    }\r\n\r\n    public void clickOnNextButton() {\r\n        nextButton.click();\r\n    }\r\n\r\n    public WebElement getPreviewTitle(WebDriverWait wait) {\r\n        wait.until(ExpectedConditions.visibilityOf(previewTitle));\r\n        return previewTitle;\r\n    }\r\n\r\n    public void clickNextButtonInPreview(WebDriverWait wait) {\r\n        wait.until(ExpectedConditions.visibilityOf(previewNextButton));\r\n        previewNextButton.click();\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/pages/BannerFormPage.java b/src/main/java/pages/BannerFormPage.java
+--- a/src/main/java/pages/BannerFormPage.java	(revision ad6d53e945f9348b4071cb30f8a0f44b78a77a29)
++++ b/src/main/java/pages/BannerFormPage.java	(date 1704964309809)
+@@ -6,6 +6,7 @@
+ import org.openqa.selenium.support.FindBy;
+ import org.openqa.selenium.support.ui.ExpectedConditions;
+ import org.openqa.selenium.support.ui.WebDriverWait;
++import utils.WebScraper;
+ 
+ import java.util.List;
+ 
+@@ -84,7 +85,9 @@
+         return radioButtonElement.findElement(By.xpath("//parent::label//span")).getText();
+     }
+ 
+-    public WebElement getUploadedImage() {
++    public WebElement getUploadedImage(WebDriverWait wait) {
++        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("img[alt='banner']")));
++        wait.until(ExpectedConditions.visibilityOf(uploadedImage));
+         return uploadedImage;
+     }
+ 
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"702453be-4ee0-43c8-8fb3-d57e725563f7\" name=\"Changes\" comment=\"added incomplete banner ad testcases\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/pages/BannerFormPage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/pages/BannerFormPage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/pages/PromotionPurchasePage.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/pages/PromotionPurchasePage.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/practice/JsonMain.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/practice/JsonMain.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/practice/JsonOps.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/practice/JsonOps.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/saved/locationData.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/saved/locationData.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/saved/randomFile.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/saved/randomFile.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/saved/statesLocationData.json\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/resources/saved/statesLocationData.json\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/testbase/BaseTest.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/testbase/BaseTest.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/testcase/api/TestBannerAd.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/testcase/smoke/TestPageResponse.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/testcase/smoke/TestHomePageResponse.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/resources/runner/Master.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/test/resources/runner/Master.xml\" afterDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"FormatOnSaveOptions\">\r\n    <option name=\"myRunOnSave\" value=\"true\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"PREVIOUS_COMMIT_AUTHORS\">\r\n      <list>\r\n        <option value=\"gauravxcode &lt;gauravmohore111@gmail.com&gt;\" />\r\n      </list>\r\n    </option>\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n    <option name=\"UPDATE_TYPE\" value=\"REBASE\" />\r\n  </component>\r\n  <component name=\"ProblemsViewState\">\r\n    <option name=\"selectedTabId\" value=\"ProjectErrors\" />\r\n  </component>\r\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\r\n  <component name=\"ProjectId\" id=\"2a7atfYkEErxjLzwfBYQxWtk1yU\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"Application.DataProviders.executor\": \"Run\",\n    \"Application.JsonMain.executor\": \"Run\",\n    \"Application.JsonOps.executor\": \"Run\",\n    \"Application.TestBannerAd.executor\": \"Run\",\n    \"Application.TestBannerAdCreation.executor\": \"Run\",\n    \"Application.TestUtils.executor\": \"Run\",\n    \"Application.WebScraper.executor\": \"Run\",\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor\": \"Run\",\n    \"TestNG.EntryPages.executor\": \"Run\",\n    \"TestNG.TestBannerAd.testApiRequest.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation (1).executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_101_VerifyBannerCreationFormElements.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_101_VerifyBannerCreationFormResponse.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_103_VerifyBannerFormHeading.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_104_BannerFormDescription.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_104_VerifyBannerFormDefaultRadioSelection (1).executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_104_VerifyBannerFormDefaultRadioSelection.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_105_VerifyBannerAdImageSelection.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_106_WhatsAppNumberInput.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_107_BannerPreviewFragment.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_108_BannerPreviewFragment.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_108_PurchasePageNavigation.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_109_PromotionLocalityLevelPlans.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_109_PurchasePageNavigation.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.TC_BannerPurchasePage.executor\": \"Run\",\n    \"TestNG.TestBannerAdCreation.executor\": \"Run\",\n    \"TestNG.TestBlogsPage.fillForm.executor\": \"Run\",\n    \"TestNG.TestBlogsPage.testPageResponse.executor\": \"Run\",\n    \"TestNG.TestHomePage (1).executor\": \"Run\",\n    \"TestNG.TestHomePage.TC_102_VerifyPageTitle.executor\": \"Run\",\n    \"TestNG.TestHomePage.TC_201_VerifyHeaderAppLogo.executor\": \"Run\",\n    \"TestNG.TestHomePage.TC_202_VerifyHeaderDownloadLink.executor\": \"Run\",\n    \"TestNG.TestHomePage.TC_301_VerifyContactEmail.executor\": \"Run\",\n    \"TestNG.TestHomePage.TC_302_VerifyFooterLinksLinks.executor\": \"Run\",\n    \"TestNG.TestHomePage.TC_303_VerifySocialMediaIntegration.executor\": \"Run\",\n    \"TestNG.TestHomePage.TC_VerifyPageTitle.executor\": \"Run\",\n    \"TestNG.TestHomePage.TC_testPageTitle.executor\": \"Run\",\n    \"TestNG.TestHomePage.executor\": \"Run\",\n    \"TestNG.TestHomePage.test.executor\": \"Run\",\n    \"TestNG.TestNewsPage.executor\": \"Run\",\n    \"TestNG.TestNewsPage.test1.executor\": \"Run\",\n    \"TestNG.TestNewsPage.testSomething.executor\": \"Run\",\n    \"TestNG.TestNewsPageResponse.executor\": \"Run\",\n    \"TestNG.TestNewsPageResponse.testHomePageResponse.executor\": \"Run\",\n    \"TestNG.TestPageResponse.TestHomePageResponse.executor\": \"Run\",\n    \"TestNG.TestPageResponse.executor\": \"Run\",\n    \"TestNG.TestPageResponse.hitRestApiAndPrintResponse.executor\": \"Run\",\n    \"TestNG.TestPageResponse.testHomePageResponse.executor\": \"Run\",\n    \"TestNG.TestRest.testHomePageResponse.executor\": \"Run\",\n    \"TestNG.testcase.web.executor\": \"Run\",\n    \"git-widget-placeholder\": \"banner\",\n    \"kotlin-language-version-configured\": \"true\",\n    \"last_opened_file_path\": \"D:/Projects/JavaProjects/Selenium-V1\",\n    \"settings.editor.selected.configurable\": \"actions.on.save\"\n  }\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"TestNG.TestNewsPageResponse\">\r\n    <configuration name=\"JsonMain\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"practice.JsonMain\" />\r\n      <module name=\"Selenium-V1\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"practice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"JsonOps\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"practice.JsonOps\" />\r\n      <module name=\"Selenium-V1\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"practice.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"WebScraper\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"utils.WebScraper\" />\r\n      <module name=\"Selenium-V1\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"utils.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestNewsPageResponse\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Selenium-V1\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"testcase.smoke.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"testcase.smoke\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"testcase.smoke.TestNewsPageResponse\" />\r\n      <option name=\"TEST_OBJECT\" value=\"CLASS\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"TestNewsPageResponse.testHomePageResponse\" type=\"TestNG\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"Selenium-V1\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"testcase.smoke.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"testcase.smoke\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"testcase.smoke.TestNewsPageResponse\" />\r\n      <option name=\"METHOD_NAME\" value=\"testHomePageResponse\" />\r\n      <option name=\"TEST_OBJECT\" value=\"METHOD\" />\r\n      <properties />\r\n      <listeners />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"TestNG.TestNewsPageResponse\" />\r\n        <item itemvalue=\"TestNG.TestNewsPageResponse.testHomePageResponse\" />\r\n        <item itemvalue=\"Application.JsonMain\" />\r\n        <item itemvalue=\"Application.WebScraper\" />\r\n        <item itemvalue=\"Application.JsonOps\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"jdk-17.0.9-corretto-17.0.9-249ae16d76d6-98297cd8\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"702453be-4ee0-43c8-8fb3-d57e725563f7\" name=\"Changes\" comment=\"added 2 empty .xlsx files\" />\r\n      <created>1703568941458</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1703568941458</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"created folders\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703569393366</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703569393366</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"added dependencies\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703569604095</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703569604095</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"added dependencies\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703570049009</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703570049009</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"added test directories and created base classes\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703570179444</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703570179444</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"added 2 empty .xlsx files\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703585669460</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703585669460</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"added 2 empty .xlsx files\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703585688524</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703585688524</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"Added home testcase\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703703543138</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703703543138</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"Added home + testcase\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703765360166</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703765360166</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"Added home + testcase\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703785774543</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703785774543</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"Added home + testcase\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1703788786719</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1703788786719</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00011\" summary=\"added Jackson for json operations\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704057245758</created>\r\n      <option name=\"number\" value=\"00011\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00011\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704057245758</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00012\" summary=\"added &quot;setHeadless&quot; suite config\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704175906647</created>\r\n      <option name=\"number\" value=\"00012\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00012\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704175906647</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00013\" summary=\"added &quot;setHeadless&quot; suite config\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704175917481</created>\r\n      <option name=\"number\" value=\"00013\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00013\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704175917481</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00014\" summary=\"saved &quot;states&quot; data in json\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704183823290</created>\r\n      <option name=\"number\" value=\"00014\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00014\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704183823290</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00015\" summary=\"practicing json read/write\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704436263158</created>\r\n      <option name=\"number\" value=\"00015\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00015\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704436263158</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00016\" summary=\"fixed grouping and dependencies from suite.xml\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704692079306</created>\r\n      <option name=\"number\" value=\"00016\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00016\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704692079306</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00017\" summary=\"fixed grouping and dependencies from suite.xml\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704692276870</created>\r\n      <option name=\"number\" value=\"00017\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00017\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704692276870</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00018\" summary=\"before grouping fix\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704694846382</created>\r\n      <option name=\"number\" value=\"00018\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00018\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704694846382</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00019\" summary=\"added incomplete banner ad testcases\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1704796442786</created>\r\n      <option name=\"number\" value=\"00019\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00019\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1704796442786</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"20\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"UnknownFeatures\">\r\n    <option featureType=\"dependencySupport\" implementationName=\"executable:docker\" />\r\n    <option featureType=\"dependencySupport\" implementationName=\"java:io.reactivex.rxjava3:rxjava\" />\r\n    <option featureType=\"dependencySupport\" implementationName=\"java:org.seleniumhq.selenium:selenium-java\" />\r\n    <option featureType=\"dependencySupport\" implementationName=\"executable:kubectl\" />\r\n    <option featureType=\"dependencySupport\" implementationName=\"java:org.projectlombok:lombok\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"created folders\" />\r\n    <MESSAGE value=\"added dependencies\" />\r\n    <MESSAGE value=\"added test directories and created base classes\" />\r\n    <MESSAGE value=\"added 2 empty .xlsx files\" />\r\n    <MESSAGE value=\"tested remote driver\" />\r\n    <MESSAGE value=\"Added home testcase\" />\r\n    <MESSAGE value=\"Added home + testcase\" />\r\n    <MESSAGE value=\"fixed soft assertion issue\" />\r\n    <MESSAGE value=\"added html soup for some scraping + messy code\" />\r\n    <MESSAGE value=\"added fail test messages\" />\r\n    <MESSAGE value=\"added Jackson for json operations\" />\r\n    <MESSAGE value=\"added &quot;setHeadless&quot; suite config\" />\r\n    <MESSAGE value=\"saved &quot;states&quot; data in json\" />\r\n    <MESSAGE value=\"fixed grouping and dependencies from suite.xml\" />\r\n    <MESSAGE value=\"practicing json read/write\" />\r\n    <MESSAGE value=\"before grouping fix\" />\r\n    <MESSAGE value=\"added incomplete banner ad testcases\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"added incomplete banner ad testcases\" />\r\n  </component>\r\n  <component name=\"XDebuggerManager\">\r\n    <breakpoint-manager>\r\n      <breakpoints>\r\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\r\n          <url>file://$PROJECT_DIR$/src/main/java/pages/HomePage.java</url>\r\n          <line>43</line>\r\n          <option name=\"timeStamp\" value=\"5\" />\r\n        </line-breakpoint>\r\n      </breakpoints>\r\n    </breakpoint-manager>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ad6d53e945f9348b4071cb30f8a0f44b78a77a29)
++++ b/.idea/workspace.xml	(date 1705039655896)
+@@ -4,21 +4,13 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="added incomplete banner ad testcases">
+-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
++    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="Added smoke tests for news page">
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/main/java/pages/BannerFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BannerFormPage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PromotionPurchasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PromotionPurchasePage.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/practice/JsonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/JsonMain.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/practice/JsonOps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/JsonOps.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/saved/locationData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/saved/locationData.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/saved/randomFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/saved/randomFile.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/saved/statesLocationData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/saved/statesLocationData.json" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/TestBannerAd.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestPageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestHomePageResponse.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseApiTest.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestHomePageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestHomePageResponse.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestNewsPageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestNewsPageResponse.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -63,116 +55,116 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "Application.DataProviders.executor": "Run",
+-    "Application.JsonMain.executor": "Run",
+-    "Application.JsonOps.executor": "Run",
+-    "Application.TestBannerAd.executor": "Run",
+-    "Application.TestBannerAdCreation.executor": "Run",
+-    "Application.TestUtils.executor": "Run",
+-    "Application.WebScraper.executor": "Run",
+-    "RunOnceActivity.OpenProjectViewOnStart": "true",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor": "Run",
+-    "TestNG.EntryPages.executor": "Run",
+-    "TestNG.TestBannerAd.testApiRequest.executor": "Run",
+-    "TestNG.TestBannerAdCreation (1).executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_101_VerifyBannerCreationFormElements.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_101_VerifyBannerCreationFormResponse.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_103_VerifyBannerFormHeading.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_104_BannerFormDescription.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_104_VerifyBannerFormDefaultRadioSelection (1).executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_104_VerifyBannerFormDefaultRadioSelection.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_105_VerifyBannerAdImageSelection.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_106_WhatsAppNumberInput.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_107_BannerPreviewFragment.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_108_BannerPreviewFragment.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_108_PurchasePageNavigation.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_109_PromotionLocalityLevelPlans.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_109_PurchasePageNavigation.executor": "Run",
+-    "TestNG.TestBannerAdCreation.TC_BannerPurchasePage.executor": "Run",
+-    "TestNG.TestBannerAdCreation.executor": "Run",
+-    "TestNG.TestBlogsPage.fillForm.executor": "Run",
+-    "TestNG.TestBlogsPage.testPageResponse.executor": "Run",
+-    "TestNG.TestHomePage (1).executor": "Run",
+-    "TestNG.TestHomePage.TC_102_VerifyPageTitle.executor": "Run",
+-    "TestNG.TestHomePage.TC_201_VerifyHeaderAppLogo.executor": "Run",
+-    "TestNG.TestHomePage.TC_202_VerifyHeaderDownloadLink.executor": "Run",
+-    "TestNG.TestHomePage.TC_301_VerifyContactEmail.executor": "Run",
+-    "TestNG.TestHomePage.TC_302_VerifyFooterLinksLinks.executor": "Run",
+-    "TestNG.TestHomePage.TC_303_VerifySocialMediaIntegration.executor": "Run",
+-    "TestNG.TestHomePage.TC_VerifyPageTitle.executor": "Run",
+-    "TestNG.TestHomePage.TC_testPageTitle.executor": "Run",
+-    "TestNG.TestHomePage.executor": "Run",
+-    "TestNG.TestHomePage.test.executor": "Run",
+-    "TestNG.TestNewsPage.executor": "Run",
+-    "TestNG.TestNewsPage.test1.executor": "Run",
+-    "TestNG.TestNewsPage.testSomething.executor": "Run",
+-    "TestNG.TestNewsPageResponse.executor": "Run",
+-    "TestNG.TestNewsPageResponse.testHomePageResponse.executor": "Run",
+-    "TestNG.TestPageResponse.TestHomePageResponse.executor": "Run",
+-    "TestNG.TestPageResponse.executor": "Run",
+-    "TestNG.TestPageResponse.hitRestApiAndPrintResponse.executor": "Run",
+-    "TestNG.TestPageResponse.testHomePageResponse.executor": "Run",
+-    "TestNG.TestRest.testHomePageResponse.executor": "Run",
+-    "TestNG.testcase.web.executor": "Run",
+-    "git-widget-placeholder": "banner",
+-    "kotlin-language-version-configured": "true",
+-    "last_opened_file_path": "D:/Projects/JavaProjects/Selenium-V1",
+-    "settings.editor.selected.configurable": "actions.on.save"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;Application.DataProviders.executor&quot;: &quot;Run&quot;,
++    &quot;Application.JsonMain.executor&quot;: &quot;Run&quot;,
++    &quot;Application.JsonOps.executor&quot;: &quot;Run&quot;,
++    &quot;Application.TestBannerAd.executor&quot;: &quot;Run&quot;,
++    &quot;Application.TestBannerAdCreation.executor&quot;: &quot;Run&quot;,
++    &quot;Application.TestUtils.executor&quot;: &quot;Run&quot;,
++    &quot;Application.WebScraper.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Promotions.xml.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.EntryPages.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAd.testApiRequest.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation (1).executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_101_VerifyBannerCreationFormElements.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_101_VerifyBannerCreationFormResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_103_VerifyBannerFormHeading.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_104_BannerFormDescription.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_104_VerifyBannerFormDefaultRadioSelection (1).executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_104_VerifyBannerFormDefaultRadioSelection.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_105_VerifyBannerAdImageSelection.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_106_WhatsAppNumberInput.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_107_BannerPreviewFragment.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_108_BannerPreviewFragment.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_108_PurchasePageNavigation.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_109_PromotionLocalityLevelPlans.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_109_PurchasePageNavigation.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.TC_BannerPurchasePage.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBannerAdCreation.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBlogsPage.fillForm.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestBlogsPage.testPageResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage (1).executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.TC_102_VerifyPageTitle.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.TC_201_VerifyHeaderAppLogo.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.TC_202_VerifyHeaderDownloadLink.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.TC_301_VerifyContactEmail.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.TC_302_VerifyFooterLinksLinks.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.TC_303_VerifySocialMediaIntegration.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.TC_VerifyPageTitle.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.TC_testPageTitle.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestHomePage.test.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestNewsPage.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestNewsPage.test1.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestNewsPage.testSomething.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestNewsPageResponse (1).executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestNewsPageResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestNewsPageResponse.testHomePageResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestPageResponse.TestHomePageResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestPageResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestPageResponse.hitRestApiAndPrintResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestPageResponse.testHomePageResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.TestRest.testHomePageResponse.executor&quot;: &quot;Run&quot;,
++    &quot;TestNG.testcase.web.executor&quot;: &quot;Run&quot;,
++    &quot;git-widget-placeholder&quot;: &quot;banner&quot;,
++    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;D:/Projects/JavaProjects/Selenium-V1&quot;,
++    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
+   }
+-}]]></component>
+-  <component name="RunManager" selected="TestNG.TestNewsPageResponse">
+-    <configuration name="JsonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="practice.JsonMain" />
++}</component>
++  <component name="RunManager" selected="TestNG.TestBannerAdCreation">
++    <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Selenium-V1" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="practice.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
++      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner/Master.xml" />
++      <option name="TEST_OBJECT" value="SUITE" />
++      <properties />
++      <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="JsonOps" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="practice.JsonOps" />
++    <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Promotions.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Selenium-V1" />
+-      <extension name="coverage">
+-        <pattern>
+-          <option name="PATTERN" value="practice.*" />
+-          <option name="ENABLED" value="true" />
+-        </pattern>
+-      </extension>
++      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner/Promotions.xml" />
++      <option name="TEST_OBJECT" value="SUITE" />
++      <properties />
++      <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="WebScraper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+-      <option name="MAIN_CLASS_NAME" value="utils.WebScraper" />
++    <configuration name="TestBannerAdCreation (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Selenium-V1" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="utils.*" />
++          <option name="PATTERN" value="testcase.web.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
++      <option name="PACKAGE_NAME" value="testcase.web" />
++      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
++      <option name="TEST_OBJECT" value="CLASS" />
++      <properties />
++      <listeners />
+       <method v="2">
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TestNewsPageResponse" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TestBannerAdCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Selenium-V1" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="testcase.smoke.*" />
++          <option name="PATTERN" value="testcase.web.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="testcase.smoke" />
+-      <option name="MAIN_CLASS_NAME" value="testcase.smoke.TestNewsPageResponse" />
++      <option name="PACKAGE_NAME" value="testcase.web" />
++      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
+       <option name="TEST_OBJECT" value="CLASS" />
+       <properties />
+       <listeners />
+@@ -180,17 +172,17 @@
+         <option name="Make" enabled="true" />
+       </method>
+     </configuration>
+-    <configuration name="TestNewsPageResponse.testHomePageResponse" type="TestNG" temporary="true" nameIsGenerated="true">
++    <configuration name="TestBannerAdCreation.TC_101_VerifyBannerCreationFormResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+       <module name="Selenium-V1" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="testcase.smoke.*" />
++          <option name="PATTERN" value="testcase.web.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+-      <option name="PACKAGE_NAME" value="testcase.smoke" />
+-      <option name="MAIN_CLASS_NAME" value="testcase.smoke.TestNewsPageResponse" />
+-      <option name="METHOD_NAME" value="testHomePageResponse" />
++      <option name="PACKAGE_NAME" value="testcase.web" />
++      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
++      <option name="METHOD_NAME" value="TC_101_VerifyBannerCreationFormResponse" />
+       <option name="TEST_OBJECT" value="METHOD" />
+       <properties />
+       <listeners />
+@@ -200,11 +192,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
+-        <item itemvalue="TestNG.TestNewsPageResponse" />
+-        <item itemvalue="TestNG.TestNewsPageResponse.testHomePageResponse" />
+-        <item itemvalue="Application.JsonMain" />
+-        <item itemvalue="Application.WebScraper" />
+-        <item itemvalue="Application.JsonOps" />
++        <item itemvalue="TestNG.TestBannerAdCreation" />
++        <item itemvalue="TestNG.TestBannerAdCreation (1)" />
++        <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Promotions.xml" />
++        <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" />
++        <item itemvalue="TestNG.TestBannerAdCreation.TC_101_VerifyBannerCreationFormResponse" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -376,7 +368,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1704796442786</updated>
+     </task>
+-    <option name="localTasksCounter" value="20" />
++    <task id="LOCAL-00020" summary="Added smoke tests for news page">
++      <option name="closed" value="true" />
++      <created>1704961161472</created>
++      <option name="number" value="00020" />
++      <option name="presentableId" value="LOCAL-00020" />
++      <option name="project" value="LOCAL" />
++      <updated>1704961161472</updated>
++    </task>
++    <option name="localTasksCounter" value="21" />
+     <servers />
+   </component>
+   <component name="UnknownFeatures">
+@@ -415,7 +415,8 @@
+     <MESSAGE value="practicing json read/write" />
+     <MESSAGE value="before grouping fix" />
+     <MESSAGE value="added incomplete banner ad testcases" />
+-    <option name="LAST_COMMIT_MESSAGE" value="added incomplete banner ad testcases" />
++    <MESSAGE value="Added smoke tests for news page" />
++    <option name="LAST_COMMIT_MESSAGE" value="Added smoke tests for news page" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+Index: src/test/java/testcase/smoke/TestNewsPageResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package testcase.smoke;\r\n\r\nimport com.fasterxml.jackson.databind.JsonNode;\r\nimport com.fasterxml.jackson.databind.ObjectMapper;\r\nimport groovyjarjarantlr4.v4.codegen.model.SrcOp;\r\nimport io.restassured.RestAssured;\r\nimport org.testng.annotations.DataProvider;\r\nimport org.testng.annotations.Test;\r\nimport org.testng.asserts.SoftAssert;\r\nimport practice.JsonOps;\r\nimport testbase.BaseApiTest;\r\n\r\nimport java.io.File;\r\nimport java.io.IOException;\r\nimport java.util.ArrayList;\r\nimport java.util.List;\r\n\r\npublic class TestNewsPageResponse extends BaseApiTest {\r\n    ObjectMapper mapper;\r\n\r\n    @DataProvider(name = \"stateUrls\")\r\n    private Object[][] stateUrls() throws IOException {\r\n        String filePath = JsonOps.getResourceFilePath(\"saved//locationData.json\");\r\n        mapper = new ObjectMapper();\r\n        JsonNode rootNode = mapper.readTree(new File(filePath));\r\n\r\n        List<Object[]> list = new ArrayList<>();\r\n\r\n        rootNode.get(\"subLocations\").forEach(state -> {\r\n            List<Object> stateInfo = new ArrayList<>();\r\n            stateInfo.add(state.get(\"locName\").asText());\r\n            stateInfo.add(state.get(\"locUrl\").asText());\r\n            list.add(stateInfo.toArray(new Object[0]));\r\n        });\r\n\r\n        return list.toArray(new Object[0][0]);\r\n    }\r\n\r\n\r\n    @Test(dataProvider = \"stateUrls\")\r\n    public void testHomePageResponse(String stateName, String stateUrl) {\r\n        SAssert = new SoftAssert();\r\n        try {\r\n            response = RestAssured.get(stateUrl);\r\n\r\n            int statusCode = response.getStatusCode();\r\n            long responseTime = response.getTime();\r\n\r\n            //STEP-1: Validate Status Code\r\n            String failMessage1 = String.format(\"expected status code to be 200, but %s responded with %d\", stateUrl, statusCode);\r\n            SAssert.assertEquals(statusCode, 200, failMessage1);\r\n\r\n            //STEP-2: Verify page response time to be under 10s\r\n            String failMessage2 = String.format(\"expected response time(in ms) to be under 10000, but %s responded in %d\", stateUrl, responseTime);\r\n            SAssert.assertTrue(responseTime <= 10000, failMessage2);\r\n\r\n            SAssert.assertAll();\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/testcase/smoke/TestNewsPageResponse.java b/src/test/java/testcase/smoke/TestNewsPageResponse.java
+--- a/src/test/java/testcase/smoke/TestNewsPageResponse.java	(revision ad6d53e945f9348b4071cb30f8a0f44b78a77a29)
++++ b/src/test/java/testcase/smoke/TestNewsPageResponse.java	(date 1704961734958)
+@@ -36,27 +36,8 @@
+         return list.toArray(new Object[0][0]);
+     }
+ 
+-
+     @Test(dataProvider = "stateUrls")
+     public void testHomePageResponse(String stateName, String stateUrl) {
+-        SAssert = new SoftAssert();
+-        try {
+-            response = RestAssured.get(stateUrl);
+-
+-            int statusCode = response.getStatusCode();
+-            long responseTime = response.getTime();
+-
+-            //STEP-1: Validate Status Code
+-            String failMessage1 = String.format("expected status code to be 200, but %s responded with %d", stateUrl, statusCode);
+-            SAssert.assertEquals(statusCode, 200, failMessage1);
+-
+-            //STEP-2: Verify page response time to be under 10s
+-            String failMessage2 = String.format("expected response time(in ms) to be under 10000, but %s responded in %d", stateUrl, responseTime);
+-            SAssert.assertTrue(responseTime <= 10000, failMessage2);
+-
+-            SAssert.assertAll();
+-        } catch (Exception error) {
+-            failedTest(error);
+-        }
++        testResponse(stateUrl);
+     }
+ }
+Index: src/test/java/testcase/smoke/TestHomePageResponse.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package testcase.smoke;\r\n\r\nimport io.restassured.RestAssured;\r\nimport org.testng.annotations.Test;\r\nimport org.testng.asserts.SoftAssert;\r\nimport testbase.BaseApiTest;\r\n\r\n\r\npublic class TestHomePageResponse extends BaseApiTest {\r\n\r\n    @Test(priority = 0, groups = {\"smoke\", \"homePageResponse\"})\r\n    public void testHomePageResponse() {\r\n        System.out.println(1);\r\n        SAssert = new SoftAssert();\r\n        CURRENT_WEB_PAGE_URL = BASE_WEB_PAGE_URL;\r\n        try {\r\n            response = RestAssured.get(CURRENT_WEB_PAGE_URL);\r\n\r\n            int statusCode = response.getStatusCode();\r\n            long responseTime = response.getTime();\r\n\r\n            //STEP-1: Validate Status Code\r\n            String failMessage1 = String.format(\"expected status code to be 200, but %s responded with %d\", CURRENT_WEB_PAGE_URL, statusCode);\r\n            SAssert.assertEquals(statusCode, 200, failMessage1);\r\n\r\n            //STEP-2: Verify page response time to be under 10s\r\n            String failMessage2 = String.format(\"expected response time(in ms) to be under 10000, but %s responded in %d\", CURRENT_WEB_PAGE_URL, responseTime);\r\n            SAssert.assertTrue(responseTime <= 10000, failMessage2);\r\n\r\n            SAssert.assertAll();\r\n        } catch (Exception error) {\r\n            failedTest(error);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/test/java/testcase/smoke/TestHomePageResponse.java b/src/test/java/testcase/smoke/TestHomePageResponse.java
+--- a/src/test/java/testcase/smoke/TestHomePageResponse.java	(revision ad6d53e945f9348b4071cb30f8a0f44b78a77a29)
++++ b/src/test/java/testcase/smoke/TestHomePageResponse.java	(date 1704965640516)
+@@ -12,7 +12,7 @@
+     public void testHomePageResponse() {
+         System.out.println(1);
+         SAssert = new SoftAssert();
+-        CURRENT_WEB_PAGE_URL = BASE_WEB_PAGE_URL;
++        CURRENT_WEB_PAGE_URL = String.valueOf(BASE_WEB_PAGE_URL);
+         try {
+             response = RestAssured.get(CURRENT_WEB_PAGE_URL);
+ 

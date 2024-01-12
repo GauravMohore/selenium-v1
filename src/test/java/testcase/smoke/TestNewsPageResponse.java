@@ -36,27 +36,8 @@ public class TestNewsPageResponse extends BaseApiTest {
         return list.toArray(new Object[0][0]);
     }
 
-
     @Test(dataProvider = "stateUrls")
     public void testHomePageResponse(String stateName, String stateUrl) {
-        SAssert = new SoftAssert();
-        try {
-            response = RestAssured.get(stateUrl);
-
-            int statusCode = response.getStatusCode();
-            long responseTime = response.getTime();
-
-            //STEP-1: Validate Status Code
-            String failMessage1 = String.format("expected status code to be 200, but %s responded with %d", stateUrl, statusCode);
-            SAssert.assertEquals(statusCode, 200, failMessage1);
-
-            //STEP-2: Verify page response time to be under 10s
-            String failMessage2 = String.format("expected response time(in ms) to be under 10000, but %s responded in %d", stateUrl, responseTime);
-            SAssert.assertTrue(responseTime <= 10000, failMessage2);
-
-            SAssert.assertAll();
-        } catch (Exception error) {
-            failedTest(error);
-        }
+        testResponse(stateUrl);
     }
 }

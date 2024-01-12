@@ -6,6 +6,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import utils.WebScraper;
 
 import java.util.List;
 
@@ -84,7 +85,9 @@ public class BannerFormPage extends BasePage {
         return radioButtonElement.findElement(By.xpath("//parent::label//span")).getText();
     }
 
-    public WebElement getUploadedImage() {
+    public WebElement getUploadedImage(WebDriverWait wait) {
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector("img[alt='banner']")));
+        wait.until(ExpectedConditions.visibilityOf(uploadedImage));
         return uploadedImage;
     }
 
