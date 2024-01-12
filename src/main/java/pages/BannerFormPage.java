@@ -110,8 +110,7 @@ public class BannerFormPage extends BasePage {
         return previewTitle;
     }
 
-    public void clickNextButtonInPreview(WebDriverWait wait) {
-        wait.until(ExpectedConditions.visibilityOf(previewNextButton));
+    public void clickNextButtonInPreview() {
         previewNextButton.click();
     }
 }

@@ -171,7 +171,7 @@ public class TestBannerAdCreation extends BaseTest {
         }
     }
 
-    @Test(priority = 4, groups = {"bannerFormPage"}, dependsOnGroups = "bannerFormCritical")
+    @Test(priority = 4, groups = "bannerFormPage", dependsOnGroups = "bannerFormCritical")
     public void TC_108_BannerPreviewFragment() {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         String purchasePageEndpoint = "app/promotion/purchase";
@@ -194,7 +194,7 @@ public class TestBannerAdCreation extends BaseTest {
             SAssert.assertEquals(totalUploadedImages, 2, failMessage3);
 
             //STEP-4: Click on 'Next' to navigate to purchase page
-            formPage.clickNextButtonInPreview(wait);
+            formPage.clickNextButtonInPreview();
 
             //STEP-5: Validate URL for purchase page
             try {
@@ -243,5 +243,4 @@ public class TestBannerAdCreation extends BaseTest {
             failedTest(error);
         }
     }
-
 }
