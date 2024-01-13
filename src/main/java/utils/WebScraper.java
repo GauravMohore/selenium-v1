@@ -83,7 +83,8 @@ public class WebScraper {
                 locationSet.put(stateName, pageUrl);
             });
 
-            updateStates("locationData", locationSet);
+            String newFileName = String.format("%s#%d", "location", System.currentTimeMillis() / 1000);
+            updateStates("newFileName", locationSet);
         } finally {
             if (driver != null) driver.quit();
         }

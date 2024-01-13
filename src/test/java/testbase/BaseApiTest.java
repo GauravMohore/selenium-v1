@@ -11,14 +11,15 @@ import java.util.ResourceBundle;
 public class BaseApiTest {
     protected Response response;
     protected SoftAssert SAssert;
-    protected StringBuilder BASE_WEB_PAGE_URL;
-    protected String CURRENT_WEB_PAGE_URL;
-    protected static final String BASE_STAGING_APP_URI = "http://13.126.136.172:9000";
-    protected static final String BASE_PRODUCTION_APP_URI = "https://api.shuru.co.in";
+    protected StringBuilder BASE_WebUrl;
+    protected static StringBuilder BAST_StageUri;
+    protected static StringBuilder BASE_ProdUri;
 
     @BeforeClass
     public void baseSetup() {
-        BASE_WEB_PAGE_URL = new StringBuilder(ResourceBundle.getBundle("config.baseConfig").getString("url"));
+        BASE_WebUrl = new StringBuilder(ResourceBundle.getBundle("config.baseConfig").getString("url"));
+        BAST_StageUri = new StringBuilder("http://13.126.136.172:9000");
+        BASE_ProdUri = new StringBuilder("https://api.shuru.co.in");
     }
 
     protected void failedTest(Exception error) {

@@ -32,11 +32,10 @@ public class TestNewsPageResponse extends BaseApiTest {
             stateInfo.add(state.get("locUrl").asText());
             list.add(stateInfo.toArray(new Object[0]));
         });
-
         return list.toArray(new Object[0][0]);
     }
 
-    @Test(dataProvider = "stateUrls")
+    @Test(dataProvider = "stateUrls", threadPoolSize = 5)
     public void testHomePageResponse(String stateName, String stateUrl) {
         testResponse(stateUrl);
     }
