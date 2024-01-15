@@ -5,12 +5,15 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class HomePage extends BasePage {
 
+    public URL pageUrl = getPageUrl("home");
     @FindBy(xpath = "//div[@class='h2']/parent::div/preceding-sibling::span/img")
     private WebElement HeaderAppLogo;
     @FindBy(xpath = "//img[@alt='download']/ancestor::a")
@@ -22,7 +25,7 @@ public class HomePage extends BasePage {
     List<WebElement> socialMediaLinks;
 
     /* Constructor */
-    public HomePage(WebDriver driver) {
+    public HomePage(WebDriver driver) throws MalformedURLException {
         super(driver);
     }
 

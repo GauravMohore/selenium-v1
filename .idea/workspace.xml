@@ -5,13 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_rebase__Changes_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/output.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/practice/lol.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/LocationScraper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/runner/SmokeTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/practice/JsonMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/practice/JsonMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BannerFormPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BannerFormPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/NewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/NewsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/PromotionPurchasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/PromotionPurchasePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebScraper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebScraper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/config/baseConfig.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/config/base-config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/testdata/TD_HomePage.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testdata/TD_HomePage.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestHomePageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestHomePageResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestNewsPageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestNewsPageResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestHomePageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/smoke/TestSanityResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/runner/Master.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,9 +71,11 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.BasePage.executor&quot;: &quot;Run&quot;,
     &quot;Application.DataProviders.executor&quot;: &quot;Run&quot;,
     &quot;Application.JsonMain.executor&quot;: &quot;Run&quot;,
     &quot;Application.JsonOps.executor&quot;: &quot;Run&quot;,
+    &quot;Application.LocationScraper.executor&quot;: &quot;Run&quot;,
     &quot;Application.TestBannerAd.executor&quot;: &quot;Run&quot;,
     &quot;Application.TestBannerAdCreation.executor&quot;: &quot;Run&quot;,
     &quot;Application.TestUtils.executor&quot;: &quot;Run&quot;,
@@ -114,6 +129,11 @@
     &quot;TestNG.TestPageResponse.hitRestApiAndPrintResponse.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestPageResponse.testHomePageResponse.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestRest.testHomePageResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestSanityResponse.testHomePageResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestSanityResponse.testServicesPageResponse.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestServicesPage.TC_101_VerifyPageTitle.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestServicesPage.TC_201_TestServicesLinks.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestServicesPage.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.testcase.web.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
@@ -122,36 +142,10 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.JsonMain">
-    <configuration name="JsonMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="practice.JsonMain" />
+  <component name="RunManager" selected="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml">
+    <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="practice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebScraper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="utils.WebScraper" />
-      <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/SmokeTest.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-V1" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner/SmokeTest.xml" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner/Master.xml" />
       <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
@@ -159,24 +153,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBannerAdCreation (2)" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.web.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase.web" />
-      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestHomePageResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestSanityResponse.testServicesPageResponse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
       <extension name="coverage">
         <pattern>
@@ -185,8 +162,62 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="testcase.smoke" />
-      <option name="MAIN_CLASS_NAME" value="testcase.smoke.TestHomePageResponse" />
+      <option name="MAIN_CLASS_NAME" value="testcase.smoke.TestSanityResponse" />
+      <option name="METHOD_NAME" value="testServicesPageResponse" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServicesPage" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase.web" />
+      <option name="MAIN_CLASS_NAME" value="testcase.web.TestServicesPage" />
       <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServicesPage.TC_101_VerifyPageTitle" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase.web" />
+      <option name="MAIN_CLASS_NAME" value="testcase.web.TestServicesPage" />
+      <option name="METHOD_NAME" value="TC_101_VerifyPageTitle" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestServicesPage.TC_201_TestServicesLinks" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase.web.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase.web" />
+      <option name="MAIN_CLASS_NAME" value="testcase.web.TestServicesPage" />
+      <option name="METHOD_NAME" value="TC_201_TestServicesLinks" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -195,11 +226,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JsonMain" />
-        <item itemvalue="Application.WebScraper" />
-        <item itemvalue="TestNG.TestBannerAdCreation (2)" />
-        <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/SmokeTest.xml" />
-        <item itemvalue="TestNG.TestHomePageResponse" />
+        <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" />
+        <item itemvalue="TestNG.TestServicesPage.TC_201_TestServicesLinks" />
+        <item itemvalue="TestNG.TestServicesPage" />
+        <item itemvalue="TestNG.TestServicesPage.TC_101_VerifyPageTitle" />
+        <item itemvalue="TestNG.TestSanityResponse.testServicesPageResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -426,7 +457,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pages/HomePage.java</url>
-          <line>43</line>
+          <line>46</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>

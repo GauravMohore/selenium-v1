@@ -17,7 +17,7 @@ public class BaseApiTest {
 
     @BeforeClass
     public void baseSetup() {
-        BASE_WebUrl = new StringBuilder(ResourceBundle.getBundle("config.baseConfig").getString("url"));
+        BASE_WebUrl = new StringBuilder(ResourceBundle.getBundle("config.base-config").getString("url"));
         BAST_StageUri = new StringBuilder("http://13.126.136.172:9000");
         BASE_ProdUri = new StringBuilder("https://api.shuru.co.in");
     }

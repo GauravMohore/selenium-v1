@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import utils.WebScraper;
 
+import java.net.MalformedURLException;
 import java.util.List;
 
 public class BannerFormPage extends BasePage {
@@ -37,7 +38,7 @@ public class BannerFormPage extends BasePage {
     @FindBy(xpath = "//footer/button[2]")
     private WebElement previewNextButton;
 
-    public BannerFormPage(WebDriver driver, WebDriverWait wait) {
+    public BannerFormPage(WebDriver driver, WebDriverWait wait) throws MalformedURLException {
         super(driver, wait);
     }
 

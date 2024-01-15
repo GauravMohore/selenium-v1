@@ -11,6 +11,7 @@ import pages.HomePage;
 import testbase.BaseTest;
 import utils.DataProviders;
 
+import java.net.MalformedURLException;
 import java.util.*;
 import java.util.stream.Collectors;
 
@@ -19,8 +20,8 @@ public class TestHomePage extends BaseTest {
     HomePage homePage;
 
     @BeforeClass
-    private void classSetup() {
-        pageURL = baseURL;
+    private void classSetup() throws MalformedURLException {
+        pageURL = String.valueOf(getPageUrl("home"));
         driver.get(pageURL);
         homePage = new HomePage(driver);
     }
@@ -60,8 +61,8 @@ public class TestHomePage extends BaseTest {
 
 
     @Test(priority = 1, dataProvider = "homePageTitle", groups = {"homePageTitle", "homePage"})
-    public void TC_102_VerifyPageTitle(String key, String expectedTitle) {
-        System.out.println(2);
+    public void TC_101_VerifyPageTitle(String key, String expectedTitle) {
+//        System.out.println(2);  //Testing order
         try {
             String currentPageTitle = driver.getTitle();
             //STEP: Validate Page Title
@@ -76,7 +77,7 @@ public class TestHomePage extends BaseTest {
 
     @Test(priority = 2, groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_201_VerifyHeaderAppLogo() {
-        System.out.println(3);
+//        System.out.println(3); //Testing order
         try {
             //STEP: Verify presence of app logo
             String failMessage = "expected app logo in header not found";
@@ -88,7 +89,7 @@ public class TestHomePage extends BaseTest {
 
     @Test(priority = 2, dataProvider = "appDownloadLink", groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_202_VerifyHeaderDownloadLink(String key, String expectedDownloadLink) {
-        System.out.println(4);
+//        System.out.println(4); //Testing order
         try {
             //STEP-1: Verify presence of app download link
             String failMessage1 = "expected app download button not found";
@@ -110,7 +111,7 @@ public class TestHomePage extends BaseTest {
 
     @Test(priority = 2, dataProvider = "contactEmailAddress", groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_301_VerifyContactEmail(String key, String expectedContactAddress) {
-        System.out.println(5);
+//        System.out.println(5); //Testing order
         try {
             //STEP-1: Verify presence of Contact Us link
             String failMessage1 = "expected 'Contact Us' email not found";
@@ -129,7 +130,7 @@ public class TestHomePage extends BaseTest {
 
     @Test(priority = 2, dataProvider = "footerLinks", groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_302_VerifyFooterLinksLinks(double index, String title, String linkText, String linkRoute) {
-        System.out.println(String.format("6(%s)", Math.round(index * 10) / 10.0));
+//        System.out.println(String.format("6(%s)", Math.round(index * 10) / 10.0)); //Testing order
         SAssert = new SoftAssert();
         try {
             HashMap<String, String> map = homePage.getFooterLinks(title);
@@ -150,7 +151,7 @@ public class TestHomePage extends BaseTest {
 
     @Test(priority = 2, dataProvider = "socialMedia", groups = "homePage", dependsOnGroups = "homePageTitle")
     public void TC_303_VerifySocialMediaIntegration(double Index, String title, String expectedLink) {
-        System.out.println(String.format("7(%d)", (int) Index));
+//        System.out.println(String.format("7(%d)", (int) Index)); //Testing order
         SAssert = new SoftAssert();
         try {
             List<WebElement> links = homePage.getSocialMediaLinks();
