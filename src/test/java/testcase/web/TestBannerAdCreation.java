@@ -238,7 +238,6 @@ public class TestBannerAdCreation extends BaseTest {
             String pgBaseUrl = "https://razorpay.com/payment-link";
             purchasePage.clickBuyPromotionButton();
             wait.until(ExpectedConditions.urlContains(pgBaseUrl));
-            System.out.println(driver.getCurrentUrl());
         } catch (Exception error) {
             failedTest(error);
         }

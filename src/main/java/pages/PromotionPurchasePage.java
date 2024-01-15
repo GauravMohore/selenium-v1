@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.net.MalformedURLException;
 import java.util.List;
 
 public class PromotionPurchasePage extends BasePage {
@@ -23,7 +24,7 @@ public class PromotionPurchasePage extends BasePage {
     @FindBy(css = "footer>button")
     private WebElement butPromotionButton;
 
-    public PromotionPurchasePage(WebDriver driver) {
+    public PromotionPurchasePage(WebDriver driver) throws MalformedURLException {
         super(driver);
     }
 

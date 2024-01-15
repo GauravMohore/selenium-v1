@@ -27,7 +27,7 @@ public class BaseTest {
     public WebDriverWait wait;
     public Response response;
     public SoftAssert SAssert;
-    public ResourceBundle resourceBundle = ResourceBundle.getBundle("config.baseConfig");
+    public ResourceBundle resourceBundle = ResourceBundle.getBundle("config.base-config");
     public String baseURL = resourceBundle.getString("url");
 
     public static String getTestDataFilePath(String workbookName) {
@@ -77,5 +77,10 @@ public class BaseTest {
 
     protected static void failedTest(Exception error) {
         Assert.fail(Arrays.toString(error.getStackTrace()));
+    }
+
+    protected URL getPageUrl(String pageName) throws MalformedURLException {
+        String pageUrl = ResourceBundle.getBundle("config.url-config").getString(pageName);
+        return new URL(pageUrl);
     }
 }

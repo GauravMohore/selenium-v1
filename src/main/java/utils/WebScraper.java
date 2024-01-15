@@ -11,7 +11,11 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.*;
 import java.util.*;
+import java.util.stream.IntStream;
 
 public class WebScraper {
     private static ResourceBundle resource = ResourceBundle.getBundle("config.baseConfig");
@@ -70,7 +74,8 @@ public class WebScraper {
     }
 
 
-    public static void main(String[] args) {
+    /* Test */
+    public static void text(String[] args) {
         driver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
         driver.get(baseURL + "news");
         createLocationJson("test");
@@ -88,5 +93,13 @@ public class WebScraper {
         } finally {
             if (driver != null) driver.quit();
         }
+    }
+
+    private static String getFileName(String fileName) {
+        return String.format("%s\\src\\main\\java\\practice\\%s", System.getProperty("user.dir"), fileName);
+    }
+
+    public static void main(String[] args) throws IOException {
+        Path path = Paths.get(getFileName("lol.json"));
     }
 }
