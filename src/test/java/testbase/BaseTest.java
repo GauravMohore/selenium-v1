@@ -65,7 +65,7 @@ public class BaseTest {
         SAssert = new SoftAssert();
         RestAssured.baseURI = baseURL;
         driver.manage().deleteAllCookies();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
     }
 
     @AfterClass
