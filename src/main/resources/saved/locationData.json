@@ -1,186 +1,183 @@
 {
-  "locLevel": "COUNTRY",
-  "locName": "India",
-  "locUrl": "https://shuru.co.in/news",
-  "subLocations": [
+  "locList": [
     {
-      "locLevel": "state",
       "locName": "Andaman And Nicobar Islands",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/andaman-and-nicobar-islands"
     },
     {
-      "locLevel": "state",
       "locName": "Andhra Pradesh",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/andhra-pradesh"
     },
     {
-      "locLevel": "state",
       "locName": "Arunachal Pradesh",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/arunachal-pradesh"
     },
     {
-      "locLevel": "state",
       "locName": "Assam",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/assam"
     },
     {
-      "locLevel": "state",
       "locName": "Bihar",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/bihar"
     },
     {
-      "locLevel": "state",
       "locName": "Chandigarh",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/chandigarh"
     },
     {
-      "locLevel": "state",
       "locName": "Chhattisgarh",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/chhattisgarh"
     },
     {
-      "locLevel": "state",
       "locName": "Dadra And Nagar Haveli And Daman And Diu",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/dadra-and-nagar-haveli-and-daman-and-diu"
     },
     {
-      "locLevel": "state",
       "locName": "Delhi",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/delhi"
     },
     {
-      "locLevel": "state",
       "locName": "Goa",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/goa"
     },
     {
-      "locLevel": "state",
       "locName": "Gujarat",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/gujarat"
     },
     {
-      "locLevel": "state",
       "locName": "Haryana",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/haryana"
     },
     {
-      "locLevel": "state",
       "locName": "Himachal Pradesh",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/himachal-pradesh"
     },
     {
-      "locLevel": "state",
       "locName": "Jammu And Kashmir",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/jammu-and-kashmir"
     },
     {
-      "locLevel": "state",
       "locName": "Jharkhand",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/jharkhand"
     },
     {
-      "locLevel": "state",
       "locName": "Karnataka",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/karnataka"
     },
     {
-      "locLevel": "state",
       "locName": "Kerala",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/kerala"
     },
     {
-      "locLevel": "state",
       "locName": "Ladakh",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/ladakh"
     },
     {
-      "locLevel": "state",
       "locName": "Lakshadweep",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/lakshadweep"
     },
     {
-      "locLevel": "state",
       "locName": "Madhya Pradesh",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/madhya-pradesh"
     },
     {
-      "locLevel": "state",
       "locName": "Maharashtra",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/maharashtra"
     },
     {
-      "locLevel": "state",
       "locName": "Manipur",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/manipur"
     },
     {
-      "locLevel": "state",
       "locName": "Meghalaya",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/meghalaya"
     },
     {
-      "locLevel": "state",
       "locName": "Mizoram",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/mizoram"
     },
     {
-      "locLevel": "state",
       "locName": "Nagaland",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/nagaland"
     },
     {
-      "locLevel": "state",
       "locName": "Odisha",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/odisha"
     },
     {
-      "locLevel": "state",
       "locName": "Puducherry",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/puducherry"
     },
     {
-      "locLevel": "state",
       "locName": "Punjab",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/punjab"
     },
     {
-      "locLevel": "state",
       "locName": "Rajasthan",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/rajasthan"
     },
     {
-      "locLevel": "state",
       "locName": "Sikkim",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/sikkim"
     },
     {
-      "locLevel": "state",
       "locName": "Tamil Nadu",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/tamil-nadu"
     },
     {
-      "locLevel": "state",
       "locName": "Telangana",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/telangana"
     },
     {
-      "locLevel": "state",
       "locName": "Tripura",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/tripura"
     },
     {
-      "locLevel": "state",
       "locName": "Uttar Pradesh",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/uttar-pradesh"
     },
     {
-      "locLevel": "state",
       "locName": "Uttarakhand",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/uttarakhand"
     },
     {
-      "locLevel": "state",
       "locName": "West Bengal",
+      "locLevel": "STATE",
       "locUrl": "https://shuru.co.in/news/west-bengal"
     }
   ]
