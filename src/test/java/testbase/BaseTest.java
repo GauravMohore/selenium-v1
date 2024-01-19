@@ -36,7 +36,7 @@ public class BaseTest {
 
     @BeforeClass
     @Parameters({"browser", "setHeadless"})
-    public void setUp(@Optional("chrome") String browser, @Optional("false") boolean setHeadless) throws MalformedURLException {
+    public void setUp(@Optional("chrome") String browser, @Optional("true") boolean setHeadless) throws MalformedURLException {
         switch (browser.toLowerCase()) {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();

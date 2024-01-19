@@ -1,0 +1,276 @@
+page url : https://shuru.co.in/news/assam/bajali
+E--> {{locName}} আজিৰ খবৰ | {{locName}} Live News in Assamese | {{locName}} ব্ৰেকিং নিউজ | {{locName}} খবৰ | Shuru
+A--> Bajali আজিৰ খবৰ | Bajali News In Assamese | Bajali: ব্ৰেকিং নিউজ | Live Bajali News | Shuru
+
+
+page url : https://shuru.co.in/news/assam/bajali
+E--> Find Latest {{locName}} আজিৰ খবৰ in Assamese. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}}: ব্ৰেকিং নিউজ only on Shuru
+A--> Read Bajali আজিৰ খবৰ in Assamese. ব্ৰেকিং নিউজ from Bajali. Get Bajali খবৰ আজিৰ for the latest updates on politics, crime, cinema, finance, sports etc. only on Shuru.
+
+
+page url : https://shuru.co.in/news/assam/bajali
+E--> {{locName}} News Today in Assamese - {{locName}} খবৰ - {{locName}} ব্ৰেকিং নিউজ
+A--> Bajali News Today in Assamese - Bajali খবৰ today - Bajali ব্ৰেকিং নিউজ
+
+
+page url : https://shuru.co.in/news/assam/bajali
+E--> Discover the Latest {{locName}} News in Assamese - {{locName}} ব্ৰেকিং নিউজ
+A--> Discover the Latest Bajali News in Assamese - Bajali ব্ৰেকিং নিউজ
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/west-bengal/medinipur-west
+E--> {{locName}} লাইভ খবর | {{locName}} Live News in Bengali | {{locName}} খবর আজকের | {{locName}} লাইভ খবর | Shuru
+A--> Paschim Medinipur লাইভ খবর Today | Paschim Medinipur News In Bengali | Paschim Medinipur আজকের খবর | Paschim Medinipur লাইভ খবর | Shuru
+
+
+page url : https://shuru.co.in/news/west-bengal/medinipur-west
+E--> Find {{locName}} লাইভ খবর in Bengali. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}}: আজকের খবর only on Shuru
+A--> Read Paschim Medinipur লাইভ খবর in Bengali. Breaking news from Paschim Medinipur. Live News Paschim Medinipur only in Shuru. Get [Paschim Medinipur আজকের খবর] & updates on politics, crime, cinema, finance, sports etc. only on Shuru.
+
+
+page url : https://shuru.co.in/news/west-bengal/medinipur-west
+E--> {{locName}} News Today in Bengali - {{locName}} লাইভ খবর today - {{locName}} স্থানীয় সংবাদ
+A--> Paschim Medinipur News Today in Bengali - Paschim Medinipur লাইভ খবর today - Paschim Medinipur আজকের খবর
+
+
+page url : https://shuru.co.in/news/west-bengal/medinipur-west
+E--> Discover the Latest {{locName}} News in Bangla - {{locName}} স্থানীয় সংবাদ
+A--> Discover the Latest Paschim Medinipur News in Bangla - Paschim Medinipur খবর আজকের
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/gujarat/ahmedabad
+E--> {{locName}} ના તાજા સમાચાર આજના | {{locName}} Live News in Gujarati | {{locName}} ના આજના તાજા સમાચાર | {{locName}} ના તાજા સમાચાર | Shuru 
+A--> Ahmedabad ના તાજા સમાચાર આજના | Ahmedabad News In Gujarati | Ahmedabad ના તાજા સમાચાર આજના | Ahmedabad ના તાજા સમાચાર | Shuru
+
+
+page url : https://shuru.co.in/news/gujarat/ahmedabad
+E--> Find {{locName}} ના આજના તાજા સમાચાર. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}}: ના તાજા સમાચાર આજના only on Shuru
+A--> Read Ahmedabad ના આજના તાજા સમાચાર. Breaking news from Ahmedabad. Ahmedabad ના તાજા સમાચાર આજના. Get the latest news updates on politics, crime, cinema, finance, sports etc. Ahmedabad ના તાજા સમાચાર only on Shuru.
+
+
+page url : https://shuru.co.in/news/gujarat/ahmedabad
+E--> {{locName}} News Today in Gujarati - {{locName}} ના તાજા સમાચાર - {{locName}} ના આજના તાજા સમાચાર
+A--> Ahmedabad News Today in Gujarati - Ahmedabad તાજા સમાચાર - Ahmedabad ના આજના તાજા સમાચાર
+
+
+page url : https://shuru.co.in/news/gujarat/ahmedabad
+E--> Discover the Latest {{locName}} News in Gujarati - {{locName}} ના આજના તાજા સમાચાર
+A--> Discover the Latest Ahmedabad News in Gujarati - Ahmedabad ના આજના તાજા સમાચાર
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/uttar-pradesh/agra
+E--> {{locName}} हिंदी न्यूज़ today | {{locName}} न्यूज़ लाइव in Hindi | {{locName}} ताजा खबर | {{locName}} न्यूज़ टुडे | Shuru 
+A--> Agra न्यूज़ लाइव Today | Agra News In Hindi | Agra: न्यूज़ टुडे | Agra ताजा खबर | Shuru
+
+
+page url : https://shuru.co.in/news/uttar-pradesh/agra
+E--> Find Latest {{locName}} हिंदी न्यूज़ today. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}}: ताजा खबर at Shuru
+A--> Read Agra न्यूज़ in हिंदी. Breaking news from Agra. Agra ताजा खबर only on Shuru. Get the latest news updates on politics, crime, cinema, finance, sports etc. from Agra हिंदी न्यूज़ today.
+
+
+page url : https://shuru.co.in/news/uttar-pradesh/agra
+E--> {{locName}} News Today in Hindi - {{locName}} ताजा खबर - {{locName}} हिंदी न्यूज़ today
+A--> Agra News Today in Hindi - Agra न्यूज़ लाइव - Agra ताजा खबर
+
+
+page url : https://shuru.co.in/news/uttar-pradesh/agra
+E--> Discover the Latest {{locName}} News in Hindi - {{locName}} हिंदी न्यूज़ today
+A--> Discover the Latest Agra News in Hindi - Agra ताजा खबर
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/karnataka/bagalkote
+E--> {{locName}} ನ್ಯೂಸ್ ಟುಡೇ | {{locName}} Live News in Kannada | {{locName}} ನ್ಯೂಸ್ | Shuru
+A--> Bagalkote ನ್ಯೂಸ್ Live Today | Bagalkote News In Kannada | Bagalkote: ನ್ಯೂಸ್ ಟುಡೇ | Bagalkote Breaking News | Shuru
+
+
+page url : https://shuru.co.in/news/karnataka/bagalkote
+E--> Find Latest {{locName}} ನ್ಯೂಸ್ in Kannada. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}}: ನ್ಯೂಸ್ ಟುಡೇ only on Shuru.
+A--> Read Bagalkote ನ್ಯೂಸ್ in Kannada. Breaking news from Bagalkote. Live News Bagalkote only in Shuru. Get the latest news updates on politics, crime, cinema, finance, sports etc. from Bagalkote ನ್ಯೂಸ್ ಟುಡೇ.
+
+
+page url : https://shuru.co.in/news/karnataka/bagalkote
+E--> {{locName}} News Today in Kannada - {{locName}} ನ್ಯೂಸ್ - {{locName}} ನ್ಯೂಸ್ ಟುಡೇ
+A--> Bagalkote News Today in Kannada - Bagalkote ನ್ಯೂಸ್ - Bagalkote ನ್ಯೂಸ್ ಟುಡೇ
+
+
+page url : https://shuru.co.in/news/karnataka/bagalkote
+E--> Discover the Latest {{locName}} News in Kannada - {{locName}} ನ್ಯೂಸ್ ಟುಡೇ
+A--> Discover the Latest Bagalkote News in Kannada - Bagalkote ನ್ಯೂಸ್ ಟುಡೇ
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/kerala/alappuzha
+E--> {{locName}} ഇന്നത്തെ വാര്ത്തകള് | {{locName}} ന്യൂസ് ലൈവ് in Malayalam | {{locName}} ഇന്നത്തെ പ്രാദേശിക വാര്ത്തകള് | Shuru
+A--> Alappuzha ന്യൂസ് ലൈവ് Today | Alappuzha News In Malyalam | Alappuzha: ഇന്നത്തെ പ്രാദേശിക വാര്ത്തകള് | Shuru
+
+
+page url : https://shuru.co.in/news/kerala/alappuzha
+E--> Find Latest {{locName}} ന്യൂസ് ലൈവ് in Malyalam. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}}: ഇന്നത്തെ പ്രാദേശിക വാര്ത്തകള് only on Shuru
+A--> Read Alappuzha ന്യൂസ് in Malayalam. Breaking news from Alappuzha. Alappuzha ന്യൂസ് ലൈവ് only in Shuru. Get the latest news updates on politics, crime, cinema, finance, sports etc. from Alappuzha പ്രാദേശിക വാര്ത്തകള്.
+
+
+page url : https://shuru.co.in/news/kerala/alappuzha
+E--> {{locName}} News Today in Malayalam - {{locName}} ന്യൂസ് ലൈവ് - {{locName}} വാര്ത്തകള്
+A--> Alappuzha News Today in Malayalam - Alappuzha ന്യൂസ് ലൈവ് today - Alappuzha ഇന്നത്തെ പ്രാദേശിക വാര്ത്തകള്
+
+
+page url : https://shuru.co.in/news/kerala/alappuzha
+E--> Discover the Latest {{locName}} News in Malayalam - {{locName}} ഇന്നത്തെ പ്രാദേശിക വാര്ത്തകള്
+A--> Discover the Latest Alappuzha News in Malayalam - Alappuzha ഇന്നത്തെ പ്രാദേശിക വാര്ത്തകള്
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/maharashtra/bhandara
+E--> {{locName}} न्यूज़ लाइव | {{locName}} Live News in Marathi | आजच्या ताज्या बातम्या | {{locName}} मराठी न्यूज | Shuru 
+A--> Bhandara मराठी न्यूज Live Today | Bhandara News In Marathi | Bhandara: ताज्या बातम्या | Bhandara ठळक बातम्या | Shuru
+
+
+page url : https://shuru.co.in/news/maharashtra/bhandara
+E--> Find Latest {{locName}} न्यूज लाइव मराठी मध्ये. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}}: ताज्या ठळक बातम्या at Shuru
+A--> Read Bhandara न्यूज मराठी मध्ये. Breaking news from Bhandara. Live News Bhandara only on Shuru. Get the latest updates on politics, crime, cinema, finance, sports etc. from Bhandara. Read Bhandara ताज्या ठळक बातम्या. 
+
+
+page url : https://shuru.co.in/news/maharashtra/bhandara
+E--> {{locName}} News Today in Marathi - {{locName}} न्यूज लाइव मराठी मध्ये - {{locName}} ठळक बातम्या
+A--> Bhandara News Today in Marathi - Bhandara ताज्या बातम्या - Bhandara ठळक बातम्या
+
+
+page url : https://shuru.co.in/news/maharashtra/bhandara
+E--> Discover the Latest {{locName}} News in Marathi - {{locName}} आजच्या ताज्या बातम्या
+A--> Discover the Latest Bhandara News in Marathi - Bhandara आजच्या ताज्या बातम्या
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/odisha/anugul
+E--> {{locName}} ସମ୍ବାଦ | {{locName}} Live News in Odia | {{locName}} ସମ୍ବାଦ today | Shuru
+A--> Anugul ସମ୍ବାଦ Live | Anugul News In Odia | Anugul ସମ୍ବାଦ Today | Anugul Breaking News | Shuru
+
+
+page url : https://shuru.co.in/news/odisha/anugul
+E--> Find Latest {{locName}} ସମ୍ବାଦ today in Odia. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}} ସମ୍ବାଦ today only on Shuru
+A--> Read Anugul ସମ୍ବାଦ today in Odia. Breaking news from Anugul. Live News Anugul only in Shuru. Get the latest news updates on crime, education, politics, etc. from Anugul ସମ୍ବାଦ today.
+
+
+page url : https://shuru.co.in/news/odisha/anugul
+E--> {{locName}} News in Odia - {{locName}} ସମ୍ବାଦ today - Latest {{locName}} ସମ୍ବାଦ
+A--> Anugul News in Odia - Anugul ସମ୍ବାଦ today - Latest Anugul ସମ୍ବାଦ
+
+
+page url : https://shuru.co.in/news/odisha/anugul
+E--> Discover the Latest {{locName}} News in Odia - {{locName}} ସମ୍ବାଦ today
+A--> Discover the Latest Anugul News in Odia - Anugul ସମ୍ବାଦ
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/punjab/amritsar
+E--> {{locName}} News Today | {{locName}} Live News in Punjabi | ਤਾਜ਼ਾ ਖ਼ਬਰਾਂ {{locName}} | {{locName}} ਪੰਜਾਬੀ ਖ਼ਬਰਾਂ | Shuru
+A--> Amritsar ਖ਼ਬਰਾਂ today live | Amritsar ਖ਼ਬਰਾਂ in ਪੰਜਾਬੀ | Amritsar ਖ਼ਬਰਾਂ ਅੱਜ | Amritsar Breaking News | Shuru
+
+
+page url : https://shuru.co.in/news/punjab/amritsar
+E--> Find Latest {{locName}} News in Punjabi. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}} : ਤਾਜ਼ਾ ਪੰਜਾਬੀ ਖਬਰਾਂ at Shuru
+A--> Read Amritsar ਖ਼ਬਰਾਂ in ਪੰਜਾਬੀ. Breaking news from Amritsar. Amritsar ਖ਼ਬਰਾਂ today live only in Shuru. Get the latest news updates on crime, education, politics, etc. from Amritsar ਖ਼ਬਰਾਂ today. 
+
+
+page url : https://shuru.co.in/news/punjab/amritsar
+E--> {{locName}} News Today in Punjabi - {{locName}} ਖ਼ਬਰਾਂ today - {{locName}} ਹੈੱਡਲਾਈਨਜ਼
+A--> Amritsar ਖ਼ਬਰਾਂ Today in Punjabi - Amritsar ਖ਼ਬਰਾਂ today - Amritsar ਖ਼ਬਰਾਂ in ਪੰਜਾਬੀ
+
+
+page url : https://shuru.co.in/news/punjab/amritsar
+E--> Discover the Latest {{locName}} ਖ਼ਬਰਾਂ in ਪੰਜਾਬੀ - {{locName}} ਖ਼ਬਰਾਂ today live
+A--> Discover the Latest Amritsar ਖ਼ਬਰਾਂ in ਪੰਜਾਬੀ - Amritsar ਖ਼ਬਰਾਂ today live
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/tamil-nadu/ariyalur
+E--> {{locName}} செய்திகள் Today Live | {{locName}} Live News in Tamil | Latest {{locName}} செய்திகள் | Shuru
+A--> Ariyalur செய்திகள் | Ariyalur News In Tamil | Ariyalur செய்திகள் today live | Ariyalur Breaking News | Shuru
+
+
+page url : https://shuru.co.in/news/tamil-nadu/ariyalur
+E--> Find Latest {{locName}} செய்திகள் in Tamil. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}} செய்திகள் today live only on Shuru
+A--> Read Ariyalur செய்திகள் in Tamil. Breaking news from Ariyalur. Live செய்திகள் today only on Shuru. Get the latest news updates on politics, crime, cinema, finance, sports etc. from Ariyalur செய்திகள் today.
+
+
+page url : https://shuru.co.in/news/tamil-nadu/ariyalur
+E--> {{locName}} News Today in Tamil - {{locName}} செய்திகள் - {{locName}} செய்திகள் live
+A--> Ariyalur News Today in Tamil - Ariyalur செய்திகள் - Ariyalur செய்திகள் Today Live
+
+
+page url : https://shuru.co.in/news/tamil-nadu/ariyalur
+E--> Discover the Latest {{locName}} News in Tamil - {{locName}} செய்திகள் today
+A--> Discover the Latest Ariyalur News in Tamil - Ariyalur செய்திகள் today live
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/telangana/adilabad
+E--> {{locName}} లోకల్ న్యూస్ టుడే | {{locName}} News Today | {{locName}} Live News in Telugu | Latest {{locName}} న్యూస్ | Shuru
+A--> Adilabad లోకల్ న్యూస్ టుడే | Adilabad News In Telugu | Live Adilabad న్యూస్ టుడే | Adilabad Breaking న్యూస్ | Shuru
+
+
+page url : https://shuru.co.in/news/telangana/adilabad
+E--> Find Latest {{locName}} న్యూస్ in Telugu. We cover {{locName}} breaking news and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}}: లోకల్ న్యూస్ టుడే at Shuru
+A--> Read Adilabad న్యూస్ in Telugu. Breaking news from Adilabad. Live Adilabad న్యూస్ టుడే only in Shuru. Get the latest news updates on politics, crime, cinema, finance, sports etc. from Adilabad లోకల్ న్యూస్ టుడే
+
+
+page url : https://shuru.co.in/news/telangana/adilabad
+E--> {{locName}} News Today in Telugu - {{locName}} న్యూస్ today - {{locName}} లోకల్ న్యూస్ టుడే
+A--> Adilabad News Today in Telugu - Adilabad న్యూస్ today - Adilabad లోకల్ న్యూస్ టుడే
+
+
+page url : https://shuru.co.in/news/telangana/adilabad
+E--> Discover the Latest {{locName}} News in Telugu - {{locName}} లోకల్ న్యూస్ టుడే
+A--> Discover the Latest Adilabad News in Telugu - Adilabad లోకల్ న్యూస్ టుడే
+
+
+________________________________________
+
+
+page url : https://shuru.co.in/news/jammu-and-kashmir/rajouri
+E--> {{locName}} تازہ ترین خبر | {{locName}} न्यूज़ टुडे | {{locName}} Live News in Urdu | تازہ ترین خبر {{locName}} | Shuru
+A--> Rajouri न्यूज़ लाइव Today | Rajouri News In Hindi | Rajouri: न्यूज़ टुडे | Rajouri ताजा खबर | Shuru
+
+
+page url : https://shuru.co.in/news/jammu-and-kashmir/rajouri
+E--> Find Latest {{locName}} news today in Urdu. We cover {{locName}} تازہ ترین خبر and Live Updates on politics, crime, cinema, finance, sports etc. Read {{locName}} تازہ ترین خبر at Shuru
+A--> Read Rajouri न्यूज़ in हिंदी. Breaking news from Rajouri. Rajouri ताजा खबर only on Shuru. Get the latest news updates on politics, crime, cinema, finance, sports etc. from Rajouri हिंदी न्यूज़ today.
+
+
+page url : https://shuru.co.in/news/jammu-and-kashmir/rajouri
+E--> {{locName}} News Today in Urdu - {{locName}} تازہ ترین خبر today - {{locName}} تازہ ترین خبر
+A--> Rajouri News Today in Hindi - Rajouri न्यूज़ लाइव - Rajouri ताजा खबर
+
+
+page url : https://shuru.co.in/news/jammu-and-kashmir/rajouri
+E--> Discover the Latest {{locName}} News in Urdu - {{locName}} تازہ ترین خبر
+A--> Discover the Latest Rajouri News in Hindi - Rajouri ताजा खबर
+
+
+________________________________________
+
+
