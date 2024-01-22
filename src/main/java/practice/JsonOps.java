@@ -21,12 +21,38 @@ import java.io.File;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ResourceBundle;
 
 public class JsonOps {
+    static ObjectMapper objectMapper;
+    ResourceBundle commonUrl = ResourceBundle.getBundle("config.url-config");
 
+    /* Helper Methods ----------------------------------------------*/
     public static String getResourceFilePath(String path) {
         return System.getProperty("user.dir") + "\\src\\main\\resources\\" + path;
     }
+
+    private static Document connectWithRetry(String url, int timeout, int maxRetries) throws IOException, InterruptedException {
+        int retries = 0;
+        boolean success = false;
+        Document document = null;
+
+        while (retries < maxRetries && !success) {
+            try {
+                document = Jsoup.connect(url).timeout(timeout).get();
+                success = true; // Break out of the loop if the connection is successful
+            } catch (IOException e) {
+                System.out.println("Error connecting to the website: " + e.getMessage());
+                retries++;
+                // Optionally sleep for a short duration before retrying
+                Thread.sleep(1000); // 1 second
+            }
+        }
+
+        return document;
+    }
+
+    /* Scraping Logic ------------------------------------------- */
 
     public static JsonNode getEntireJsonFileAsJsonNode(String jsonFileNameInSaved) throws JsonProcessingException {
         try {
@@ -38,7 +64,6 @@ public class JsonOps {
             throw new RuntimeException("Error reading JSON file", e);
         }
     }
-
 
     public static String getEntireJsonFileAsString(String jsonFileNameInSaved) throws JsonProcessingException {
         try {
@@ -52,67 +77,9 @@ public class JsonOps {
         }
     }
 
-    public static void generateFile() {
-        ObjectMapper objectMapper = new ObjectMapper();
-        String jsonFileName = String.format("%s-%o.json", "location", System.currentTimeMillis());
-        String jsonFilePath = String.format("%s\\src\\main\\resources\\saved\\%s", System.getProperty("user.dir"), jsonFileName);
-        System.out.println(jsonFileName);
-
-        ArrayNode stateArray = objectMapper.createArrayNode();
-        WebDriver stateDriver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
-        ObjectNode jsonRoot = objectMapper.createObjectNode();
-
-        String pageUrl = "https://shuru.co.in/news";
-        stateDriver.get(pageUrl);
-        try {
-            stateDriver.findElements(By.cssSelector("a[title]")).forEach(stateElement -> {
-                ObjectNode stateObject = objectMapper.createObjectNode();
-                stateObject.put("locName", stateElement.getText());
-                stateObject.put("locLevel", "STATE");
-                stateObject.put("locUrl", stateElement.getAttribute("href"));
-                stateArray.add(stateObject);
-            });
-        } finally {
-            stateDriver.quit();
-        }
-
-        stateArray.forEach(stateNode -> {
-            String stateUrl = stateNode.get("locUrl").asText();
-            System.out.println(stateUrl);
-
-            ArrayNode districtArray = objectMapper.createArrayNode();
-            WebDriver districtDriver = new ChromeDriver(new ChromeOptions().addArguments("--headless"));
-            try {
-                districtDriver.get(stateUrl);
-                districtDriver.findElements(By.cssSelector("div[class=list-items]>a")).forEach(districtElement -> {
-                    ObjectNode districtObject = objectMapper.createObjectNode();
-                    districtObject.put("locName", districtElement.getText());
-                    districtObject.put("locLevel", "DISTRICT");
-                    districtObject.put("locUrl", districtElement.getAttribute("href"));
-                    districtArray.add(districtObject);
-                    System.out.println("    " + districtObject.get("locName") + " --> " + districtObject.get("locUrl"));
-                });
-            } finally {
-                districtDriver.quit();
-            }
-        });
-
-        jsonRoot.put("locName", "India");
-        jsonRoot.put("locLevel", "COUNTRY");
-        jsonRoot.put("locUrl", pageUrl);
-        jsonRoot.set("locList", stateArray);
-
-        // File Creation
-        try {
-//            objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(jsonFilePath), jsonRoot);
-            System.out.println("success");
-        } catch (Exception err) {
-            System.out.println(err.getMessage());
-        }
-    }
-
-    public static void generateFileJsoup() {
-        ObjectMapper objectMapper = new ObjectMapper();
+    // Create .json file containing all urls from /news/* hierarchy
+    public static void generateAllNewsJsonFile() {
+        objectMapper = new ObjectMapper();
         String jsonFileName = String.format("%s-%d.json", "location", System.currentTimeMillis());
         String jsonFilePath = String.format("%s/src/main/resources/saved/%s", System.getProperty("user.dir"), jsonFileName);
         System.out.println(jsonFileName);
@@ -192,28 +159,44 @@ public class JsonOps {
         }
     }
 
-    private static Document connectWithRetry(String url, int timeout, int maxRetries) throws IOException, InterruptedException {
-        int retries = 0;
-        boolean success = false;
-        Document document = null;
+    // Create .json file containing all urls from /services/* routes
+    public static void generateAllServicesJsonFile() {
+        objectMapper = new ObjectMapper();
+        String jsonFileName = String.format("%s-%d.json", "location", System.currentTimeMillis());
+        String jsonFilePath = String.format("%s/src/main/resources/saved/%s", System.getProperty("user.dir"), jsonFileName);
+        System.out.println(jsonFileName);
 
-        while (retries < maxRetries && !success) {
-            try {
-                document = Jsoup.connect(url).timeout(timeout).get();
-                success = true; // Break out of the loop if the connection is successful
-            } catch (IOException e) {
-                System.out.println("Error connecting to the website: " + e.getMessage());
-                retries++;
-                // Optionally sleep for a short duration before retrying
-                Thread.sleep(1000); // 1 second
+        ObjectNode jsonRoot = objectMapper.createObjectNode();
+        ArrayNode stateArray = objectMapper.createArrayNode();
+
+        String pageUrl = "https://shuru.co.in";
+        String servicesPageUrl = pageUrl + "/services";
+
+        int maxRetries = 3;
+
+        try {
+            Document servicesDocument = connectWithRetry(servicesPageUrl, 20000, maxRetries);
+            Elements servicesElements = servicesDocument.select("a[title]");
+            for (Element servicesElement : servicesElements) {
+                
             }
+
+            // File Creation
+            try {
+                objectMapper.writerWithDefaultPrettyPrinter().writeValue(new File(jsonFilePath), jsonRoot);
+                System.out.println("Success");
+            } catch (IOException e) {
+                System.out.println("Error writing to file: " + e.getMessage());
+            }
+        } catch (IOException | InterruptedException e) {
+            System.out.println("Error connecting to the website: " + e.getMessage());
         }
 
-        return document;
+
     }
 
     public static void main(String[] args) {
         /* Test Methods */
-        generateFileJsoup();
+        generateAllServicesJsonFile();
     }
 }

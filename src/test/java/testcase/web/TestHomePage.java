@@ -1,19 +1,16 @@
 package testcase.web;
 
-import io.restassured.RestAssured;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
-import org.testng.ITestResult;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.HomePage;
+import testbase.ApiTest;
 import testbase.BaseTest;
 import utils.DataProviders;
 
 import java.net.MalformedURLException;
 import java.util.*;
-import java.util.stream.Collectors;
 
 public class TestHomePage extends BaseTest {
     String pageURL;

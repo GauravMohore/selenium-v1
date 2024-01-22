@@ -11,7 +11,7 @@
             </dependencies>
         </groups>
         <classes>
-            <class name="testcase.smoke.TestSanityResponse"/>
+            <class name="testcase.api.TestSanityResponse"/>
             <class name="testcase.web.TestHomePage"/>
             <class name="testcase.web.TestServicesPage"/>
         </classes>

@@ -3,9 +3,9 @@
 <suite name="test-test-suite">
     <test name="test-promotions" parallel="methods" thread-count="5">
         <classes>
-            <class name="testcase.smoke.TestSanityResponse"/>
-            <class name="testcase.smoke.TestPromotionsPageResponse"/>
-            <class name="testcase.smoke.TestNewsPageResponse"/>
+            <class name="testcase.api.TestSanityResponse"/>
+            <class name="testcase.api.TestPromotionsPageResponse"/>
+            <class name="testcase.api.FullRegression"/>
         </classes>
     </test>
 </suite>
