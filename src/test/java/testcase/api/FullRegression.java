@@ -2,14 +2,12 @@ package testcase.api;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
 import components.RestAssuredUtils;
-import lombok.Data;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import practice.JsonOps;
-import testbase.ApiTest;
+import utils.WebScarper;
+import base.ApiTest;
 
 import java.io.File;
 import java.io.IOException;
@@ -23,7 +21,7 @@ public class FullRegression extends ApiTest {
 
     @DataProvider(name = "stateUrls")
     private Object[][] stateUrls() throws IOException {
-        String filePath = JsonOps.getResourceFilePath("saved//allLocationData.json");
+        String filePath = WebScarper.getResourceFilePath("saved//all-news-location-details.json");
         mapper = new ObjectMapper();
         JsonNode rootNode = mapper.readTree(new File(filePath));
 
@@ -40,7 +38,7 @@ public class FullRegression extends ApiTest {
 
     @DataProvider(name = "districtUrls")
     private Object[][] districtUrls() throws IOException {
-        String filePath = JsonOps.getResourceFilePath("saved//allLocationData.json");
+        String filePath = WebScarper.getResourceFilePath("saved//all-news-location-details.json");
         mapper = new ObjectMapper();
         JsonNode rootNode = mapper.readTree(new File(filePath));
 
@@ -59,7 +57,7 @@ public class FullRegression extends ApiTest {
 
     @DataProvider(name = "subDistrictUrls")
     private Object[][] subDistrictUrls() throws IOException {
-        String filePath = JsonOps.getResourceFilePath("saved//allLocationData.json");
+        String filePath = WebScarper.getResourceFilePath("saved//all-news-location-details.json");
         mapper = new ObjectMapper();
         JsonNode rootNode = mapper.readTree(new File(filePath));
 
@@ -74,6 +72,41 @@ public class FullRegression extends ApiTest {
                             list.add(subDistrictInfo.toArray(new Object[0]));
                         })));
 
+        return list.toArray(new Object[0][0]);
+    }
+
+    @DataProvider(name = "mandiStateUrls")
+    private Object[] mandiStateUrls() throws IOException {
+        String filePath = WebScarper.getResourceFilePath("saved//all-mandi-page-details.json");
+        mapper = new ObjectMapper();
+        JsonNode rootNode = mapper.readTree(new File(filePath));
+
+        List<Object[]> list = new ArrayList<>();
+
+        rootNode.get("pageRoutes").forEach(state -> {
+            List<Object> statePageInfo = new ArrayList<>();
+            statePageInfo.add(state.get("pageTitle").asText().split("\\|")[0].trim());
+            statePageInfo.add(state.get("pageUrl").asText());
+            list.add(statePageInfo.toArray(new Object[0]));
+        });
+        return list.toArray(new Object[0][0]);
+
+    }
+
+    @DataProvider(name = "mandiDistrictUrls")
+    private Object[] mandiDistrictUrls() throws IOException {
+        String filePath = WebScarper.getResourceFilePath("saved//all-mandi-page-details.json");
+        mapper = new ObjectMapper();
+        JsonNode rootNode = mapper.readTree(new File(filePath));
+
+        List<Object[]> list = new ArrayList<>();
+
+        rootNode.get("pageRoutes").forEach(state -> state.forEach(district -> {
+            List<Object> statePageInfo = new ArrayList<>();
+            statePageInfo.add(state.get("pageTitle").asText().split("\\|")[0].trim());
+            statePageInfo.add(state.get("pageUrl").asText());
+            list.add(statePageInfo.toArray(new Object[0]));
+        }));
         return list.toArray(new Object[0][0]);
     }
 
@@ -114,6 +147,36 @@ public class FullRegression extends ApiTest {
         SAssert = new SoftAssert();
         try {
             apiTest = RestAssuredUtils.testUrl(subDistrictUrl);
+            int actualStatusCode = apiTest.getStatusCode();
+            long actualResponseTime = apiTest.getResponseTime();
+            SAssert.assertEquals(actualStatusCode, 200);
+            SAssert.assertTrue(actualResponseTime <= 10000);
+            SAssert.assertAll();
+        } catch (Exception error) {
+            failedTest(error);
+        }
+    }
+
+    @Test(dataProvider = "mandiStateUrls", threadPoolSize = 4)
+    public void testAllMandiStatePages(String pageTitle, String pageUrl) {
+        SAssert = new SoftAssert();
+        try {
+            apiTest = RestAssuredUtils.testUrl(pageUrl);
+            int actualStatusCode = apiTest.getStatusCode();
+            long actualResponseTime = apiTest.getResponseTime();
+            SAssert.assertEquals(actualStatusCode, 200);
+            SAssert.assertTrue(actualResponseTime <= 10000);
+            SAssert.assertAll();
+        } catch (Exception error) {
+            failedTest(error);
+        }
+    }
+
+    @Test(dataProvider = "mandiDistrictUrls", threadPoolSize = 4)
+    public void testAllMandiDistrictPages(String pageTitle, String pageUrl) {
+        SAssert = new SoftAssert();
+        try {
+            apiTest = RestAssuredUtils.testUrl(pageUrl);
             int actualStatusCode = apiTest.getStatusCode();
             long actualResponseTime = apiTest.getResponseTime();
             SAssert.assertEquals(actualStatusCode, 200);

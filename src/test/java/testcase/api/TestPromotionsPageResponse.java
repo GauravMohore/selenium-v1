@@ -1,6 +1,6 @@
 package testcase.api;
 
-import testbase.ApiTest;
+import base.ApiTest;
 
 public class TestPromotionsPageResponse extends ApiTest {
 

@@ -5,8 +5,7 @@ import org.testng.Assert;
 import org.testng.annotations.*;
 import org.testng.asserts.SoftAssert;
 import pages.HomePage;
-import testbase.ApiTest;
-import testbase.BaseTest;
+import base.BaseTest;
 import utils.DataProviders;
 
 import java.net.MalformedURLException;

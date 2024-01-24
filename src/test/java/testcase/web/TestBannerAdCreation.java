@@ -5,13 +5,12 @@ import io.restassured.RestAssured;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 import pages.BannerFormPage;
 import pages.PromotionPurchasePage;
-import testbase.BaseTest;
+import base.BaseTest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
