@@ -3,7 +3,7 @@ package testcase.api;
 import io.restassured.RestAssured;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
-import testbase.ApiTest;
+import base.ApiTest;
 import utils.Helper;
 
 
