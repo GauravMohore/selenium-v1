@@ -1,16 +1,26 @@
 package testcase.web;
 
+import groovyjarjarantlr4.v4.codegen.model.SrcOp;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
+import testbase.BaseTest;
 import utils.DataProviders;
 
 import java.io.*;
+import java.net.MalformedURLException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.StandardOpenOption;
+import java.util.Arrays;
 
-import static base.BaseTest.getTestDataFilePath;
+import static testbase.BaseTest.getTestDataFilePath;
 
 public class TestMetaTags {
     WebDriver driver;

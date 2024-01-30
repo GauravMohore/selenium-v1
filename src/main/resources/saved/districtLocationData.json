@@ -1,0 +1,4079 @@
+{
+  "locName": "India",
+  "locLevel": "COUNTRY",
+  "locUrl": "https://shuru.co.in/news",
+  "locList": [
+    {
+      "locName": "Andaman And Nicobar Islands",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/andaman-and-nicobar-islands",
+      "LocList": [
+        {
+          "LocName": "निकोबार्स",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andaman-and-nicobar-islands/news/andaman-and-nicobar-islands/nicobars"
+        },
+        {
+          "LocName": "नॉर्थ एंड मिडल अंडमान",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andaman-and-nicobar-islands/news/andaman-and-nicobar-islands/north-and-middle-andaman"
+        },
+        {
+          "LocName": "साउथ अंडमान",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andaman-and-nicobar-islands/news/andaman-and-nicobar-islands/south-andamans"
+        }
+      ]
+    },
+    {
+      "locName": "Andhra Pradesh",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/andhra-pradesh",
+      "LocList": [
+        {
+          "LocName": "అల్లూరి సీతారామ రాజు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/alluri-sitharama-raju"
+        },
+        {
+          "LocName": "అనకాపల్లి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/anakapalli"
+        },
+        {
+          "LocName": "అనంతపూర్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/anantapur"
+        },
+        {
+          "LocName": "అన్నమయ్య",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/annamayya"
+        },
+        {
+          "LocName": "బాపట్ల",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/bapatla"
+        },
+        {
+          "LocName": "చిత్తూర్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/chittoor"
+        },
+        {
+          "LocName": "తూర్పు గోదావరి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/east-godavari"
+        },
+        {
+          "LocName": "ఏలూరు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/eluru"
+        },
+        {
+          "LocName": "గుంటూరు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/guntur"
+        },
+        {
+          "LocName": "కాకినాడ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/kakinada"
+        },
+        {
+          "LocName": "కోనసీమ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/konaseema"
+        },
+        {
+          "LocName": "కృష్ణ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/krishna"
+        },
+        {
+          "LocName": "కర్నూలు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/kurnool"
+        },
+        {
+          "LocName": "నంద్యాల",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/nandyal"
+        },
+        {
+          "LocName": "ఎన్టీఆర్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/ntr"
+        },
+        {
+          "LocName": "పల్నాడు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/palnadu"
+        },
+        {
+          "LocName": "పార్వతీపురం మన్యం",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/parvathipuram-manyam"
+        },
+        {
+          "LocName": "ప్రకాశం",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/prakasam"
+        },
+        {
+          "LocName": "ఎస్పిఎస్ఆర్ నెల్లూరు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/spsr-nellore"
+        },
+        {
+          "LocName": "శ్రీకాకుళం",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/srikakulam"
+        },
+        {
+          "LocName": "శ్రీ సత్య సాయి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/sri-sathya-sai"
+        },
+        {
+          "LocName": "తిరుపతి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/tirupati"
+        },
+        {
+          "LocName": "విశాఖపట్నం",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/visakhapatanam"
+        },
+        {
+          "LocName": "విజయనగరం",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/vizianagaram"
+        },
+        {
+          "LocName": "పశ్చిమగోదావరి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/west-godavari"
+        },
+        {
+          "LocName": "వైయస్ఆర్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/andhra-pradesh/news/andhra-pradesh/y.s.r."
+        }
+      ]
+    },
+    {
+      "locName": "Arunachal Pradesh",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/arunachal-pradesh",
+      "LocList": [
+        {
+          "LocName": "অনজৌ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/anjaw"
+        },
+        {
+          "LocName": "চাংলাং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/changlang"
+        },
+        {
+          "LocName": "দিবাং ভেলী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/dibang-valley"
+        },
+        {
+          "LocName": "এস কামেং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/east-kameng"
+        },
+        {
+          "LocName": "এস চিৰাং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/east-siang"
+        },
+        {
+          "LocName": "কমলে",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/kamle"
+        },
+        {
+          "LocName": "কৰা দাড়ি",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/kra-daadi"
+        },
+        {
+          "LocName": "কুৰুবং কুমায়",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/kurung-kumey"
+        },
+        {
+          "LocName": "লেপাৰদ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/leparada"
+        },
+        {
+          "LocName": "লোহিত",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/lohit"
+        },
+        {
+          "LocName": "লোংডিং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/longding"
+        },
+        {
+          "LocName": "লোৱাৰ দিবাং ভেলী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/lower-dibang-valley"
+        },
+        {
+          "LocName": "লোৱাৰ চিৰাং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/lower-siang"
+        },
+        {
+          "LocName": "লোৱাৰ সোৱণশিৰী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/lower-subansiri"
+        },
+        {
+          "LocName": "নামচাই",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/namsai"
+        },
+        {
+          "LocName": "পক্কা কেচেঙ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/pakke-kessang"
+        },
+        {
+          "LocName": "পাপুম পাৰে",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/papum-pare"
+        },
+        {
+          "LocName": "সি যমী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/shi-yomi"
+        },
+        {
+          "LocName": "ছিয়াং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/siang"
+        },
+        {
+          "LocName": "টাৱাং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/tawang"
+        },
+        {
+          "LocName": "টিৰাপ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/tirap"
+        },
+        {
+          "LocName": "উপপৰ চিৰাং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/upper-siang"
+        },
+        {
+          "LocName": "উপপৰ সোৱণশিৰী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/upper-subansiri"
+        },
+        {
+          "LocName": "ৱেষ্ট কামেং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/west-kameng"
+        },
+        {
+          "LocName": "ৱেষ্ট চিৰাং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/arunachal-pradesh/news/arunachal-pradesh/west-siang"
+        }
+      ]
+    },
+    {
+      "locName": "Assam",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/assam",
+      "LocList": [
+        {
+          "LocName": "বিশ্বনাথ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/biswanath"
+        },
+        {
+          "LocName": "দৰং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/darrang"
+        },
+        {
+          "LocName": "কামৰূপ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/kamrup"
+        },
+        {
+          "LocName": "কামৰূপ মহানগৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/kamrup-metro"
+        },
+        {
+          "LocName": "কোকৰাঝাৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/kokrajhar"
+        },
+        {
+          "LocName": "শিৱসাগৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/sivasagar"
+        },
+        {
+          "LocName": "চৰাইদেউ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/charaideo"
+        },
+        {
+          "LocName": "দক্ষিণ শালমাৰা মানকাচাৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/south-salmara-mancachar"
+        },
+        {
+          "LocName": "বঙাইগাঁও",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/bongaigaon"
+        },
+        {
+          "LocName": "কাচাৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/cachar"
+        },
+        {
+          "LocName": "হোজাই",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/hojai"
+        },
+        {
+          "LocName": "কৰিমগঞ্জ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/karimganj"
+        },
+        {
+          "LocName": "চিৰাং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/chirang"
+        },
+        {
+          "LocName": "ধুবুৰী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/dhubri"
+        },
+        {
+          "LocName": "মাজুলী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/majuli"
+        },
+        {
+          "LocName": "তিনিচুকীয়া",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/tinsukia"
+        },
+        {
+          "LocName": "গোৱালপাৰা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/goalpara"
+        },
+        {
+          "LocName": "ধেমাজি",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/dhemaji"
+        },
+        {
+          "LocName": "ডিব্ৰুগড়",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/dibrugarh"
+        },
+        {
+          "LocName": "ওদালগুৰি",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/udalguri"
+        },
+        {
+          "LocName": "গোলাঘাট",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/golaghat"
+        },
+        {
+          "LocName": "লক্ষীমপুৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/lakhimpur"
+        },
+        {
+          "LocName": "নাগাওঁ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/nagaon"
+        },
+        {
+          "LocName": "তামুলপুৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/tamulpur"
+        },
+        {
+          "LocName": "পশ্চিম কাৰ্বি আংলং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/west-karbi-anglong"
+        },
+        {
+          "LocName": "বৰপেটা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/barpeta"
+        },
+        {
+          "LocName": "ডিমা হাছাও",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/dima-hasao"
+        },
+        {
+          "LocName": "কাৰ্বি আংলং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/karbi-anglong"
+        },
+        {
+          "LocName": "বাক্সা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/baksa"
+        },
+        {
+          "LocName": "নলবাৰী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/nalbari"
+        },
+        {
+          "LocName": "শোণিতপুৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/sonitpur"
+        },
+        {
+          "LocName": "বজালী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/bajali"
+        },
+        {
+          "LocName": "হাইলাকান্দি",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/hailakandi"
+        },
+        {
+          "LocName": "যোৰহাট",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/jorhat"
+        },
+        {
+          "LocName": "মৰিগাওঁ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/assam/news/assam/marigaon"
+        }
+      ]
+    },
+    {
+      "locName": "Bihar",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/bihar",
+      "LocList": [
+        {
+          "LocName": "अररिया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/araria"
+        },
+        {
+          "LocName": "अरवल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/arwal"
+        },
+        {
+          "LocName": "औरंगाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/aurangabad"
+        },
+        {
+          "LocName": "बांका",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/banka"
+        },
+        {
+          "LocName": "बेगूसराय",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/begusarai"
+        },
+        {
+          "LocName": "भागलपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/bhagalpur"
+        },
+        {
+          "LocName": "भोजपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/bhojpur"
+        },
+        {
+          "LocName": "बक्सर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/buxar"
+        },
+        {
+          "LocName": "दरभंगा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/darbhanga"
+        },
+        {
+          "LocName": "गया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/gaya"
+        },
+        {
+          "LocName": "गोपालगंज",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/gopalganj"
+        },
+        {
+          "LocName": "जमुई",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/jamui"
+        },
+        {
+          "LocName": "जहानाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/jehanabad"
+        },
+        {
+          "LocName": "कैमूर ( भभुआ )",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/kaimur-(bhabua)"
+        },
+        {
+          "LocName": "कटिहार",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/katihar"
+        },
+        {
+          "LocName": "खगड़िया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/khagaria"
+        },
+        {
+          "LocName": "किशनगंज",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/kishanganj"
+        },
+        {
+          "LocName": "लखीसराय",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/lakhisarai"
+        },
+        {
+          "LocName": "मधेपुरा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/madhepura"
+        },
+        {
+          "LocName": "मधुबनी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/madhubani"
+        },
+        {
+          "LocName": "मुंगेर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/munger"
+        },
+        {
+          "LocName": "मुज़फ़्फ़रपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/muzaffarpur"
+        },
+        {
+          "LocName": "नालंदा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/nalanda"
+        },
+        {
+          "LocName": "नवादा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/nawada"
+        },
+        {
+          "LocName": "पश्चिम चम्पारण",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/pashchim-champaran"
+        },
+        {
+          "LocName": "पटना",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/patna"
+        },
+        {
+          "LocName": "पूर्वी चंपारण",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/purbi-champaran"
+        },
+        {
+          "LocName": "पूर्णिया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/purnia"
+        },
+        {
+          "LocName": "रोहतास",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/rohtas"
+        },
+        {
+          "LocName": "सहरसा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/saharsa"
+        },
+        {
+          "LocName": "समस्तीपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/samastipur"
+        },
+        {
+          "LocName": "सारण",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/saran"
+        },
+        {
+          "LocName": "शेखपुरा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/sheikhpura"
+        },
+        {
+          "LocName": "शिवहर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/sheohar"
+        },
+        {
+          "LocName": "सीतामढी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/sitamarhi"
+        },
+        {
+          "LocName": "सिवान",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/siwan"
+        },
+        {
+          "LocName": "सुपौल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/supaul"
+        },
+        {
+          "LocName": "वैशाली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/bihar/news/bihar/vaishali"
+        }
+      ]
+    },
+    {
+      "locName": "Chandigarh",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/chandigarh",
+      "LocList": [
+        {
+          "LocName": "ਚੰਡੀਗੜ੍ਹ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chandigarh/news/chandigarh/chandigarh"
+        }
+      ]
+    },
+    {
+      "locName": "Chhattisgarh",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/chhattisgarh",
+      "LocList": [
+        {
+          "LocName": "बालोद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/balod"
+        },
+        {
+          "LocName": "बलोदा बाज़ार",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/baloda-bazar"
+        },
+        {
+          "LocName": "बलरामपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/balrampur"
+        },
+        {
+          "LocName": "बस्तर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/bastar"
+        },
+        {
+          "LocName": "बेमेतरा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/bemetara"
+        },
+        {
+          "LocName": "बीजापुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/bijapur"
+        },
+        {
+          "LocName": "बिलासपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/bilaspur"
+        },
+        {
+          "LocName": "दंतेवाड़ा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/dantewada"
+        },
+        {
+          "LocName": "धमतरी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/dhamtari"
+        },
+        {
+          "LocName": "दुर्ग",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/durg"
+        },
+        {
+          "LocName": "गरियाबंद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/gariyaband"
+        },
+        {
+          "LocName": "गौरेला पेंड्रा मरवाही",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/gaurella-pendra-marwahi"
+        },
+        {
+          "LocName": "जांजगीर - चाम्पा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/janjgir-champa"
+        },
+        {
+          "LocName": "जशपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/jashpur"
+        },
+        {
+          "LocName": "कबीरधाम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/kabirdham"
+        },
+        {
+          "LocName": "कांकेर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/kanker"
+        },
+        {
+          "LocName": "खैरागढ़ छुईखदान गंडई",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/khairgarh-chhuikhadan-gandai"
+        },
+        {
+          "LocName": "कोंडागांव",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/kondagaon"
+        },
+        {
+          "LocName": "कोरबा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/korba"
+        },
+        {
+          "LocName": "कोरिया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/korea"
+        },
+        {
+          "LocName": "महासमुंद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/mahasamund"
+        },
+        {
+          "LocName": "मनेन्द्रगढ़ चिरमिरी भरतपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/manendragarh-chirimiri-bharatpur"
+        },
+        {
+          "LocName": "मोहला मानपुर अम्बागढ़ चौकी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/mohla-manpur-ambagarh-chouki"
+        },
+        {
+          "LocName": "मुंगेली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/mungeli"
+        },
+        {
+          "LocName": "नारायणपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/narayanpur"
+        },
+        {
+          "LocName": "रायगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/raigarh"
+        },
+        {
+          "LocName": "रायपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/raipur"
+        },
+        {
+          "LocName": "राजनांदगांव",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/rajnandgaon"
+        },
+        {
+          "LocName": "सक्ती",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/sakti"
+        },
+        {
+          "LocName": "सारंगढ़ बिलाईगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/sarangarh-bilaigarh"
+        },
+        {
+          "LocName": "सुकमा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/sukma"
+        },
+        {
+          "LocName": "सूरजपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/surajpur"
+        },
+        {
+          "LocName": "सरगुजा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/chhattisgarh/news/chhattisgarh/surguja"
+        }
+      ]
+    },
+    {
+      "locName": "Dadra And Nagar Haveli And Daman And Diu",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/dadra-and-nagar-haveli-and-daman-and-diu",
+      "LocList": [
+        {
+          "LocName": "દાદરા એન્ડ નગર હવેલી",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/dadra-and-nagar-haveli-and-daman-and-diu/news/dadra-and-nagar-haveli-and-daman-and-diu/dadra-and-nagar-haveli"
+        },
+        {
+          "LocName": "દમણ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/dadra-and-nagar-haveli-and-daman-and-diu/news/dadra-and-nagar-haveli-and-daman-and-diu/daman"
+        },
+        {
+          "LocName": "દિઉ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/dadra-and-nagar-haveli-and-daman-and-diu/news/dadra-and-nagar-haveli-and-daman-and-diu/diu"
+        }
+      ]
+    },
+    {
+      "locName": "Delhi",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/delhi",
+      "LocList": [
+        {
+          "LocName": "सेंट्रल दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/central-delhi"
+        },
+        {
+          "LocName": "ईस्ट दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/east-delhi"
+        },
+        {
+          "LocName": "नई दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/new-delhi"
+        },
+        {
+          "LocName": "नार्थ दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/north-delhi"
+        },
+        {
+          "LocName": "नार्थ ईस्ट दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/north-east-delhi"
+        },
+        {
+          "LocName": "नार्थ वेस्ट दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/north-west-delhi"
+        },
+        {
+          "LocName": "शाहदरा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/shahdara"
+        },
+        {
+          "LocName": "साउथ दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/south-delhi"
+        },
+        {
+          "LocName": "साउथ ईस्ट दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/south-east-delhi"
+        },
+        {
+          "LocName": "साउथ वेस्ट दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/south-west-delhi"
+        },
+        {
+          "LocName": "वेस्ट दिल्ली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/delhi/news/delhi/west-delhi"
+        }
+      ]
+    },
+    {
+      "locName": "Goa",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/goa",
+      "LocList": [
+        {
+          "LocName": "उत्तर गोंय",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/goa/news/goa/north-goa"
+        },
+        {
+          "LocName": "दक्षिण गोंय",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/goa/news/goa/south-goa"
+        }
+      ]
+    },
+    {
+      "locName": "Gujarat",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/gujarat",
+      "LocList": [
+        {
+          "LocName": "રાજકોટ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/rajkot"
+        },
+        {
+          "LocName": "સુરત",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/surat"
+        },
+        {
+          "LocName": "દેવભૂમિ દ્વારકા",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/devbhumi-dwarka"
+        },
+        {
+          "LocName": "આણંદ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/anand"
+        },
+        {
+          "LocName": "પાટણ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/patan"
+        },
+        {
+          "LocName": "દાહોદ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/dohad"
+        },
+        {
+          "LocName": "ખેડા",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/kheda"
+        },
+        {
+          "LocName": "સુરેન્દ્રનગર",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/surendranagar"
+        },
+        {
+          "LocName": "તાપી",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/tapi"
+        },
+        {
+          "LocName": "અરવલ્લી",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/arvalli"
+        },
+        {
+          "LocName": "ભાવનગર",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/bhavnagar"
+        },
+        {
+          "LocName": "છોટાઉદેપુર",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/chhotaudepur"
+        },
+        {
+          "LocName": "મહેસાણા",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/mahesana"
+        },
+        {
+          "LocName": "અમરેલી",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/amreli"
+        },
+        {
+          "LocName": "બનાસકાંઠા",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/banas-kantha"
+        },
+        {
+          "LocName": "ગીર સોમનાથ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/gir-somnath"
+        },
+        {
+          "LocName": "નવસારી",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/navsari"
+        },
+        {
+          "LocName": "અહમદાબાદ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/ahmedabad"
+        },
+        {
+          "LocName": "બોટાદ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/botad"
+        },
+        {
+          "LocName": "ડાંગ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/dang"
+        },
+        {
+          "LocName": "જૂનાગઢ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/junagadh"
+        },
+        {
+          "LocName": "મહિસાગર",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/mahisagar"
+        },
+        {
+          "LocName": "પંચ મહાલ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/panch-mahals"
+        },
+        {
+          "LocName": "સાબર કાંઠા",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/sabar-kantha"
+        },
+        {
+          "LocName": "ભરૂચ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/bharuch"
+        },
+        {
+          "LocName": "મોરબી",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/morbi"
+        },
+        {
+          "LocName": "નર્મદા",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/narmada"
+        },
+        {
+          "LocName": "ગાંધીનગર",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/gandhinagar"
+        },
+        {
+          "LocName": "જામનગર",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/jamnagar"
+        },
+        {
+          "LocName": "કચ્છ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/kachchh"
+        },
+        {
+          "LocName": "પોરબંદર",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/porbandar"
+        },
+        {
+          "LocName": "વડોદરા",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/vadodara"
+        },
+        {
+          "LocName": "વલસાડ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/gujarat/news/gujarat/valsad"
+        }
+      ]
+    },
+    {
+      "locName": "Haryana",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/haryana",
+      "LocList": [
+        {
+          "LocName": "अम्बाला",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/ambala"
+        },
+        {
+          "LocName": "भिवानी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/bhiwani"
+        },
+        {
+          "LocName": "चरखी दादरी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/charki-dadri"
+        },
+        {
+          "LocName": "फरीदाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/faridabad"
+        },
+        {
+          "LocName": "फतेहाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/fatehabad"
+        },
+        {
+          "LocName": "गुरुग्राम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/gurugram"
+        },
+        {
+          "LocName": "हिसार",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/hisar"
+        },
+        {
+          "LocName": "झज्जर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/jhajjar"
+        },
+        {
+          "LocName": "जींद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/jind"
+        },
+        {
+          "LocName": "कैथल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/kaithal"
+        },
+        {
+          "LocName": "करनाल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/karnal"
+        },
+        {
+          "LocName": "कुरुक्षेत्र",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/kurukshetra"
+        },
+        {
+          "LocName": "महेंद्रगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/mahendragarh"
+        },
+        {
+          "LocName": "नूँह",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/nuh"
+        },
+        {
+          "LocName": "पलवल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/palwal"
+        },
+        {
+          "LocName": "पंचकूला",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/panchkula"
+        },
+        {
+          "LocName": "पानीपत",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/panipat"
+        },
+        {
+          "LocName": "रेवाड़ी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/rewari"
+        },
+        {
+          "LocName": "रोहतक",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/rohtak"
+        },
+        {
+          "LocName": "सिरसा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/sirsa"
+        },
+        {
+          "LocName": "सोनीपत",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/sonipat"
+        },
+        {
+          "LocName": "यमुनानगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/haryana/news/haryana/yamunanagar"
+        }
+      ]
+    },
+    {
+      "locName": "Himachal Pradesh",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/himachal-pradesh",
+      "LocList": [
+        {
+          "LocName": "किन्नौर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/kinnaur"
+        },
+        {
+          "LocName": "चम्बा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/chamba"
+        },
+        {
+          "LocName": "काँगड़ा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/kangra"
+        },
+        {
+          "LocName": "मंडी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/mandi"
+        },
+        {
+          "LocName": "लहुल एंड स्पिति",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/lahul-and-spiti"
+        },
+        {
+          "LocName": "सिरमौर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/sirmaur"
+        },
+        {
+          "LocName": "उना",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/una"
+        },
+        {
+          "LocName": "शिमला",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/shimla"
+        },
+        {
+          "LocName": "हमीरपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/hamirpur"
+        },
+        {
+          "LocName": "बिलासपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/bilaspur"
+        },
+        {
+          "LocName": "कुल्लू",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/kullu"
+        },
+        {
+          "LocName": "सोलन",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/himachal-pradesh/news/himachal-pradesh/solan"
+        }
+      ]
+    },
+    {
+      "locName": "Jammu And Kashmir",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/jammu-and-kashmir",
+      "LocList": [
+        {
+          "LocName": "अनंतनाग",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/anantnag"
+        },
+        {
+          "LocName": "बांदीपोरा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/bandipora"
+        },
+        {
+          "LocName": "बारामुल्ला",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/baramulla"
+        },
+        {
+          "LocName": "बडगाम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/budgam"
+        },
+        {
+          "LocName": "डोडा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/doda"
+        },
+        {
+          "LocName": "गांदेरबल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/ganderbal"
+        },
+        {
+          "LocName": "जम्मू",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/jammu"
+        },
+        {
+          "LocName": "कठुआ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/kathua"
+        },
+        {
+          "LocName": "किश्तवार",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/kishtwar"
+        },
+        {
+          "LocName": "कुलगाम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/kulgam"
+        },
+        {
+          "LocName": "कुपवाड़ा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/kupwara"
+        },
+        {
+          "LocName": "पूँछ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/poonch"
+        },
+        {
+          "LocName": "पुलवामा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/pulwama"
+        },
+        {
+          "LocName": "राजौरी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/rajouri"
+        },
+        {
+          "LocName": "रामबाण",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/ramban"
+        },
+        {
+          "LocName": "रासि",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/reasi"
+        },
+        {
+          "LocName": "साम्बा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/samba"
+        },
+        {
+          "LocName": "शोपियां",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/shopian"
+        },
+        {
+          "LocName": "श्रीनगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/srinagar"
+        },
+        {
+          "LocName": "उधमपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jammu-and-kashmir/news/jammu-and-kashmir/udhampur"
+        }
+      ]
+    },
+    {
+      "locName": "Jharkhand",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/jharkhand",
+      "LocList": [
+        {
+          "LocName": "बोकारो",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/bokaro"
+        },
+        {
+          "LocName": "चतरा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/chatra"
+        },
+        {
+          "LocName": "देवघर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/deoghar"
+        },
+        {
+          "LocName": "धनबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/dhanbad"
+        },
+        {
+          "LocName": "दुमका",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/dumka"
+        },
+        {
+          "LocName": "पूर्वी सिंघभूम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/east-singhbum"
+        },
+        {
+          "LocName": "गढ़वा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/garhwa"
+        },
+        {
+          "LocName": "गिरिडीह",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/giridih"
+        },
+        {
+          "LocName": "गोड्डा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/godda"
+        },
+        {
+          "LocName": "गुमला",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/gumla"
+        },
+        {
+          "LocName": "हज़ारीबाग",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/hazaribagh"
+        },
+        {
+          "LocName": "जामताड़ा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/jamtara"
+        },
+        {
+          "LocName": "खूंटी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/khunti"
+        },
+        {
+          "LocName": "कोडरमा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/koderma"
+        },
+        {
+          "LocName": "लातेहार",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/latehar"
+        },
+        {
+          "LocName": "लोहरदगा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/lohardaga"
+        },
+        {
+          "LocName": "पाकुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/pakur"
+        },
+        {
+          "LocName": "पलामू",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/palamu"
+        },
+        {
+          "LocName": "रामगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/ramgarh"
+        },
+        {
+          "LocName": "राँची",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/ranchi"
+        },
+        {
+          "LocName": "साहेबगंज",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/sahebganj"
+        },
+        {
+          "LocName": "सरायकेला खरसावां",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/saraikela-kharsawan"
+        },
+        {
+          "LocName": "सिमडेगा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/simdega"
+        },
+        {
+          "LocName": "पश्चिमी सिंघभूम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/jharkhand/news/jharkhand/west-singhbhum"
+        }
+      ]
+    },
+    {
+      "locName": "Karnataka",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/karnataka",
+      "LocList": [
+        {
+          "LocName": "ಬಾಗಲಕೋಟೆ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/bagalkote"
+        },
+        {
+          "LocName": "ಬಳ್ಳಾರಿ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/ballari"
+        },
+        {
+          "LocName": "ಬೆಳಗಾವಿ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/belagavi"
+        },
+        {
+          "LocName": "ಬೆಂಗಳೂರು ಗ್ರಾಮಾಂತರ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/bengaluru-rural"
+        },
+        {
+          "LocName": "ಬೆಂಗಳೂರು",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/bengaluru-urban"
+        },
+        {
+          "LocName": "ಬೀದರ್‌",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/bidar"
+        },
+        {
+          "LocName": "ಚಾಮರಾಜನಗರ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/chamarajanagara"
+        },
+        {
+          "LocName": "ಚಿಕ್ಕಬಳ್ಳಾಪುರ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/chikkaballapura"
+        },
+        {
+          "LocName": "ಚಿಕ್ಕಮಗಳೂರು",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/chikkamagaluru"
+        },
+        {
+          "LocName": "ಚಿತ್ರದುರ್ಗ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/chitradurga"
+        },
+        {
+          "LocName": "ದಕ್ಷಿಣ ಕನ್ನಡ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/dakshina-kannada"
+        },
+        {
+          "LocName": "ದಾವಣಗೆರೆ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/davangere"
+        },
+        {
+          "LocName": "ಧಾರವಾಡ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/dharwad"
+        },
+        {
+          "LocName": "ಗದಗ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/gadag"
+        },
+        {
+          "LocName": "ಹಾಸನ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/hassan"
+        },
+        {
+          "LocName": "ಹಾವೇರಿ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/haveri"
+        },
+        {
+          "LocName": "ಕಲಬುರಗಿ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/kalaburagi"
+        },
+        {
+          "LocName": "ಕೊಡಗು",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/kodagu"
+        },
+        {
+          "LocName": "ಕೋಲಾರ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/kolar"
+        },
+        {
+          "LocName": "ಕೊಪ್ಪಳ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/koppal"
+        },
+        {
+          "LocName": "ಮಂಡ್ಯ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/mandya"
+        },
+        {
+          "LocName": "ಮೈಸೂರು",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/mysuru"
+        },
+        {
+          "LocName": "ರಾಯಚೂರು",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/raichur"
+        },
+        {
+          "LocName": "ರಾಮನಗರ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/ramanagara"
+        },
+        {
+          "LocName": "ಶಿವಮೊಗ್ಗ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/shivamogga"
+        },
+        {
+          "LocName": "ತುಮಕೂರು",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/tumakuru"
+        },
+        {
+          "LocName": "ಉಡುಪಿ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/udupi"
+        },
+        {
+          "LocName": "ಉತ್ತರ ಕನ್ನಡ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/uttara-kannada"
+        },
+        {
+          "LocName": "ವಿಜಯನಗರ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/vijayanagar"
+        },
+        {
+          "LocName": "ವಿಜಯಾಪುರ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/vijayapura"
+        },
+        {
+          "LocName": "ಯಾದಗಿರಿ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/karnataka/news/karnataka/yadgir"
+        }
+      ]
+    },
+    {
+      "locName": "Kerala",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/kerala",
+      "LocList": [
+        {
+          "LocName": "ആലപ്പുഴ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/alappuzha"
+        },
+        {
+          "LocName": "എറണാകുളം",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/ernakulam"
+        },
+        {
+          "LocName": "ഇടുക്കി",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/idukki"
+        },
+        {
+          "LocName": "കണ്ണൂര്",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/kannur"
+        },
+        {
+          "LocName": "കാസര്",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/kasaragod"
+        },
+        {
+          "LocName": "കൊല്ലം",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/kollam"
+        },
+        {
+          "LocName": "കോട്ടയം",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/kottayam"
+        },
+        {
+          "LocName": "കോഴിക്കോട്",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/kozhikode"
+        },
+        {
+          "LocName": "മലപ്പുറം",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/malappuram"
+        },
+        {
+          "LocName": "പാലക്കാട്",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/palakkad"
+        },
+        {
+          "LocName": "പത്തനംതിട്ട",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/pathanamthitta"
+        },
+        {
+          "LocName": "തിരുവനന്തപുരം",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/thiruvananthapuram"
+        },
+        {
+          "LocName": "തൃശ്ശൂര്",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/thrissur"
+        },
+        {
+          "LocName": "വയനാട്",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/kerala/news/kerala/wayanad"
+        }
+      ]
+    },
+    {
+      "locName": "Ladakh",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/ladakh",
+      "LocList": [
+        {
+          "LocName": "कारगिल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/ladakh/news/ladakh/kargil"
+        },
+        {
+          "LocName": "लेह लद्दाख",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/ladakh/news/ladakh/leh-ladakh"
+        }
+      ]
+    },
+    {
+      "locName": "Lakshadweep",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/lakshadweep",
+      "LocList": [
+        {
+          "LocName": "ലക്ഷദ്വീപ് ഡിസ്",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/lakshadweep/news/lakshadweep/lakshadweep-district"
+        }
+      ]
+    },
+    {
+      "locName": "Madhya Pradesh",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/madhya-pradesh",
+      "LocList": [
+        {
+          "LocName": "आगर मालवा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/agar-malwa"
+        },
+        {
+          "LocName": "अलीराजपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/alirajpur"
+        },
+        {
+          "LocName": "अनूपपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/anuppur"
+        },
+        {
+          "LocName": "अशोकनगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/ashoknagar"
+        },
+        {
+          "LocName": "बालाघाट",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/balaghat"
+        },
+        {
+          "LocName": "बड़वानी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/barwani"
+        },
+        {
+          "LocName": "बैतूल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/betul"
+        },
+        {
+          "LocName": "भिंड",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/bhind"
+        },
+        {
+          "LocName": "भोपाल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/bhopal"
+        },
+        {
+          "LocName": "बुरहानपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/burhanpur"
+        },
+        {
+          "LocName": "छतरपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/chhatarpur"
+        },
+        {
+          "LocName": "छिन्दवाड़ा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/chhindwara"
+        },
+        {
+          "LocName": "दमोह",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/damoh"
+        },
+        {
+          "LocName": "दतिया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/datia"
+        },
+        {
+          "LocName": "देवास",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/dewas"
+        },
+        {
+          "LocName": "धार",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/dhar"
+        },
+        {
+          "LocName": "डिंडोरी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/dindori"
+        },
+        {
+          "LocName": "पूर्वी निमाड़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/east-nimar"
+        },
+        {
+          "LocName": "गुना",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/guna"
+        },
+        {
+          "LocName": "ग्वालियर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/gwalior"
+        },
+        {
+          "LocName": "हरदा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/harda"
+        },
+        {
+          "LocName": "इंदौर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/indore"
+        },
+        {
+          "LocName": "जबलपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/jabalpur"
+        },
+        {
+          "LocName": "झाबुआ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/jhabua"
+        },
+        {
+          "LocName": "कटनी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/katni"
+        },
+        {
+          "LocName": "खरगौन",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/khargone"
+        },
+        {
+          "LocName": "मंडला",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/mandla"
+        },
+        {
+          "LocName": "मंदसौर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/mandsaur"
+        },
+        {
+          "LocName": "मुरैना",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/morena"
+        },
+        {
+          "LocName": "नर्मदापुरम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/narmadapuram"
+        },
+        {
+          "LocName": "नरसिंहपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/narsinghpur"
+        },
+        {
+          "LocName": "नीमच",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/neemuch"
+        },
+        {
+          "LocName": "निवारी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/niwari"
+        },
+        {
+          "LocName": "पन्ना",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/panna"
+        },
+        {
+          "LocName": "रायसेन",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/raisen"
+        },
+        {
+          "LocName": "राजगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/rajgarh"
+        },
+        {
+          "LocName": "रतलाम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/ratlam"
+        },
+        {
+          "LocName": "रीवा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/rewa"
+        },
+        {
+          "LocName": "सागर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/sagar"
+        },
+        {
+          "LocName": "सतना",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/satna"
+        },
+        {
+          "LocName": "सीहोर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/sehore"
+        },
+        {
+          "LocName": "सिवनी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/seoni"
+        },
+        {
+          "LocName": "शहडोल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/shahdol"
+        },
+        {
+          "LocName": "शाजापुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/shajapur"
+        },
+        {
+          "LocName": "श्योपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/sheopur"
+        },
+        {
+          "LocName": "शिवपुरी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/shivpuri"
+        },
+        {
+          "LocName": "सीधी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/sidhi"
+        },
+        {
+          "LocName": "सिंगरौली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/singrauli"
+        },
+        {
+          "LocName": "टीकमगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/tikamgarh"
+        },
+        {
+          "LocName": "उज्जैन",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/ujjain"
+        },
+        {
+          "LocName": "उमरिया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/umaria"
+        },
+        {
+          "LocName": "विदिशा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/madhya-pradesh/news/madhya-pradesh/vidisha"
+        }
+      ]
+    },
+    {
+      "locName": "Maharashtra",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/maharashtra",
+      "LocList": [
+        {
+          "LocName": "अहमदनगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/ahmednagar"
+        },
+        {
+          "LocName": "अकोला",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/akola"
+        },
+        {
+          "LocName": "अमरावती",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/amravati"
+        },
+        {
+          "LocName": "औरंगाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/aurangabad"
+        },
+        {
+          "LocName": "बीड",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/beed"
+        },
+        {
+          "LocName": "भंडारा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/bhandara"
+        },
+        {
+          "LocName": "बुलढाणा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/buldhana"
+        },
+        {
+          "LocName": "चंद्रपूर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/chandrapur"
+        },
+        {
+          "LocName": "धुळे",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/dhule"
+        },
+        {
+          "LocName": "गडचिरोली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/gadchiroli"
+        },
+        {
+          "LocName": "गोंदीया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/gondia"
+        },
+        {
+          "LocName": "हिंगोली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/hingoli"
+        },
+        {
+          "LocName": "जळगाव",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/jalgaon"
+        },
+        {
+          "LocName": "जालना",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/jalna"
+        },
+        {
+          "LocName": "कोल्हापूर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/kolhapur"
+        },
+        {
+          "LocName": "लातूर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/latur"
+        },
+        {
+          "LocName": "मुंबई",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/mumbai"
+        },
+        {
+          "LocName": "मुंबई उपनगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/mumbai-suburban"
+        },
+        {
+          "LocName": "नागपूर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/nagpur"
+        },
+        {
+          "LocName": "नांदेड",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/nanded"
+        },
+        {
+          "LocName": "नंदूरबार",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/nandurbar"
+        },
+        {
+          "LocName": "नाशिक",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/nashik"
+        },
+        {
+          "LocName": "उस्मानाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/osmanabad"
+        },
+        {
+          "LocName": "पालघर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/palghar"
+        },
+        {
+          "LocName": "परभणी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/parbhani"
+        },
+        {
+          "LocName": "पुणे",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/pune"
+        },
+        {
+          "LocName": "रायगड",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/raigad"
+        },
+        {
+          "LocName": "रत्नागिरी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/ratnagiri"
+        },
+        {
+          "LocName": "सांगली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/sangli"
+        },
+        {
+          "LocName": "सातारा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/satara"
+        },
+        {
+          "LocName": "सिंधुदुर्ग",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/sindhudurg"
+        },
+        {
+          "LocName": "सोलापूर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/solapur"
+        },
+        {
+          "LocName": "ठाणे",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/thane"
+        },
+        {
+          "LocName": "वर्धा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/wardha"
+        },
+        {
+          "LocName": "वाशिम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/washim"
+        },
+        {
+          "LocName": "यवतमाळ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/maharashtra/news/maharashtra/yavatmal"
+        }
+      ]
+    },
+    {
+      "locName": "Manipur",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/manipur",
+      "LocList": [
+        {
+          "LocName": "बिष्णुपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/bishnupur"
+        },
+        {
+          "LocName": "चंदेल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/chandel"
+        },
+        {
+          "LocName": "चुराचांदपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/churachandpur"
+        },
+        {
+          "LocName": "इम्फाल ईस्ट",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/imphal-east"
+        },
+        {
+          "LocName": "इंफाल वेस्ट",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/imphal-west"
+        },
+        {
+          "LocName": "जिरीबाम",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/jiribam"
+        },
+        {
+          "LocName": "कक्चिंग",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/kakching"
+        },
+        {
+          "LocName": "कमजोंग",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/kamjong"
+        },
+        {
+          "LocName": "कांगपोकपि",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/kangpokpi"
+        },
+        {
+          "LocName": "नोनी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/noney"
+        },
+        {
+          "LocName": "फरज़ाल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/pherzawl"
+        },
+        {
+          "LocName": "सेनापति",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/senapati"
+        },
+        {
+          "LocName": "तमेंगलोंग",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/tamenglong"
+        },
+        {
+          "LocName": "टेंगनूपाल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/tengnoupal"
+        },
+        {
+          "LocName": "थौबल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/thoubal"
+        },
+        {
+          "LocName": "उखरुल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/manipur/news/manipur/ukhrul"
+        }
+      ]
+    },
+    {
+      "locName": "Meghalaya",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/meghalaya",
+      "LocList": [
+        {
+          "LocName": "পূব পশ্চিম খাছি পাহাৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/eastern-west-khasi-hills"
+        },
+        {
+          "LocName": "চৌথ ৱেষ্ট খাচী হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/south-west-khasi-hills"
+        },
+        {
+          "LocName": "ৱেষ্ট গাৰো হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/west-garo-hills"
+        },
+        {
+          "LocName": "চৌথ ৱেষ্ট গাৰো হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/south-west-garo-hills"
+        },
+        {
+          "LocName": "এস খাচী হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/east-khasi-hills"
+        },
+        {
+          "LocName": "চৌথ গাৰো হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/south-garo-hills"
+        },
+        {
+          "LocName": "ৱেষ্ট খাচী হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/west-khasi-hills"
+        },
+        {
+          "LocName": "এস জয়ন্তীয়া হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/east-jaintia-hills"
+        },
+        {
+          "LocName": "নৰ্থ গাৰো হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/north-garo-hills"
+        },
+        {
+          "LocName": "এস গাৰো হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/east-garo-hills"
+        },
+        {
+          "LocName": "ৰী ভয়",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/ri-bhoi"
+        },
+        {
+          "LocName": "ৱেষ্ট জয়ন্তীয়া হিলছ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/meghalaya/news/meghalaya/west-jaintia-hills"
+        }
+      ]
+    },
+    {
+      "locName": "Mizoram",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/mizoram",
+      "LocList": [
+        {
+          "LocName": "लवंगत्लई",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/lawngtlai"
+        },
+        {
+          "LocName": "खावजॉल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/khawzawl"
+        },
+        {
+          "LocName": "सैह",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/saiha"
+        },
+        {
+          "LocName": "सेरछिप",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/serchhip"
+        },
+        {
+          "LocName": "ममित",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/mamit"
+        },
+        {
+          "LocName": "ऐज़ौल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/aizawl"
+        },
+        {
+          "LocName": "कोलासिब",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/kolasib"
+        },
+        {
+          "LocName": "लुंगलेई",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/lunglei"
+        },
+        {
+          "LocName": "सैतुअल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/saitual"
+        },
+        {
+          "LocName": "चम्फाई",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/champhai"
+        },
+        {
+          "LocName": "हनहतहीअल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/mizoram/news/mizoram/hnahthial"
+        }
+      ]
+    },
+    {
+      "locName": "Nagaland",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/nagaland",
+      "LocList": [
+        {
+          "LocName": "পারেন",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/peren"
+        },
+        {
+          "LocName": "চুমুকডিমা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/chumoukedima"
+        },
+        {
+          "LocName": "ঝুনাহেরত",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/zunheboto"
+        },
+        {
+          "LocName": "টচএমইয়ো",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/tseminyu"
+        },
+        {
+          "LocName": "নিয়ালেণ্ড",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/niuland"
+        },
+        {
+          "LocName": "ওখ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/wokha"
+        },
+        {
+          "LocName": "কোহিমা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/kohima"
+        },
+        {
+          "LocName": "মাকোকচুং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/mokokchung"
+        },
+        {
+          "LocName": "টুৱেনছাঙ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/tuensang"
+        },
+        {
+          "LocName": "ডিমাপুৰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/dimapur"
+        },
+        {
+          "LocName": "নকলক",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/noklak"
+        },
+        {
+          "LocName": "কীপাহিৰে",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/kiphire"
+        },
+        {
+          "LocName": "লেংলেং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/longleng"
+        },
+        {
+          "LocName": "ফেক",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/phek"
+        },
+        {
+          "LocName": "মন",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/nagaland/news/nagaland/mon"
+        }
+      ]
+    },
+    {
+      "locName": "Odisha",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/odisha",
+      "LocList": [
+        {
+          "LocName": "ଅନୁଗୁଳ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/anugul"
+        },
+        {
+          "LocName": "ଢେଙ୍କାନାଳ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/dhenkanal"
+        },
+        {
+          "LocName": "କନ୍ଧମାଳ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/kandhamal"
+        },
+        {
+          "LocName": "ନବରଙ୍ଗପୁର",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/nabarangpur"
+        },
+        {
+          "LocName": "ଗଜପତି",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/gajapati"
+        },
+        {
+          "LocName": "ଜଗତସିଂହପୁର",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/jagatsinghapur"
+        },
+        {
+          "LocName": "ସମ୍ବଲପୁର",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/sambalpur"
+        },
+        {
+          "LocName": "ବରଗଡ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/bargarh"
+        },
+        {
+          "LocName": "ଝାରସୁଗୁଡା",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/jharsuguda"
+        },
+        {
+          "LocName": "ଯାଜପୁର",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/jajapur"
+        },
+        {
+          "LocName": "ନୂଆପଡା",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/nuapada"
+        },
+        {
+          "LocName": "ଦେବଗଡ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/deogarh"
+        },
+        {
+          "LocName": "ମୟୁରଭଞ୍ଜ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/mayurbhanj"
+        },
+        {
+          "LocName": "ରାୟଗଡା",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/rayagada"
+        },
+        {
+          "LocName": "ଭଦ୍ରକ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/bhadrak"
+        },
+        {
+          "LocName": "କୋରାପୁଟ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/koraput"
+        },
+        {
+          "LocName": "କଟକ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/cuttack"
+        },
+        {
+          "LocName": "ଖୋର୍ଦ୍ଧା",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/khordha"
+        },
+        {
+          "LocName": "ମାଲକାନଗିରି",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/malkangiri"
+        },
+        {
+          "LocName": "କଳାହାଣ୍ଡି",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/kalahandi"
+        },
+        {
+          "LocName": "କେନ୍ଦ୍ରାପଡ଼ା",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/kendrapara"
+        },
+        {
+          "LocName": "ସୁନ୍ଦରଗଡ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/sundargarh"
+        },
+        {
+          "LocName": "ବାଲେଶ୍ବର",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/baleshwar"
+        },
+        {
+          "LocName": "ଗଂଜାମ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/ganjam"
+        },
+        {
+          "LocName": "ସୋନ୍ପୁର",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/sonepur"
+        },
+        {
+          "LocName": "ବୌଧ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/boudh"
+        },
+        {
+          "LocName": "କେନ୍ଦୁଝର",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/kendujhar"
+        },
+        {
+          "LocName": "ନୟାଗଡ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/nayagarh"
+        },
+        {
+          "LocName": "ପୁରୀ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/puri"
+        },
+        {
+          "LocName": "ବଲାଙ୍ଗୀର",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/odisha/news/odisha/balangir"
+        }
+      ]
+    },
+    {
+      "locName": "Puducherry",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/puducherry",
+      "LocList": [
+        {
+          "LocName": "காரைக்கால்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/puducherry/news/puducherry/karaikal"
+        },
+        {
+          "LocName": "பாண்டிச்சேரி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/puducherry/news/puducherry/pondicherry"
+        },
+        {
+          "LocName": "யானம்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/puducherry/news/puducherry/yanam"
+        },
+        {
+          "LocName": "மாஹே",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/puducherry/news/puducherry/mahe"
+        }
+      ]
+    },
+    {
+      "locName": "Punjab",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/punjab",
+      "LocList": [
+        {
+          "LocName": "ਸ਼ਹੀਦ ਭਗਤ ਸਿੰਘ ਨਗਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/shahid-bhagat-singh-nagar"
+        },
+        {
+          "LocName": "ਬਰਨਾਲਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/barnala"
+        },
+        {
+          "LocName": "ਫ਼ਾਜ਼ਿਲਕਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/fazilka"
+        },
+        {
+          "LocName": "ਪਠਾਨਕੋਟ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/pathankot"
+        },
+        {
+          "LocName": "ਹੋਸ਼ਿਆਰਪੁਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/hoshiarpur"
+        },
+        {
+          "LocName": "ਕਪੂਰਥਲਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/kapurthala"
+        },
+        {
+          "LocName": "ਸੰਗਰੂਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/sangrur"
+        },
+        {
+          "LocName": "ਸ੍ਰੀ ਮੁਕਤਸਰ ਸਾਹਿਬ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/sri-muktsar-sahib"
+        },
+        {
+          "LocName": "ਮਲੇਰਕੋਟਲਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/malerkotla"
+        },
+        {
+          "LocName": "ਮਾਨਸਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/mansa"
+        },
+        {
+          "LocName": "ਮੋਗਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/moga"
+        },
+        {
+          "LocName": "ਤਰਨ ਤਾਰਨ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/tarn-taran"
+        },
+        {
+          "LocName": "ਜਲੰਧਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/jalandhar"
+        },
+        {
+          "LocName": "ਸਾਹਿਬਜ਼ਾਦਾ ਅਜੀਤ ਸਿੰਘ ਨਗਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/sahibzada-ajit-singh-nagar"
+        },
+        {
+          "LocName": "ਫ਼ਿਰੋਜ਼ਪੁਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/ferozepur"
+        },
+        {
+          "LocName": "ਲੁਧਿਆਣਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/ludhiana"
+        },
+        {
+          "LocName": "ਰੂਪਨਗਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/rupnagar"
+        },
+        {
+          "LocName": "ਗੁਰਦਾਸਪੁਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/gurdaspur"
+        },
+        {
+          "LocName": "ਬਠਿੰਡਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/bathinda"
+        },
+        {
+          "LocName": "ਪਟਿਆਲਾ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/patiala"
+        },
+        {
+          "LocName": "ਫਤਿਹਗੜ੍ਹ ਸਾਹਿਬ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/fatehgarh-sahib"
+        },
+        {
+          "LocName": "ਅੰਮ੍ਰਿਤਸਰ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/amritsar"
+        },
+        {
+          "LocName": "ਫ਼ਰੀਦਕੋਟ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/punjab/news/punjab/faridkot"
+        }
+      ]
+    },
+    {
+      "locName": "Rajasthan",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/rajasthan",
+      "LocList": [
+        {
+          "LocName": "उदयपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/udaipur"
+        },
+        {
+          "LocName": "अलवर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/alwar"
+        },
+        {
+          "LocName": "बांसवाड़ा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/banswara"
+        },
+        {
+          "LocName": "डूंगरपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/dungarpur"
+        },
+        {
+          "LocName": "धौलपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/dholpur"
+        },
+        {
+          "LocName": "जैसलमेर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/jaisalmer"
+        },
+        {
+          "LocName": "भीलवाड़ा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/bhilwara"
+        },
+        {
+          "LocName": "हनुमानगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/hanumangarh"
+        },
+        {
+          "LocName": "राजसमंद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/rajsamand"
+        },
+        {
+          "LocName": "बारां",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/baran"
+        },
+        {
+          "LocName": "दौसा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/dausa"
+        },
+        {
+          "LocName": "टोंक",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/tonk"
+        },
+        {
+          "LocName": "प्रतापगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/pratapgarh"
+        },
+        {
+          "LocName": "सिरोही",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/sirohi"
+        },
+        {
+          "LocName": "बीकानेर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/bikaner"
+        },
+        {
+          "LocName": "कोटा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/kota"
+        },
+        {
+          "LocName": "पाली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/pali"
+        },
+        {
+          "LocName": "चूरू",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/churu"
+        },
+        {
+          "LocName": "बूंदी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/bundi"
+        },
+        {
+          "LocName": "झालावाड़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/jhalawar"
+        },
+        {
+          "LocName": "सीकर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/sikar"
+        },
+        {
+          "LocName": "बाड़मेर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/barmer"
+        },
+        {
+          "LocName": "श्रीगंगानगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/sri-ganganagar"
+        },
+        {
+          "LocName": "सवाई माधोपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/sawai-madhopur"
+        },
+        {
+          "LocName": "जोधपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/jodhpur"
+        },
+        {
+          "LocName": "करौली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/karauli"
+        },
+        {
+          "LocName": "भरतपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/bharatpur"
+        },
+        {
+          "LocName": "चित्तौड़गढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/chittorgarh"
+        },
+        {
+          "LocName": "झुंझुनू",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/jhunjhunu"
+        },
+        {
+          "LocName": "नागौर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/nagaur"
+        },
+        {
+          "LocName": "जालोर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/jalore"
+        },
+        {
+          "LocName": "अजमेर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/ajmer"
+        },
+        {
+          "LocName": "जयपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/rajasthan/news/rajasthan/jaipur"
+        }
+      ]
+    },
+    {
+      "locName": "Sikkim",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/sikkim",
+      "LocList": [
+        {
+          "LocName": "গঁগটোক",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/sikkim/news/sikkim/gangtok"
+        },
+        {
+          "LocName": "গঁড়ালচিং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/sikkim/news/sikkim/gyalshing"
+        },
+        {
+          "LocName": "মানগান",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/sikkim/news/sikkim/mangan"
+        },
+        {
+          "LocName": "নামচাই",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/sikkim/news/sikkim/namchi"
+        },
+        {
+          "LocName": "পকায়ং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/sikkim/news/sikkim/pakyong"
+        },
+        {
+          "LocName": "সাৰেং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/sikkim/news/sikkim/soreng"
+        }
+      ]
+    },
+    {
+      "locName": "Tamil Nadu",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/tamil-nadu",
+      "LocList": [
+        {
+          "LocName": "நாமக்கல்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/namakkal"
+        },
+        {
+          "LocName": "ராணிப்பேட்டை",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/ranipet"
+        },
+        {
+          "LocName": "நீலகிரி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/the-nilgiris"
+        },
+        {
+          "LocName": "கடலூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/cuddalore"
+        },
+        {
+          "LocName": "கிருஷ்ணகிரி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/krishnagiri"
+        },
+        {
+          "LocName": "திருச்சிராப்பள்ளி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/tiruchirappalli"
+        },
+        {
+          "LocName": "பெரம்பலூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/perambalur"
+        },
+        {
+          "LocName": "விழுப்புரம்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/villupuram"
+        },
+        {
+          "LocName": "நாகப்பட்டினம்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/nagapattinam"
+        },
+        {
+          "LocName": "தூத்துக்குடி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/tuticorin"
+        },
+        {
+          "LocName": "வேலூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/vellore"
+        },
+        {
+          "LocName": "திருவள்ளூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/thiruvallur"
+        },
+        {
+          "LocName": "திருவாரூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/thiruvarur"
+        },
+        {
+          "LocName": "திருவண்ணாமலை",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/tiruvannamalai"
+        },
+        {
+          "LocName": "திருநெல்வேலி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/tirunelveli"
+        },
+        {
+          "LocName": "அரியலூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/ariyalur"
+        },
+        {
+          "LocName": "சேலம்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/salem"
+        },
+        {
+          "LocName": "தர்மபுரி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/dharmapuri"
+        },
+        {
+          "LocName": "மயிலாடுதுறை",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/mayiladuthurai"
+        },
+        {
+          "LocName": "புதுக்கோட்டை",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/pudukkottai"
+        },
+        {
+          "LocName": "தென்காசி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/tenkasi"
+        },
+        {
+          "LocName": "திருப்பூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/tiruppur"
+        },
+        {
+          "LocName": "மதுரை",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/madurai"
+        },
+        {
+          "LocName": "தஞ்சாவூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/thanjavur"
+        },
+        {
+          "LocName": "கோயம்புத்தூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/coimbatore"
+        },
+        {
+          "LocName": "விருதுநகர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/virudhunagar"
+        },
+        {
+          "LocName": "ஈரோடு",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/erode"
+        },
+        {
+          "LocName": "காஞ்சிபுரம்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/kanchipuram"
+        },
+        {
+          "LocName": "கன்னியாகுமரி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/kanniyakumari"
+        },
+        {
+          "LocName": "கரூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/karur"
+        },
+        {
+          "LocName": "திண்டுக்கல்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/dindigul"
+        },
+        {
+          "LocName": "ராமநாதபுரம்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/ramanathapuram"
+        },
+        {
+          "LocName": "சிவகங்கை",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/sivaganga"
+        },
+        {
+          "LocName": "செங்கல்பட்டு",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/chengalpattu"
+        },
+        {
+          "LocName": "சென்னை",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/chennai"
+        },
+        {
+          "LocName": "கள்ளக்குறிச்சி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/kallakurichi"
+        },
+        {
+          "LocName": "தேனி",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/theni"
+        },
+        {
+          "LocName": "திருப்பத்தூர்",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tamil-nadu/news/tamil-nadu/tirupathur"
+        }
+      ]
+    },
+    {
+      "locName": "Telangana",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/telangana",
+      "LocList": [
+        {
+          "LocName": "అదిలాబాదు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/adilabad"
+        },
+        {
+          "LocName": "భద్రాద్రి కొత్తగూడెం",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/bhadradri-kothagudem"
+        },
+        {
+          "LocName": "హనుమకొండ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/hanumakonda"
+        },
+        {
+          "LocName": "హైదరాబాద్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/hyderabad"
+        },
+        {
+          "LocName": "జగిత్యాల",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/jagtial"
+        },
+        {
+          "LocName": "జనగాం",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/jangaon"
+        },
+        {
+          "LocName": "జయశంకర్ భూపాలపల్లి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/jayashankar-bhupalpally"
+        },
+        {
+          "LocName": "జోగులాంబ గద్వాల",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/jogulamba-gadwal"
+        },
+        {
+          "LocName": "కామారెడ్డి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/kamareddy"
+        },
+        {
+          "LocName": "కరీంనగర్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/karimnagar"
+        },
+        {
+          "LocName": "ఖమ్మం",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/khammam"
+        },
+        {
+          "LocName": "కుమురం భీమ్ ఆసిఫాబాద్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/kumuram-bheem-asifabad"
+        },
+        {
+          "LocName": "మహబూబాబాద్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/mahabubabad"
+        },
+        {
+          "LocName": "మహబూబ్ నగర్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/mahabubnagar"
+        },
+        {
+          "LocName": "మంచిర్యాల్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/mancherial"
+        },
+        {
+          "LocName": "మెదక్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/medak"
+        },
+        {
+          "LocName": "మేడ్చల్ మల్కాజిగిరి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/medchal-malkajgiri"
+        },
+        {
+          "LocName": "ములుగు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/mulugu"
+        },
+        {
+          "LocName": "నాగర్ కర్నూల్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/nagarkurnool"
+        },
+        {
+          "LocName": "నల్గొండ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/nalgonda"
+        },
+        {
+          "LocName": "నారాయణ్ పేట్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/narayanpet"
+        },
+        {
+          "LocName": "నిర్మల్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/nirmal"
+        },
+        {
+          "LocName": "నిజామాబాదు",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/nizamabad"
+        },
+        {
+          "LocName": "పెద్దపల్లి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/peddapalli"
+        },
+        {
+          "LocName": "రాజన్న సిరిసిల్ల",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/rajanna-sircilla"
+        },
+        {
+          "LocName": "రంగా రెడ్డి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/ranga-reddy"
+        },
+        {
+          "LocName": "సంగారెడ్డి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/sangareddy"
+        },
+        {
+          "LocName": "సిద్దిపేట",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/siddipet"
+        },
+        {
+          "LocName": "సూర్యాపేట",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/suryapet"
+        },
+        {
+          "LocName": "వికారాబాద్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/vikarabad"
+        },
+        {
+          "LocName": "వనపర్తి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/wanaparthy"
+        },
+        {
+          "LocName": "వరంగల్",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/warangal"
+        },
+        {
+          "LocName": "యాదాద్రి భువనగిరి",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/telangana/news/telangana/yadadri-bhuvanagiri"
+        }
+      ]
+    },
+    {
+      "locName": "Tripura",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/tripura",
+      "LocList": [
+        {
+          "LocName": "ধলাই",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tripura/news/tripura/dhalai"
+        },
+        {
+          "LocName": "গোমতি",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tripura/news/tripura/gomati"
+        },
+        {
+          "LocName": "খোয়াই",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tripura/news/tripura/khowai"
+        },
+        {
+          "LocName": "উত্তর ত্রিপুরা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tripura/news/tripura/north-tripura"
+        },
+        {
+          "LocName": "সিপাহিজলা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tripura/news/tripura/sepahijala"
+        },
+        {
+          "LocName": "দক্ষিন ত্রিপুরা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tripura/news/tripura/south-tripura"
+        },
+        {
+          "LocName": "ঊনকোটি",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tripura/news/tripura/unakoti"
+        },
+        {
+          "LocName": "পশ্চিম ত্রিপুরা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/tripura/news/tripura/west-tripura"
+        }
+      ]
+    },
+    {
+      "locName": "Uttar Pradesh",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/uttar-pradesh",
+      "LocList": [
+        {
+          "LocName": "बलिया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/ballia"
+        },
+        {
+          "LocName": "बदायूं",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/budaun"
+        },
+        {
+          "LocName": "संभल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/sambhal"
+        },
+        {
+          "LocName": "अम्बेडकरनगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/ambedkar-nagar"
+        },
+        {
+          "LocName": "बलरामपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/balrampur"
+        },
+        {
+          "LocName": "भदोही",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/bhadohi"
+        },
+        {
+          "LocName": "ग़ाज़ियाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/ghaziabad"
+        },
+        {
+          "LocName": "जालौन",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/jalaun"
+        },
+        {
+          "LocName": "कुशी नगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/kushi-nagar"
+        },
+        {
+          "LocName": "बस्ती",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/basti"
+        },
+        {
+          "LocName": "फर्रुखाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/farrukhabad"
+        },
+        {
+          "LocName": "फ़िरोज़ाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/firozabad"
+        },
+        {
+          "LocName": "हापुड़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/hapur"
+        },
+        {
+          "LocName": "हरदोई",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/hardoi"
+        },
+        {
+          "LocName": "लखीमपुर खीरी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/lakhimpur-kheri"
+        },
+        {
+          "LocName": "महोबा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/mahoba"
+        },
+        {
+          "LocName": "सहारनपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/saharanpur"
+        },
+        {
+          "LocName": "शाहजहांपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/shahjahanpur"
+        },
+        {
+          "LocName": "अयोध्या",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/ayodhya"
+        },
+        {
+          "LocName": "कासगंज",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/kasganj"
+        },
+        {
+          "LocName": "ललितपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/lalitpur"
+        },
+        {
+          "LocName": "मैनपुरी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/mainpuri"
+        },
+        {
+          "LocName": "झाँसी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/jhansi"
+        },
+        {
+          "LocName": "मेरठ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/meerut"
+        },
+        {
+          "LocName": "शामली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/shamli"
+        },
+        {
+          "LocName": "सोनभद्र",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/sonbhadra"
+        },
+        {
+          "LocName": "अमेठी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/amethi"
+        },
+        {
+          "LocName": "मऊ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/mau"
+        },
+        {
+          "LocName": "मुरादाबाद",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/moradabad"
+        },
+        {
+          "LocName": "मुज़फ्फरनगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/muzaffarnagar"
+        },
+        {
+          "LocName": "औरैया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/auraiya"
+        },
+        {
+          "LocName": "बहराइच",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/bahraich"
+        },
+        {
+          "LocName": "चंदौली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/chandauli"
+        },
+        {
+          "LocName": "कन्नौज",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/kannauj"
+        },
+        {
+          "LocName": "कानपुर देहात",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/kanpur-dehat"
+        },
+        {
+          "LocName": "उन्नाव",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/unnao"
+        },
+        {
+          "LocName": "ग़ाज़ीपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/ghazipur"
+        },
+        {
+          "LocName": "मिर्ज़ापुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/mirzapur"
+        },
+        {
+          "LocName": "पीलीभीत",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/pilibhit"
+        },
+        {
+          "LocName": "रायबरेली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/rae-bareli"
+        },
+        {
+          "LocName": "श्रावस्ती",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/shravasti"
+        },
+        {
+          "LocName": "वाराणसी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/varanasi"
+        },
+        {
+          "LocName": "हमीरपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/hamirpur"
+        },
+        {
+          "LocName": "महराजगंज",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/maharajganj"
+        },
+        {
+          "LocName": "प्रतापगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/pratapgarh"
+        },
+        {
+          "LocName": "संत कबीर नगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/sant-kabeer-nagar"
+        },
+        {
+          "LocName": "अलीगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/aligarh"
+        },
+        {
+          "LocName": "बुलंदशहर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/bulandshahr"
+        },
+        {
+          "LocName": "गौतम बुद्ध नगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/gautam-buddha-nagar"
+        },
+        {
+          "LocName": "कौशाम्बी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/kaushambi"
+        },
+        {
+          "LocName": "लखनऊ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/lucknow"
+        },
+        {
+          "LocName": "रामपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/rampur"
+        },
+        {
+          "LocName": "सुल्तानपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/sultanpur"
+        },
+        {
+          "LocName": "आगरा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/agra"
+        },
+        {
+          "LocName": "जौनपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/jaunpur"
+        },
+        {
+          "LocName": "प्रयागराज",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/prayagraj"
+        },
+        {
+          "LocName": "सीतापुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/sitapur"
+        },
+        {
+          "LocName": "बरेली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/bareilly"
+        },
+        {
+          "LocName": "बिजनौर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/bijnor"
+        },
+        {
+          "LocName": "चित्रकूट",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/chitrakoot"
+        },
+        {
+          "LocName": "एटा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/etah"
+        },
+        {
+          "LocName": "फतेहपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/fatehpur"
+        },
+        {
+          "LocName": "अमरोहा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/amroha"
+        },
+        {
+          "LocName": "आजमगढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/azamgarh"
+        },
+        {
+          "LocName": "बाराबंकी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/barabanki"
+        },
+        {
+          "LocName": "देवरिया",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/deoria"
+        },
+        {
+          "LocName": "बागपत",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/baghpat"
+        },
+        {
+          "LocName": "बाँदा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/banda"
+        },
+        {
+          "LocName": "गोंडा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/gonda"
+        },
+        {
+          "LocName": "गोरखपुर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/gorakhpur"
+        },
+        {
+          "LocName": "मथुरा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/mathura"
+        },
+        {
+          "LocName": "सिद्धार्थ नगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/siddharth-nagar"
+        },
+        {
+          "LocName": "इटावा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/etawah"
+        },
+        {
+          "LocName": "हाथरस",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/hathras"
+        },
+        {
+          "LocName": "कानपुर नगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttar-pradesh/news/uttar-pradesh/kanpur-nagar"
+        }
+      ]
+    },
+    {
+      "locName": "Uttarakhand",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/uttarakhand",
+      "LocList": [
+        {
+          "LocName": "अल्मोड़ा",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/almora"
+        },
+        {
+          "LocName": "बागेश्वर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/bageshwar"
+        },
+        {
+          "LocName": "चमोली",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/chamoli"
+        },
+        {
+          "LocName": "चम्पावत",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/champawat"
+        },
+        {
+          "LocName": "देहरादून",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/dehradun"
+        },
+        {
+          "LocName": "हरिद्वार",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/haridwar"
+        },
+        {
+          "LocName": "नैनीताल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/nainital"
+        },
+        {
+          "LocName": "पौड़ी गढ़वाल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/pauri-garhwal"
+        },
+        {
+          "LocName": "पिथौरागढ़",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/pithoragarh"
+        },
+        {
+          "LocName": "रूद्र प्रयाग",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/rudra-prayag"
+        },
+        {
+          "LocName": "टेहरी गढ़वाल",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/tehri-garhwal"
+        },
+        {
+          "LocName": "उद्यम सिंह नगर",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/udam-singh-nagar"
+        },
+        {
+          "LocName": "उत्तरकाशी",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/uttarakhand/news/uttarakhand/uttar-kashi"
+        }
+      ]
+    },
+    {
+      "locName": "West Bengal",
+      "locLevel": "STATE",
+      "locUrl": "https://shuru.co.in/news/west-bengal",
+      "LocList": [
+        {
+          "LocName": "উত্তর ২৪ পরগণা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/north-24-parganas"
+        },
+        {
+          "LocName": "দক্ষিণ ২৪ পরগণা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/24-paraganas-south"
+        },
+        {
+          "LocName": "আলিপুরদুয়ার",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/alipurduar"
+        },
+        {
+          "LocName": "বাঁকুড়া",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/bankura"
+        },
+        {
+          "LocName": "বীরভূম",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/birbhum"
+        },
+        {
+          "LocName": "কোচবিহার",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/coochbehar"
+        },
+        {
+          "LocName": "দার্জিলিং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/darjeeling"
+        },
+        {
+          "LocName": "দক্ষিণ দিনাজপুর",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/dinajpur-dakshin"
+        },
+        {
+          "LocName": "উত্তর দিনাজপুর",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/dinajpur-uttar"
+        },
+        {
+          "LocName": "হুগলী",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/hooghly"
+        },
+        {
+          "LocName": "হাওড়া",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/howrah"
+        },
+        {
+          "LocName": "জলপাইগুড়ি",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/jalpaiguri"
+        },
+        {
+          "LocName": "ঝাড়গ্রাম",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/jhargram"
+        },
+        {
+          "LocName": "কালিম্পং",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/kalimpong"
+        },
+        {
+          "LocName": "কলকাতা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/kolkata"
+        },
+        {
+          "LocName": "মালদা",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/maldah"
+        },
+        {
+          "LocName": "পূর্ব মেদিনীপুর",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/medinipur-east"
+        },
+        {
+          "LocName": "পশ্চিম মেদিনীপুর",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/medinipur-west"
+        },
+        {
+          "LocName": "মুর্শিদাবাদ",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/murshidabad"
+        },
+        {
+          "LocName": "নদীয়া",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/nadia"
+        },
+        {
+          "LocName": "পশ্চিম বর্ধমান",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/paschim-bardhaman"
+        },
+        {
+          "LocName": "পূর্ব বর্ধমান",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/purba-bardhaman"
+        },
+        {
+          "LocName": "পুরুলিয়া",
+          "LocLevel": "DISTRICT",
+          "LocUrl": "https://shuru.co.in/news/west-bengal/news/west-bengal/purulia"
+        }
+      ]
+    }
+  ]
+}

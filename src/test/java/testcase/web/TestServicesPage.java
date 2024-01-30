@@ -1,12 +1,16 @@
 package testcase.web;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pages.HomePage;
 import pages.ServicesPage;
-import base.BaseTest;
+import testbase.BaseTest;
 import utils.DataProviders;
 
 import java.net.MalformedURLException;

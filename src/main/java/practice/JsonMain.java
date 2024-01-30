@@ -2,25 +2,34 @@ package practice;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ArrayNode;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import utils.WebScarper;
+import practice.JsonOps;
+import utils.WebScraper;
 
 import java.io.File;
 import java.io.IOException;
 import java.time.Duration;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class JsonMain {
 
     public static void temp(String[] args) throws IOException {
-        String filePath = WebScarper.getResourceFilePath("saved\\locationData.json");
+        String filePath = JsonOps.getResourceFilePath("saved\\locationData.json");
         System.out.println(filePath);
 
         ObjectMapper objectMapper = new ObjectMapper();
@@ -50,7 +59,7 @@ public class JsonMain {
                 driver.navigate().to(linkStr);
 
                 try {
-                    // Re-find the link element to avoid StaleElementReferenceException
+                    // Refind the link element to avoid StaleElementReferenceException
                     link = driver.findElement(By.cssSelector("a[class=community-next-link]"));
                     wait.until(ExpectedConditions.urlToBe(linkStr));
                     System.out.println(driver.getCurrentUrl());
