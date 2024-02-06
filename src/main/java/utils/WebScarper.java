@@ -106,9 +106,9 @@ public class WebScarper {
                     for (Element districtElement : districtElements) {
                         String districtUrl = pageUrl + districtElement.attr("href");
                         ObjectNode districtObject = objectMapper.createObjectNode();
-                        districtObject.put("LocName", districtElement.text());
-                        districtObject.put("LocLevel", "DISTRICT");
-                        districtObject.put("LocUrl", districtUrl);
+                        districtObject.put("locName", districtElement.text());
+                        districtObject.put("locLevel", "DISTRICT");
+                        districtObject.put("locUrl", districtUrl);
 
                         Document subDistrictDocument = connectWithRetry(districtUrl, 20000, maxRetries);
                         Elements subDistrictElements = subDistrictDocument.select("div[class=list-items]>a");
@@ -119,19 +119,19 @@ public class WebScarper {
                             for (Element subDistrictElement : subDistrictElements) {
                                 String subDistrictUrl = pageUrl + subDistrictElement.attr("href");
                                 ObjectNode subDistrictObject = objectMapper.createObjectNode();
-                                subDistrictObject.put("LocName", subDistrictElement.text());
-                                subDistrictObject.put("LocLevel", "SUB-DISTRICT");
-                                subDistrictObject.put("LocUrl", subDistrictUrl);
+                                subDistrictObject.put("locName", subDistrictElement.text());
+                                subDistrictObject.put("locLevel", "SUB-DISTRICT");
+                                subDistrictObject.put("locUrl", subDistrictUrl);
 
                                 subDistrictArray.add(subDistrictObject);
                             }
 
-                            districtObject.set("LocList", subDistrictArray);
+                            districtObject.set("locList", subDistrictArray);
                             districtArray.add(districtObject);
                         }
                     }
 
-                    stateObject.set("LocList", districtArray);
+                    stateObject.set("locList", districtArray);
                     stateArray.add(stateObject);
                 }
             }
@@ -364,9 +364,9 @@ public class WebScarper {
         }
     }
 
-    public static void main(String[] args) {
-        /* Test Methods */
-        generateAllMandiJsonFile();
-
-    }
+//    public static void main(String[] args) {
+//        /* Test Methods */
+//        generateAllMandiJsonFile();
+//
+//    }
 }

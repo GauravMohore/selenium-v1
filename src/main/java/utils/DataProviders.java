@@ -97,7 +97,7 @@ public class DataProviders {
                 for (int j = 0; j < rowCount; j++) {
                     Row row = sheet.getRow(j);
                     for (int k = 0; k < colCount; k++) {
-                        Cell cell = row.getCell(k);
+                        Cell cell = row.getCell(k, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
                         if (cell != null) {
                             switch (cell.getCellType()) {
                                 case STRING:
@@ -224,6 +224,74 @@ public class DataProviders {
             rowIndex++;
         }
         return rowIndex;
+    }
+
+
+    private static Map<String, Object[]> bestExcelReader(String filePath) {
+        Map<String, Object[]> sheetsData = new HashMap();
+        FileInputStream inputStream = null;
+        Workbook workbook = null;
+
+        try {
+            inputStream = new FileInputStream(new File(filePath));
+            workbook = WorkbookFactory.create(inputStream);
+
+            int numOfSheets = workbook.getNumberOfSheets();
+
+            for (int i = 0; i < numOfSheets; i++) {
+                Sheet sheet = workbook.getSheetAt(i);
+                String sheetName = sheet.getSheetName();
+
+                int rowCount = sheet.getLastRowNum() + 1;
+                int colCount = sheet.getRow(0).getLastCellNum();
+
+                Object[][] data = new Object[rowCount][colCount];
+
+                for (int j = 0; j < rowCount; j++) {
+                    Row row = sheet.getRow(j);
+                    for (int k = 0; k < colCount; k++) {
+                        Cell cell = row.getCell(k, Row.MissingCellPolicy.CREATE_NULL_AS_BLANK);
+                        if (cell != null) {
+                            switch (cell.getCellType()) {
+                                case STRING:
+                                    data[j][k] = cell.getStringCellValue();
+                                    break;
+                                case NUMERIC:
+                                    if (DateUtil.isCellDateFormatted(cell)) {
+                                        data[j][k] = cell.getDateCellValue();
+                                    } else {
+                                        data[j][k] = cell.getNumericCellValue();
+                                    }
+                                    break;
+                                case BOOLEAN:
+                                    data[j][k] = cell.getBooleanCellValue();
+                                    break;
+                                default:
+                                    data[j][k] = null;
+                            }
+                        } else {
+                            data[j][k] = null;
+                        }
+                    }
+                }
+                sheetsData.put(sheetName, data);
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            try {
+                if (workbook != null) {
+                    workbook.close();
+                }
+                if (inputStream != null) {
+                    inputStream.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        return sheetsData;
     }
 
     /* ------>TEST USAGE */

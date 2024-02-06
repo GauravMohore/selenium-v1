@@ -2,7 +2,9 @@ package testcase.api;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import common.ApiResult;
 import components.RestAssuredUtils;
+import lombok.RequiredArgsConstructor;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
@@ -16,7 +18,7 @@ import java.util.List;
 
 public class FullRegression extends ApiTest {
     ObjectMapper mapper;
-    RestAssuredUtils.ApiResult apiTest;
+    ApiResult apiTest;
 
 
     @DataProvider(name = "stateUrls")
@@ -109,6 +111,8 @@ public class FullRegression extends ApiTest {
         }));
         return list.toArray(new Object[0][0]);
     }
+
+
 
     /* Test Cases --------------------------------------------------------*/
 

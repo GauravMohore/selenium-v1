@@ -4,21 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="Added smoke tests for news page">
+    <list default="true" id="702453be-4ee0-43c8-8fb3-d57e725563f7" name="Changes" comment="Added test for badge Request page">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/saved/all-news-locations-details.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/saved/all-news-location-details.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/saved/randomFile.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/saved/randomFile.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/ApiTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/ApiTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testbase/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/base/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new-668.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/DataProviders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DataProviders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/WebScarper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/WebScarper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/FullRegression.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/api/FullRegression.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/TestPromotionsPageResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/api/TestPromotionsPageResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/api/TestSanityResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/api/TestSanityResponse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestBannerAdCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestBlogsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestBlogsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestHomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestMetaTags.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestMetaTags.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestNewsPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/testcase/web/TestServicesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/testcase/web/TestServicesPage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,22 +57,29 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;Application.BadgeHelper.executor&quot;: &quot;Run&quot;,
     &quot;Application.BasePage.executor&quot;: &quot;Run&quot;,
     &quot;Application.DataProviders.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Helper.executor&quot;: &quot;Run&quot;,
     &quot;Application.JsonMain.executor&quot;: &quot;Run&quot;,
     &quot;Application.JsonOps.executor&quot;: &quot;Run&quot;,
     &quot;Application.LocationScraper.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RandomActions (1).executor&quot;: &quot;Run&quot;,
     &quot;Application.RandomActions.executor&quot;: &quot;Run&quot;,
+    &quot;Application.RandomStuff.executor&quot;: &quot;Run&quot;,
     &quot;Application.RestAssuredUtils.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Services2.executor&quot;: &quot;Run&quot;,
     &quot;Application.TestBannerAd.executor&quot;: &quot;Run&quot;,
     &quot;Application.TestBannerAdCreation.executor&quot;: &quot;Run&quot;,
     &quot;Application.TestUtils.executor&quot;: &quot;Run&quot;,
     &quot;Application.WebScarper.executor&quot;: &quot;Run&quot;,
     &quot;Application.WebScraper.executor&quot;: &quot;Run&quot;,
+    &quot;Application.grandBadge.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Promotions.xml.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/SanityTest.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/SmokeTest.xml.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.EntryPages.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.FullRegression.test.executor&quot;: &quot;Run&quot;,
@@ -90,6 +89,11 @@
     &quot;TestNG.FullRegression.testAllMandiStatePages.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.FullRegression.testAllStateNews.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.FullRegression.testAllSubDistrictUrls.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Sanity.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Sanity.expTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.Sanity.testLink.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestBadgeRequest.TC_VerifyScrollableList.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.TestBadgeRequest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestBannerAd.testApiRequest.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestBannerAdCreation (1).executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestBannerAdCreation (2).executor&quot;: &quot;Run&quot;,
@@ -141,63 +145,52 @@
     &quot;TestNG.TestServicesPage.TC_101_VerifyPageTitle.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestServicesPage.TC_201_TestServicesLinks.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.TestServicesPage.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.grandBadge.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.grandBadge.grantBadge.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.grandBadge.test.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.grandBadge.test2 (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.grandBadge.test2.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.grandBadge.testData (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.grandBadge.testData.executor&quot;: &quot;Run&quot;,
     &quot;TestNG.testcase.web.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;service&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Projects/JavaProjects/Selenium-V1&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;actions.on.save&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.FullRegression.testAllMandiDistrictPages">
-    <configuration name="FullRegression.test2" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml">
+    <configuration name="BadgeHelper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testcase2.BadgeHelper" />
       <module name="Selenium-V1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcase.api.*" />
+          <option name="PATTERN" value="testcase2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testcase.api" />
-      <option name="MAIN_CLASS_NAME" value="testcase.api.FullRegression" />
-      <option name="METHOD_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FullRegression.testAllMandiDistrictPages" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="RandomStuff" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testcase2.RandomStuff" />
       <module name="Selenium-V1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcase.api.*" />
+          <option name="PATTERN" value="testcase2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testcase.api" />
-      <option name="MAIN_CLASS_NAME" value="testcase.api.FullRegression" />
-      <option name="METHOD_NAME" value="testAllMandiDistrictPages" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FullRegression.testAllMandiStatePages" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="testcase.api.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="testcase.api" />
-      <option name="MAIN_CLASS_NAME" value="testcase.api.FullRegression" />
-      <option name="METHOD_NAME" value="testAllMandiStatePages" />
-      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/resources/runner/Master.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
       <properties />
       <listeners />
       <method v="2">
@@ -222,17 +215,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBannerAdCreation" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="grandBadge.grantBadge" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Selenium-V1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="testcase.web.*" />
+          <option name="PATTERN" value="testcase2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="testcase.web" />
-      <option name="MAIN_CLASS_NAME" value="testcase.web.TestBannerAdCreation" />
-      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PACKAGE_NAME" value="testcase2" />
+      <option name="MAIN_CLASS_NAME" value="testcase2.grandBadge" />
+      <option name="METHOD_NAME" value="grantBadge" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="grandBadge.testData" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Selenium-V1" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="testcase2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="testcase2" />
+      <option name="MAIN_CLASS_NAME" value="testcase2.grandBadge" />
+      <option name="METHOD_NAME" value="testData" />
+      <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
       <method v="2">
@@ -241,11 +253,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.FullRegression.testAllMandiDistrictPages" />
-        <item itemvalue="TestNG.FullRegression.testAllMandiStatePages" />
-        <item itemvalue="TestNG.TestBannerAdCreation" />
+        <item itemvalue="TestNG.D:/Projects/JavaProjects/Selenium-V1/src/test/resources/runner/Master.xml" />
         <item itemvalue="TestNG.FullRegression.testAllStateNews" />
-        <item itemvalue="TestNG.FullRegression.test2" />
+        <item itemvalue="Application.RandomStuff" />
+        <item itemvalue="TestNG.grandBadge.grantBadge" />
+        <item itemvalue="Application.BadgeHelper" />
       </list>
     </recent_temporary>
   </component>
@@ -425,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704961161472</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Added test for badge Request page">
+      <option name="closed" value="true" />
+      <created>1707215549253</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1707215549253</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -465,7 +485,8 @@
     <MESSAGE value="before grouping fix" />
     <MESSAGE value="added incomplete banner ad testcases" />
     <MESSAGE value="Added smoke tests for news page" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added smoke tests for news page" />
+    <MESSAGE value="Added test for badge Request page" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added test for badge Request page" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -474,6 +495,11 @@
           <url>file://$PROJECT_DIR$/src/main/java/pages/HomePage.java</url>
           <line>46</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/testcase2/RandomStuff.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

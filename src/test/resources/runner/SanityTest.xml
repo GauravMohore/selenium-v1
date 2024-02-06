@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test-test-suite">
+    <test name="test-normal">
+        <classes>
+            <class name="testcase.api.Sanity"/>
+        </classes>
+    </test>
+    <test name="test-parallel-method" parallel="methods" thread-count="4">
+        <classes>
+            <class name="testcase.api.Sanity">
+                <methods>
+                    <include name="testLink"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
